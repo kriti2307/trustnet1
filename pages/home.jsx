@@ -148,26 +148,10 @@ function Home() {
     </h2>
 
     <p className="text-lg leading-relaxed">
-      Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the 
-      globally acclaimed Manipal Group, carrying forward the visionary legacy of 
-      Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education 
-      accessible and transformative.
+      Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the globally acclaimed Manipal Group, carrying forward the visionary legacy of Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education accessible and transformative. With NAAC A+ accreditation, MUJ stands as a multi-disciplinary, future-focused university that blends academic excellence with innovation. Offering a wide spectrum of career-oriented programs across engineering, architecture, design, law, management, humanities, sciences, and more, MUJ is committed to nurturing well-rounded individuals prepared for the demands of a global world. The university’s reputation is reinforced by national and international recognition: ranked 58th in both the University and Engineering categories by NIRF 2025 and featured in prestigious global rankings such as QS Asia (701–750 band) and Times Higher Education (1201–1500 band). Beyond academics, MUJ is known for its state-of-the-art infrastructure, cutting-edge research ecosystem, and a campus designed with sustainability at its core. It is the proud recipient of a 5-star GRIHA rating and the ASSOCHAM Award for Best University Campus, testaments to its commitment to excellence in every dimension.
     </p>
 
-    <p className="text-lg leading-relaxed mt-6">
-      With NAAC A+ accreditation, MUJ stands as a multi-disciplinary, future-focused 
-      university that blends academic excellence with innovation. Offering a wide 
-      spectrum of career-oriented programs across engineering, architecture, design, 
-      law, management, humanities, sciences, and more, MUJ is committed to nurturing 
-      well-rounded individuals prepared for the demands of a global world.
-    </p>
-
-    <p className="text-lg leading-relaxed mt-6">
-      Ranked 58th in both the University and Engineering categories by NIRF 2025 
-      and featured in global rankings such as QS Asia and Times Higher Education, 
-      MUJ is known for its state-of-the-art infrastructure, cutting-edge research 
-      ecosystem, and a sustainability-driven campus.
-    </p>
+    
 
   </div>
 </section>
