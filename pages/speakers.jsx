@@ -5,17 +5,17 @@ const SPEAKERS = [
   {
     name: "Dr. Anupam Tiwari",
     designation: "Cyber Advisor, Ministry of Defence, Government of India",
-    image: "/src/assets/anupam-tiwari.webp",
+    image: "/assets/anupam-tiwari.webp",
   },
   {
     name: "Apurva K Vangujar",
     designation: "Cyber Security Engineer, Jaguar Land Rover",
-    image: "/src/assets/apurva.webp",
+    image: "/assets/apurva.webp",
   },
   {
     name: "Dr. Somanath Tripathy",
     designation: "Department of Computer Science & Engineering, IIT Patna",
-    image: "/src/assets/somanath-tripathy.webp",
+    image: "/assets/somanath-tripathy.webp",
   },
   {
     name: "Dr. Maanak Gupta",
