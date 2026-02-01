@@ -10,27 +10,27 @@ const SPEAKERS = [
   {
     name: "Apurva K Vangujar",
     designation: "Cyber Security Engineer, Jaguar Land Rover",
-    image: "/src/assets/image.png",
+    image: "/src/assets/apurva.webp",
   },
   {
     name: "Dr. Somanath Tripathy",
     designation: "Department of Computer Science & Engineering, IIT Patna",
-    image: "/src/assets/image.png",
+    image: "/src/assets/somanath-tripathy.webp",
   },
   {
     name: "Dr. Maanak Gupta",
     designation: "Department of Computer Science, Tennessee Tech University, TN, USA",
-    image: "/src/assets/image.png",
+    image: "/src/assets/maanak-gupta.webp",
   },
   {
     name: "Dr. Chhagan Lal",
     designation: "Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project",
-    image: "/src/assets/image.png",
+    image: "/src/assets/chhagan-lal.webp",
   },
   {
     name: "Dr. Gang Li",
     designation: "Professor, Deakin University, School of Information Technology",
-    image: "/src/assets/image.png",
+    image: "/src/assets/gang-li.webp",
   },
 ];
 

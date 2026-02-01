@@ -210,37 +210,37 @@ function Home() {
     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-items-center">
       
       <SpeakerCard
-        image="https://via.placeholder.com/300"
+        image="/src/assets/anupam-tiwari.webp"
         name="Dr. Anupam Tiwari"
         designation="Cyber Advisor, Ministry of Defence, Government of India"
       />
 
       <SpeakerCard
-        image="https://via.placeholder.com/300"
+        image="/src/assets/apurva.webp"
         name="Apurva K Vangujar"
         designation="Cyber Security Engineer, Jaguar Land Rover"
       />
 
       <SpeakerCard
-        image="https://via.placeholder.com/300"
+        image="/src/assets/somanath-tripathy.webp"
         name="Dr. Somanath Tripathy"
         designation="Department of Computer Science & Engineering, IIT Patna"
       />
 
       <SpeakerCard
-        image="https://via.placeholder.com/300"
+        image="/src/assets/maanak-gupta.webp"
         name="Dr. Maanak Gupta"
         designation="Department of Computer Science, Tennessee Tech University, TN, USA"
       />
 
       <SpeakerCard
-        image="https://via.placeholder.com/300"
+        image="/src/assets/chhagan-lal.webp"
         name="Dr. Chhagan Lal"
         designation="Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project"
       />
 
       <SpeakerCard
-        image="https://via.placeholder.com/300"
+        image="/src/assets/gang-li.webp"
         name="Dr. Gang Li"
         designation="Professor, Deakin University, School of Information Technology"
       />
