@@ -142,7 +142,7 @@ function Home() {
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
 <section className="bg-[#C84B13] text-trustnet-lighter py-20">
-  <div className="max-w-4xl mx-auto px-6">
+  <div className="max-w-5xl px-12 md:px-24">
 
     <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-center">
       About Manipal University Jaipur
