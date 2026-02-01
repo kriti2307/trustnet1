@@ -140,20 +140,21 @@ function Home() {
 
 
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
-<section className="bg-[#C84B13] text-trustnet-lighter py-16">
-  <div className="max-w-6xl mx-auto px-6 text-center">
+<section className="bg-[#C84B13] text-trustnet-lighter py-20">
+  <div className="max-w-4xl mx-auto px-6">
 
-    <h2 className="text-3xl md:text-4xl font-bold mb-8">
+    <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-center">
       About Manipal University Jaipur
     </h2>
 
-    <p className="text-lg leading-relaxed">
-     Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the globally acclaimed Manipal Group, carrying forward the visionary legacy of Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education accessible and transformative. With NAAC A+ accreditation, MUJ stands as a multi-disciplinary, future-focused university that blends academic excellence with innovation. Offering a wide spectrum of career-oriented programs across engineering, architecture, design, law, management, humanities, sciences, and more, MUJ is committed to nurturing well-rounded individuals prepared for the demands of a global world. The university’s reputation is reinforced by national and international recognition: ranked 58th in both the University and Engineering categories by NIRF 2025 and featured in prestigious global rankings such as QS Asia (701–750 band) and Times Higher Education (1201–1500 band). Beyond academics, MUJ is known for its state-of-the-art infrastructure, cutting-edge research ecosystem, and a campus designed with sustainability at its core. It is the proud recipient of a 5-star GRIHA rating and the ASSOCHAM Award for Best University Campus, testaments to its commitment to excellence in every dimension.
-     
+    <p className="text-lg leading-loose text-left">
+      Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the globally acclaimed Manipal Group, carrying forward the visionary legacy of Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education accessible and transformative. With NAAC A+ accreditation, MUJ stands as a multi-disciplinary, future-focused university that blends academic excellence with innovation. Offering a wide spectrum of career-oriented programs across engineering, architecture, design, law, management, humanities, sciences, and more, MUJ is committed to nurturing well-rounded individuals prepared for the demands of a global world. The university’s reputation is reinforced by national and international recognition: ranked 58th in both the University and Engineering categories by NIRF 2025 and featured in prestigious global rankings such as QS Asia (701–750 band) and Times Higher Education (1201–1500 band). Beyond academics, MUJ is known for its state-of-the-art infrastructure, cutting-edge research ecosystem, and a campus designed with sustainability at its core. It is the proud recipient of a 5-star GRIHA rating and the ASSOCHAM Award for Best University Campus, testaments to its commitment to excellence in every dimension.
     </p>
 
   </div>
 </section>
+
+
 
 {/* ================= CONFERENCE TRACKS ================= */}
 <section className="bg-trustnet-bg py-20">
