@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import SpeakerCard from "../components/speakerCard";
 import TrackItem from "../components/trackItem";
@@ -6,6 +6,15 @@ import heroImage from "../src/assets/image.png";
 import footerLogo from "../src/assets/footer-logo.webp";
 
 function Home() {
+  /* Scroll to section when landing with hash (e.g. /#about from another page) */
+  useEffect(() => {
+    const hash = window.location.hash?.slice(1);
+    if (hash) {
+      const el = document.getElementById(hash);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
+
   return (
     <div className="w-full">
 
@@ -141,7 +150,7 @@ function Home() {
 
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
-<section className="bg-trustnet-primary-dark text-trustnet-lighter py-16">
+<section id="about" className="bg-trustnet-primary-dark text-trustnet-lighter py-16 scroll-mt-20">
   <div className="max-w-6xl mx-auto px-6 text-center">
 
     <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -198,7 +207,7 @@ function Home() {
 
 
 {/* ================= OUR EMINENT SPEAKERS ================= */}
-<section className="bg-trustnet-primary-dark py-20">
+<section id="speakers" className="bg-trustnet-primary-dark py-20 scroll-mt-20">
   <div className="max-w-7xl mx-auto px-6">
 
     {/* Section Title */}

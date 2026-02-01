@@ -11,9 +11,9 @@ function Layout() {
   const navLinks = (
     <>
       <Link to="/" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-      <Link to="/about" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</Link>
+      <a href="/#about" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</a>
       <Link to="/call-for-papers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
-      <Link to="/speakers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
+      <a href="/#speakers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</a>
       
       {/* Committee Dropdown */}
       <div className="relative" onMouseEnter={() => setCommitteeOpen(true)} onMouseLeave={() => setCommitteeOpen(false)}>
@@ -45,7 +45,7 @@ function Layout() {
         )}
       </div>
 
-      <Link to="/contact" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+      <a href="/#contact" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</a>
 
       {/* Special Sessions Dropdown */}
       <div className="relative" onMouseEnter={() => setSessionsOpen(true)} onMouseLeave={() => setSessionsOpen(false)}>
@@ -102,9 +102,9 @@ function Layout() {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-trustnet-bg border-t border-trustnet-bg-light py-4 px-6 space-y-2">
             <Link to="/" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/about" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <a href="/#about" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</a>
             <Link to="/call-for-papers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
-            <Link to="/speakers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
+            <a href="/#speakers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</a>
             <span className="block py-2 font-medium text-gray-500">Committee</span>
             <Link to="/committee/advisory" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
             <Link to="/committee/organizing" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
@@ -113,7 +113,7 @@ function Layout() {
             <Link to="/for-authors/submission" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
             <Link to="/for-authors/registration" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
             <Link to="/for-authors/brochure" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Brochure</Link>
-            <Link to="/contact" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <a href="/#contact" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</a>
             <span className="block py-2 font-medium text-gray-500">Special Sessions</span>
             <Link to="/special-sessions" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
             <Link to="/special-sessions/proposal" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Session Proposal</Link>
@@ -130,7 +130,7 @@ function Layout() {
       </main>
 
       {/* Footer - shared across all pages */}
-      <footer className="bg-trustnet-primary-dark text-trustnet-lighter pt-12 pb-6">
+      <footer id="contact" className="bg-trustnet-primary-dark text-trustnet-lighter pt-12 pb-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-10 text-sm">
             <div>
