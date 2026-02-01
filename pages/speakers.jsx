@@ -20,17 +20,17 @@ const SPEAKERS = [
   {
     name: "Dr. Maanak Gupta",
     designation: "Department of Computer Science, Tennessee Tech University, TN, USA",
-    image: "/src/assets/maanak-gupta.webp",
+    image: "/assets/maanak-gupta.webp",
   },
   {
     name: "Dr. Chhagan Lal",
     designation: "Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project",
-    image: "/src/assets/chhagan-lal.webp",
+    image: "/assets/chhagan-lal.webp",
   },
   {
     name: "Dr. Gang Li",
     designation: "Professor, Deakin University, School of Information Technology",
-    image: "/src/assets/gang-li.webp",
+    image: "/assets/gang-li.webp",
   },
 ];
 
