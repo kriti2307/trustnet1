@@ -5,7 +5,7 @@ const SPEAKERS = [
   {
     name: "Dr. Anupam Tiwari",
     designation: "Cyber Advisor, Ministry of Defence, Government of India",
-    image: "C:\Users\KRITI SARAOGI\Downloads\manipal-trust-main\manipal-trust-main\dist\assets\anupam-tiwari.webp",
+    image: "/src/assets/anupam-tiwari.webp",
   },
   {
     name: "Apurva K Vangujar",
