@@ -140,6 +140,7 @@ function Home() {
 
 
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
+{/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
 <section className="bg-[#C84B13] text-trustnet-lighter py-20">
   <div className="max-w-4xl mx-auto px-6">
 
