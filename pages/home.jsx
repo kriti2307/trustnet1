@@ -141,7 +141,7 @@ function Home() {
 
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
-<section className="bg-[#C84B13] text-trustnet-lighter py-16">
+<section className="bg-trustnet-primary-dark text-trustnet-lighter py-16">
   <div className="max-w-6xl mx-auto px-6 text-center">
 
     <h2 className="text-3xl md:text-4xl font-bold mb-8">
