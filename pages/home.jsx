@@ -271,12 +271,12 @@ function Home() {
     {/* Logos */}
     <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-10">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Scopus_logo.svg"
+        src="/assets/Scopus_logo.svg.png"
         alt="Scopus"
         className="h-16 object-contain"
       />
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Springer_logo.svg"
+        src="/assets/springer-logo-removebg-preview.png"
         alt="Springer"
         className="h-16 object-contain"
       />
