@@ -1,0 +1,5 @@
+/* Smooth scroll for anchor-based navigation */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* Offset for fixed navbar */
+}
