@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 function SpecialSessionProposal() {
   return (
-    <div className="w-full min-h-screen bg-blue-100">
+    <div className="w-full min-h-screen bg-trustnet-bg">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-slate-700 mb-8">
             Special Session Proposal
-            <div className="w-24 h-1 bg-blue-900 mt-3 rounded-full"></div>
+            <div className="w-24 h-1 bg-trustnet-primary mt-3 rounded-full"></div>
           </h1>
 
           <div className="space-y-8 text-gray-700">
@@ -34,14 +34,14 @@ function SpecialSessionProposal() {
                 committee at{" "}
                 <a
                   href="mailto:trustnet2026@gmail.com"
-                  className="text-blue-900 font-semibold hover:underline"
+                  className="text-trustnet-primary font-semibold hover:underline"
                 >
                   trustnet2026@gmail.com
                 </a>
               </p>
               <Link
                 to="/special-sessions"
-                className="text-blue-900 font-semibold hover:underline"
+                className="text-trustnet-primary font-semibold hover:underline"
               >
                 ← Back to Special Sessions
               </Link>

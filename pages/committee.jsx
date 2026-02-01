@@ -17,7 +17,7 @@ function Committee() {
   const isAdvisory = type === "advisory";
 
   return (
-    <div className="w-full min-h-screen bg-blue-100">
+    <div className="w-full min-h-screen bg-trustnet-bg">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-8 flex gap-4">
@@ -25,8 +25,8 @@ function Committee() {
               to="/committee/advisory"
               className={`px-4 py-2 rounded-lg font-medium transition ${
                 isAdvisory
-                  ? "bg-blue-900 text-yellow-50"
-                  : "bg-yellow-50 hover:bg-yellow-100 text-gray-700"
+                  ? "bg-trustnet-primary text-white"
+                  : "bg-white hover:bg-trustnet-bg-light text-gray-700 border border-trustnet-bg-light"
               }`}
             >
               Advisory Board
@@ -35,8 +35,8 @@ function Committee() {
               to="/committee/organizing"
               className={`px-4 py-2 rounded-lg font-medium transition ${
                 !isAdvisory
-                  ? "bg-blue-900 text-yellow-50"
-                  : "bg-yellow-50 hover:bg-yellow-100 text-gray-700"
+                  ? "bg-trustnet-primary text-white"
+                  : "bg-white hover:bg-trustnet-bg-light text-gray-700 border border-trustnet-bg-light"
               }`}
             >
               Organizing Committee
@@ -57,7 +57,7 @@ function Committee() {
               {ADVISORY_BOARD.map((member, idx) => (
                 <div
                   key={idx}
-                  className="bg-yellow-50 rounded-xl p-6 shadow-md flex justify-between items-center"
+                  className="bg-white rounded-xl p-6 shadow-md flex justify-between items-center border border-trustnet-bg-light"
                 >
                   <span className="font-semibold text-gray-800">
                     {member.name}
@@ -75,12 +75,12 @@ function Committee() {
               {ORGANIZING_COMMITTEE.map((member, idx) => (
                 <div
                   key={idx}
-                  className="bg-yellow-50 rounded-xl p-6 shadow-md flex justify-between items-center flex-wrap gap-2"
+                  className="bg-white rounded-xl p-6 shadow-md flex justify-between items-center flex-wrap gap-2 border border-trustnet-bg-light"
                 >
                   <span className="font-semibold text-gray-800">
                     {member.name}
                   </span>
-                  <span className="text-blue-900 font-medium">
+                  <span className="text-trustnet-primary font-medium">
                     {member.role}
                   </span>
                 </div>

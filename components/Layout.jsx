@@ -10,53 +10,53 @@ function Layout() {
 
   const navLinks = (
     <>
-      <Link to="/" className="hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-      <Link to="/about" className="hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>About</Link>
-      <Link to="/call-for-papers" className="hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
-      <Link to="/speakers" className="hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
+      <Link to="/" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+      <Link to="/about" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</Link>
+      <Link to="/call-for-papers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
+      <Link to="/speakers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
       
       {/* Committee Dropdown */}
       <div className="relative" onMouseEnter={() => setCommitteeOpen(true)} onMouseLeave={() => setCommitteeOpen(false)}>
-        <button className="hover:text-orange-500 flex items-center gap-1">
+        <button className="hover:text-trustnet-accent flex items-center gap-1">
           Committee
           <span className={`transition-transform ${committeeOpen ? "rotate-180" : ""}`}>▼</span>
         </button>
         {committeeOpen && (
-          <div className="absolute top-full left-0 mt-1 bg-yellow-50 shadow-lg rounded-lg py-2 min-w-[200px] z-50">
-            <Link to="/committee/advisory" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
-            <Link to="/committee/organizing" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
+          <div className="absolute top-full left-0 mt-1 bg-trustnet-card shadow-lg rounded-lg py-2 min-w-[200px] z-50 border border-trustnet-bg-light">
+            <Link to="/committee/advisory" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
+            <Link to="/committee/organizing" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
           </div>
         )}
       </div>
 
       {/* For Authors Dropdown */}
       <div className="relative" onMouseEnter={() => setAuthorsOpen(true)} onMouseLeave={() => setAuthorsOpen(false)}>
-        <button className="hover:text-orange-500 flex items-center gap-1">
+        <button className="hover:text-trustnet-accent flex items-center gap-1">
           For Authors
           <span className={`transition-transform ${authorsOpen ? "rotate-180" : ""}`}>▼</span>
         </button>
         {authorsOpen && (
-          <div className="absolute top-full left-0 mt-1 bg-yellow-50 shadow-lg rounded-lg py-2 min-w-[220px] z-50">
-            <Link to="/for-authors/guidelines" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Guidelines for Authors</Link>
-            <Link to="/for-authors/submission" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
-            <Link to="/for-authors/registration" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
-            <Link to="/for-authors/brochure" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Conference Brochure</Link>
+          <div className="absolute top-full left-0 mt-1 bg-trustnet-card shadow-lg rounded-lg py-2 min-w-[220px] z-50 border border-trustnet-bg-light">
+            <Link to="/for-authors/guidelines" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Guidelines for Authors</Link>
+            <Link to="/for-authors/submission" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
+            <Link to="/for-authors/registration" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
+            <Link to="/for-authors/brochure" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Conference Brochure</Link>
           </div>
         )}
       </div>
 
-      <Link to="/contact" className="hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+      <Link to="/contact" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
 
       {/* Special Sessions Dropdown */}
       <div className="relative" onMouseEnter={() => setSessionsOpen(true)} onMouseLeave={() => setSessionsOpen(false)}>
-        <button className="hover:text-orange-500 flex items-center gap-1">
+        <button className="hover:text-trustnet-accent flex items-center gap-1">
           Special Sessions
           <span className={`transition-transform ${sessionsOpen ? "rotate-180" : ""}`}>▼</span>
         </button>
         {sessionsOpen && (
-          <div className="absolute top-full left-0 mt-1 bg-yellow-50 shadow-lg rounded-lg py-2 min-w-[220px] z-50">
-            <Link to="/special-sessions" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
-            <Link to="/special-sessions/proposal" className="block px-4 py-2 hover:bg-yellow-100" onClick={() => setMobileMenuOpen(false)}>Special Session Proposal</Link>
+          <div className="absolute top-full left-0 mt-1 bg-trustnet-card shadow-lg rounded-lg py-2 min-w-[220px] z-50 border border-trustnet-bg-light">
+            <Link to="/special-sessions" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
+            <Link to="/special-sessions/proposal" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Special Session Proposal</Link>
           </div>
         )}
       </div>
@@ -66,7 +66,7 @@ function Layout() {
   return (
     <div className="w-full min-h-screen font-sans">
       {/* Navbar */}
-      <nav className="w-full bg-yellow-50 shadow-md fixed top-0 z-50">
+      <nav className="w-full bg-white shadow-md fixed top-0 z-50 border-b border-trustnet-bg-light">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <Link to="/" className="text-xl font-bold text-gray-800" style={{ marginLeft: "20px" }}>
             <img src={manipalLogo} alt="Manipal Logo" style={{ height: "70px", width: "auto" }} />
@@ -77,7 +77,7 @@ function Layout() {
           </div>
 
           <div className="hidden lg:block">
-            <span className="bg-blue-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
+            <span className="bg-trustnet-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
               HYBRID
             </span>
           </div>
@@ -100,25 +100,25 @@ function Layout() {
 
         {/* Mobile menu - flat links for touch */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-yellow-50 border-t py-4 px-6 space-y-2">
-            <Link to="/" className="block py-2 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/about" className="block py-2 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>About</Link>
-            <Link to="/call-for-papers" className="block py-2 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
-            <Link to="/speakers" className="block py-2 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
+          <div className="lg:hidden bg-trustnet-bg border-t border-trustnet-bg-light py-4 px-6 space-y-2">
+            <Link to="/" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <Link to="/about" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link to="/call-for-papers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
+            <Link to="/speakers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
             <span className="block py-2 font-medium text-gray-500">Committee</span>
-            <Link to="/committee/advisory" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
-            <Link to="/committee/organizing" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
+            <Link to="/committee/advisory" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
+            <Link to="/committee/organizing" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
             <span className="block py-2 font-medium text-gray-500">For Authors</span>
-            <Link to="/for-authors/guidelines" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Guidelines</Link>
-            <Link to="/for-authors/submission" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
-            <Link to="/for-authors/registration" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
-            <Link to="/for-authors/brochure" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Brochure</Link>
-            <Link to="/contact" className="block py-2 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <Link to="/for-authors/guidelines" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Guidelines</Link>
+            <Link to="/for-authors/submission" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
+            <Link to="/for-authors/registration" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
+            <Link to="/for-authors/brochure" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Brochure</Link>
+            <Link to="/contact" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             <span className="block py-2 font-medium text-gray-500">Special Sessions</span>
-            <Link to="/special-sessions" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
-            <Link to="/special-sessions/proposal" className="block py-2 pl-4 hover:text-orange-500" onClick={() => setMobileMenuOpen(false)}>Session Proposal</Link>
+            <Link to="/special-sessions" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
+            <Link to="/special-sessions/proposal" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Session Proposal</Link>
             <div className="pt-2">
-              <span className="bg-blue-900 text-white px-3 py-1 rounded-full text-sm font-semibold">HYBRID</span>
+              <span className="bg-trustnet-primary text-white px-3 py-1 rounded-full text-sm font-semibold">HYBRID</span>
             </div>
           </div>
         )}
@@ -130,7 +130,7 @@ function Layout() {
       </main>
 
       {/* Footer - shared across all pages */}
-      <footer className="bg-blue-900 text-yellow-50 pt-12 pb-6">
+      <footer className="bg-trustnet-primary-dark text-trustnet-lighter pt-12 pb-6">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-10 text-sm">
             <div>
@@ -155,7 +155,7 @@ function Layout() {
               <p className="mt-6 text-gray-400 text-sm">Developed by SDC WebDev Team</p>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
+          <div className="border-t border-trustnet-primary-darker mt-8 pt-4 text-center text-sm text-trustnet-light">
             © 2025 All rights reserved.
           </div>
         </div>

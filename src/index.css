@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+/* TrustNet 2026 color scheme - matches trustnetcon.in */
+@theme {
+  /* Primary: Deakin cerulean/teal */
+  --color-trustnet-primary: #008fc5;
+  --color-trustnet-primary-dark: #0d4f6c;
+  --color-trustnet-primary-darker: #0a3d52;
+  
+  /* Accent: Manipal orange */
+  --color-trustnet-accent: #ea580c;
+  --color-trustnet-accent-hover: #c2410c;
+  
+  /* Backgrounds */
+  --color-trustnet-bg: #f8fafc;
+  --color-trustnet-bg-light: #f1f5f9;
+  --color-trustnet-card: #ffffff;
+  
+  /* Text on dark */
+  --color-trustnet-light: #e0f2fe;
+  --color-trustnet-lighter: #f0f9ff;
+}

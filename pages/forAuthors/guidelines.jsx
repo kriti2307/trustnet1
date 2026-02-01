@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 function Guidelines() {
   return (
-    <div className="w-full min-h-screen bg-blue-100">
+    <div className="w-full min-h-screen bg-trustnet-bg">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-slate-700 mb-8">
             Guidelines for Authors
-            <div className="w-24 h-1 bg-blue-900 mt-3 rounded-full"></div>
+            <div className="w-24 h-1 bg-trustnet-primary mt-3 rounded-full bg-trustnet-primary"></div>
           </h1>
 
           <div className="space-y-8 text-gray-700">
@@ -44,13 +44,13 @@ function Guidelines() {
             <div className="flex gap-4 flex-wrap">
               <Link
                 to="/for-authors/submission"
-                className="bg-blue-900 text-yellow-50 px-6 py-3 rounded-full font-semibold hover:bg-blue-800 transition"
+                className="bg-trustnet-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-trustnet-primary-dark transition"
               >
                 Submit Paper
               </Link>
               <Link
                 to="/for-authors/registration"
-                className="bg-yellow-50 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-100 transition"
+                className="bg-yellow-50 text-trustnet-primary-dark px-6 py-3 rounded-full font-semibold hover:bg-yellow-100 transition"
               >
                 Register
               </Link>

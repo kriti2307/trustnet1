@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 function PaperSubmission() {
   return (
-    <div className="w-full min-h-screen bg-blue-100">
+    <div className="w-full min-h-screen bg-trustnet-bg">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-slate-700 mb-8">
             Paper Submission
-            <div className="w-24 h-1 bg-blue-900 mt-3 rounded-full"></div>
+            <div className="w-24 h-1 bg-trustnet-primary mt-3 rounded-full"></div>
           </h1>
 
           <div className="space-y-8 text-gray-700">
@@ -18,7 +18,7 @@ function PaperSubmission() {
               through this service, provided by Microsoft.
             </p>
 
-            <div className="bg-yellow-50 rounded-xl p-8 shadow-md text-center">
+            <div className="bg-white border border-trustnet-bg-light rounded-xl p-8 shadow-md text-center">
               <h2 className="font-bold text-xl mb-4">Submission Portal</h2>
               <p className="mb-6">
                 Paper submission link will be available soon. Please check back
@@ -28,7 +28,7 @@ function PaperSubmission() {
                 href="https://cmt3.research.microsoft.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-900 text-yellow-50 px-8 py-3 rounded-full font-semibold hover:bg-blue-800 transition"
+                className="inline-block bg-trustnet-primary text-yellow-50 px-8 py-3 rounded-full font-semibold hover:bg-trustnet-primary-dark transition"
               >
                 Microsoft CMT Portal
               </a>
@@ -50,13 +50,13 @@ function PaperSubmission() {
             <div className="flex gap-4">
               <Link
                 to="/for-authors/guidelines"
-                className="text-blue-900 font-semibold hover:underline"
+                className="text-trustnet-primary font-semibold hover:underline"
               >
                 ← Guidelines for Authors
               </Link>
               <Link
                 to="/for-authors/registration"
-                className="text-blue-900 font-semibold hover:underline"
+                className="text-trustnet-primary font-semibold hover:underline"
               >
                 Registration →
               </Link>

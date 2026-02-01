@@ -38,10 +38,10 @@ function Home() {
           </div>
 
           <div className="flex justify-center gap-4 flex-wrap">
-            <Link to="/for-authors/registration" className="bg-blue-950 hover:bg-blue-800 px-6 py-3 rounded-full text-white font-semibold transition duration-300">
+            <Link to="/for-authors/registration" className="bg-trustnet-primary hover:bg-trustnet-primary-dark px-6 py-3 rounded-full text-white font-semibold transition duration-300">
               Register Now
             </Link>
-            <Link to="/for-authors/submission" className="bg-yellow-50 text-black hover:bg-yellow-100 px-6 py-3 rounded-full font-semibold transition duration-300">
+            <Link to="/for-authors/submission" className="bg-white text-trustnet-primary-dark hover:bg-trustnet-bg px-6 py-3 rounded-full font-semibold transition duration-300 border-2 border-white">
               Submit Paper
             </Link>
           </div>
@@ -50,7 +50,7 @@ function Home() {
       </section>
 
       {/* ================= IMPORTANT DATES ================= */}
-      <section className="bg-blue-100 py-12">
+      <section className="bg-trustnet-bg py-12">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="mb-8">
@@ -61,24 +61,24 @@ function Home() {
 
           <div className="grid md:grid-cols-4 gap-6">
 
-            <div className="bg-yellow-50  shadow-md rounded-lg p-6">
+            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
               <h3 className="font-semibold text-lg mb-2">Call for Paper</h3>
               <p className="text-gray-600">September 9, 2025</p>
             </div>
 
-            <div className="bg-yellow-50 shadow-md rounded-lg p-6">
+            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
               <h3 className="font-semibold text-lg mb-2">Submission</h3>
               <p className="text-gray-600">December 15, 2025</p>
               <p className="text-gray-600 text-sm mt-1">December 30, 2025 (Extended)</p>
             </div>
 
-            <div className="bg-yellow-50 shadow-md rounded-lg p-6">
+            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
               <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
               <p className="text-gray-600">December 15, 2025</p>
               <p className="text-gray-600 text-sm mt-1">January 10, 2026 (Extended)</p>
             </div>
 
-            <div className="bg-yellow-50 shadow-md rounded-lg p-6">
+            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
               <h3 className="font-semibold text-lg mb-2">Registration End</h3>
               <p className="text-gray-600">December 25, 2025</p>
               <p className="text-gray-600 text-sm mt-1">January 14, 2026 (Extended)</p>
@@ -90,14 +90,14 @@ function Home() {
       </section>
 
       {/* ================= CONFERENCE INTRO SECTION ================= */}
-<section className="bg-blue-100 py-16">
+<section className="bg-trustnet-bg py-16">
   <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
     {/* Left Side - Logo + Title */}
     <div className="flex flex-col md:flex-row items-start gap-6">
 
       {/* Shield Logo Placeholder */}
-      <div className="w-24 h-24 bg-blue-900 rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+      <div className="w-24 h-24 bg-trustnet-primary rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-lg">
         TN
       </div>
 
@@ -140,7 +140,7 @@ function Home() {
 
 
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
-<section className="bg-blue-950 text-yellow-50 py-16">
+<section className="bg-trustnet-primary-dark text-trustnet-lighter py-16">
   <div className="max-w-6xl mx-auto px-6 text-center">
 
     <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -173,12 +173,12 @@ function Home() {
 </section>
 
 {/* ================= CONFERENCE TRACKS ================= */}
-<section className="bg-blue-100 py-20">
+<section className="bg-trustnet-bg py-20">
   <div className="max-w-6xl mx-auto px-6">
 
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
       CONFERENCE TRACKS
-      <div className="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded-full"></div>
+      <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
     <div className="grid md:grid-cols-2 gap-6">
@@ -197,13 +197,13 @@ function Home() {
 
 
 {/* ================= OUR EMINENT SPEAKERS ================= */}
-<section className="bg-blue-950 py-20">
+<section className="bg-trustnet-primary-dark py-20">
   <div className="max-w-7xl mx-auto px-6">
 
     {/* Section Title */}
-    <h2 className="text-3xl md:text-4xl font-bold text-yellow-100 text-center mb-14">
+    <h2 className="text-3xl md:text-4xl font-bold text-trustnet-lighter text-center mb-14">
       OUR EMINENT SPEAKERS
-      <div className="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded-full"></div>
+      <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
     {/* Speakers Grid */}
@@ -250,13 +250,13 @@ function Home() {
   </div>
 </section>
 {/* ================= PUBLICATION ================= */}
-<section className="bg-blue-200 py-20">
+<section className="bg-trustnet-bg-light py-20">
   <div className="max-w-5xl mx-auto px-6 text-center">
 
     {/* Title */}
     <h2 className="text-3xl md:text-4xl font-bold mb-10">
       PUBLICATION
-      <div className="w-20 h-1 bg-blue-900 mx-auto mt-3 rounded-full"></div>
+      <div className="w-20 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
     {/* Description */}
@@ -302,7 +302,7 @@ function Home() {
     {/* Title */}
     <h2 className="text-3xl md:text-4xl font-bold mb-12">
       CONFERENCE PARTNERS
-      <div className="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded-full"></div>
+      <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
     {/* Partner Logos */}
@@ -322,13 +322,13 @@ function Home() {
   </div>
 </section>
 {/* ================= ABOUT JAIPUR ================= */}
-<section className="bg-blue-200 py-20">
+<section className="bg-trustnet-bg-light py-20">
   <div className="max-w-6xl mx-auto px-6">
 
     {/* Title */}
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
       ABOUT JAIPUR
-      <div className="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded-full"></div>
+      <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
     {/* Description */}
@@ -375,13 +375,13 @@ function Home() {
   </div>
 </section>
 {/* ================= VENUE ================= */}
-<section className="bg-blue-200 py-20">
+<section className="bg-trustnet-bg-light py-20">
   <div className="max-w-6xl mx-auto px-6">
 
     {/* Title */}
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
       VENUE
-      <div className="w-20 h-1 bg-blue-900 mx-auto mt-3 rounded-full"></div>
+      <div className="w-20 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
     {/* Description */}

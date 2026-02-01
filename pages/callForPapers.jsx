@@ -119,9 +119,9 @@ function CallForPapers() {
   const [openTrack, setOpenTrack] = useState(null);
 
   return (
-    <div className="w-full bg-blue-100 min-h-screen">
+    <div className="w-full bg-trustnet-bg min-h-screen">
       {/* Hero */}
-      <section className="bg-blue-950 text-yellow-50 py-16">
+      <section className="bg-trustnet-primary-dark text-trustnet-lighter py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Call for Papers</h1>
           <p className="text-xl leading-relaxed">
@@ -131,13 +131,13 @@ function CallForPapers() {
           <div className="mt-8 flex justify-center gap-4 flex-wrap">
             <Link
               to="/for-authors/submission"
-              className="bg-yellow-50 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-100 transition"
+              className="bg-white text-trustnet-primary-dark px-6 py-3 rounded-full font-semibold hover:bg-trustnet-bg transition"
             >
               Submit Paper
             </Link>
             <Link
               to="/for-authors/guidelines"
-              className="border-2 border-yellow-50 px-6 py-3 rounded-full font-semibold hover:bg-yellow-50/20 transition"
+              className="border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition"
             >
               Guidelines
             </Link>
@@ -160,7 +160,7 @@ function CallForPapers() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-yellow-50 rounded-xl p-6 shadow-md">
+            <div className="bg-white rounded-xl p-6 shadow-md border border-trustnet-bg-light">
               <h3 className="font-bold text-lg mb-4">Submission Requirements</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Peer-review process</li>
@@ -169,7 +169,7 @@ function CallForPapers() {
                 <li>• Original, unpublished research</li>
               </ul>
             </div>
-            <div className="bg-yellow-50 rounded-xl p-6 shadow-md">
+            <div className="bg-white rounded-xl p-6 shadow-md border border-trustnet-bg-light">
               <h3 className="font-bold text-lg mb-4">Presentation Formats</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Interactive sessions</li>
@@ -183,35 +183,35 @@ function CallForPapers() {
       </section>
 
       {/* Submission Timeline */}
-      <section className="bg-blue-200 py-16">
+      <section className="bg-trustnet-bg-light py-16">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-slate-700 mb-12 text-center">
             Submission Timeline
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                 1
               </div>
               <h3 className="font-semibold text-lg mb-2">Call for Papers</h3>
               <p className="text-gray-600">September 9, 2025</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                 2
               </div>
               <h3 className="font-semibold text-lg mb-2">Submission</h3>
               <p className="text-gray-600">December 30, 2025</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                 3
               </div>
               <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
               <p className="text-gray-600">January 10, 2026</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                 4
               </div>
               <h3 className="font-semibold text-lg mb-2">Registration End</h3>
@@ -226,7 +226,7 @@ function CallForPapers() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Conference Tracks
-            <div className="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded-full"></div>
+            <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
           </h2>
 
           <div className="space-y-4">
@@ -239,13 +239,13 @@ function CallForPapers() {
                   onClick={() =>
                     setOpenTrack(openTrack === idx ? null : idx)
                   }
-                  className="w-full flex justify-between items-center px-6 py-4 bg-yellow-50 hover:bg-yellow-100 transition text-left"
+                  className="w-full flex justify-between items-center px-6 py-4 bg-trustnet-bg hover:bg-trustnet-bg-light transition text-left"
                 >
                   <span className="font-semibold text-gray-800">
                     {track.title.toUpperCase()}
                   </span>
                   <span
-                    className={`text-blue-900 text-xl transition-transform ${
+                    className={`text-trustnet-primary text-xl transition-transform ${
                       openTrack === idx ? "rotate-180" : ""
                     }`}
                   >
@@ -268,7 +268,7 @@ function CallForPapers() {
       </section>
 
       {/* Publication */}
-      <section className="bg-blue-200 py-16">
+      <section className="bg-trustnet-bg-light py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold text-slate-700 mb-6">
             Publication and Indexing

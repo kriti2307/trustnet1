@@ -3,17 +3,17 @@ function TrackItem({ title }) {
     const [open, setOpen] = useState(false);
   
     return (
-      <div className="border border-blue-200 rounded-xl overflow-hidden shadow-sm">
+      <div className="border border-trustnet-bg-light rounded-xl overflow-hidden shadow-sm bg-white">
         
         <button
           onClick={() => setOpen(!open)}
-          className="w-full flex justify-between items-center px-6 py-4 bg-yellow-50 hover:bg-yellow-100 transition"
+          className="w-full flex justify-between items-center px-6 py-4 bg-trustnet-bg hover:bg-trustnet-bg-light transition"
         >
           <span className="font-semibold text-left text-gray-800">
             {title.toUpperCase()}
           </span>
-  
-          <span className={`text-blue-900 text-xl transition-transform duration-300 ${open ? "rotate-180" : ""}`}>
+
+          <span className={`text-trustnet-primary text-xl transition-transform duration-300 ${open ? "rotate-180" : ""}`}>
             ▼
           </span>
         </button>
