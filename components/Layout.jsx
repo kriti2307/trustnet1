@@ -141,22 +141,20 @@ function Layout() {
               <p>Dr. Ankur Pandey (Convener)</p>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-lg mb-3">MANIPAL UNIVERSITY JAIPUR</h3>
+              <img src = "/assets/manipal-logo.png" alt="Manipal Logo" className="mx-auto mb-4" style={{ height: "80px", width: "auto" }} />
               <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
               <p>Jaipur, Rajasthan, India - 303007</p>
-              <p className="mt-6 font-semibold">Total Visitors: 99</p>
             </div>
             <div className="text-right">
-              <h3 className="font-bold text-xl">TRUSTNET&apos;26</h3>
-              <p className="text-gray-400 text-sm">
-                International Conference on <br />
-                Trusted Networks and Intelligent Systems
-              </p>
-              <p className="mt-6 text-gray-400 text-sm">Developed by SDC WebDev Team</p>
+              <img src = "/assets/trustnet.webp" alt="TrustNet Logo" className="mx-auto mb-4" style={{ height: "80px", width: "auto" }} />
             </div>
           </div>
           <div className="border-t border-trustnet-primary-darker mt-8 pt-4 text-center text-sm text-trustnet-light">
-            © 2026 All rights reserved.
+            <div className="flex justify-between">
+              <span>© 2026 All rights reserved.</span>
+              <span> Total Visitors: 99</span>
+              <span>Developed by WIE WebDev Team</span>
+            </div>
           </div>
         </div>
       </footer>
