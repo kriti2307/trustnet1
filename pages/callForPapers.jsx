@@ -292,6 +292,9 @@ function CallForPapers() {
               className="h-14 object-contain"
             />
           </div>
+           <p className="text-gray-700 text-lg leading-relaxed mb-8">
+            The proceedings of TrustNet’26 will be published in Lecture Notes in Networks and Systems (LNNS). LNNS is abstracted and indexed in SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago.
+           </p>
         </div>
       </section>
     </div>
