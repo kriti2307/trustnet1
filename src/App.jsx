@@ -23,8 +23,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="call-for-papers" element={<CallForPapers />} />
           <Route path="speakers" element={<Speakers />} />
-          <Route path="committee/advisory" element={<Committee type="advisory" />} />
-          <Route path="committee/organizing" element={<Committee type="organizing" />} />
+          <Route path="committee/advisoryboard" element={<Committee type="advisoryboard" />} />
+          <Route path="committee/organizingcommittee" element={<Committee type="organizingcommittee" />} />
           <Route path="for-authors/guidelines" element={<Guidelines />} />
           <Route path="for-authors/submission" element={<PaperSubmission />} />
           <Route path="for-authors/registration" element={<Registration />} />
