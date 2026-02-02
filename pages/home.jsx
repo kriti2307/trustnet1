@@ -427,12 +427,12 @@ function Home() {
     {/* Partner Logos */}
     <div className="flex flex-col md:flex-row items-center justify-center gap-16">
       <img
-        src="https://unstop.com/assets/images/unstop-logo.svg"
+        src="/assets/unstop.png"
         alt="Unstop"
         className="h-16 object-contain"
       />
       <img
-        src="https://upload.wikimedia.org/wikipedia/en/7/7b/Deakin_University_Logo.svg"
+        src="/assets/deakin.png"
         alt="Deakin University"
         className="h-16 object-contain"
       />
