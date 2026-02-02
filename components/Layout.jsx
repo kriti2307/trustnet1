@@ -156,7 +156,7 @@ function Layout() {
             </div>
           </div>
           <div className="border-t border-trustnet-primary-darker mt-8 pt-4 text-center text-sm text-trustnet-light">
-            © 2025 All rights reserved.
+            © 2026 All rights reserved.
           </div>
         </div>
       </footer>
