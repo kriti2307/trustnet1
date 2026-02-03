@@ -134,7 +134,7 @@ function Home() {
 
     {/* Right Side - Description */}
     <div>
-      <p className="text-gray-700 leading-relaxed text-lg">
+      <p className="text-gray-700 leading-relaxed text-lg text-justify">
         The <span className="font-semibold">Department of Computer Science and Engineering, Manipal University Jaipur</span> 
         is pleased to announce that it will host the International Conference on 
         Trusted Networks and Intelligent Systems (TrustNet 2026) on 
@@ -142,7 +142,7 @@ function Home() {
       </p>
 
 
-      <p className="text-gray-700 leading-relaxed text-lg mt-4">
+      <p className="text-gray-700 leading-relaxed text-lg mt-4 text-justify">
         This conference is centered around a shared global goal: creating a safe, smart, 
         and sustainable digital future. Discussions and research will focus on 
         <span className="font-semibold"> cybersecurity and Artificial Intelligence (AI)</span>, 
@@ -151,7 +151,7 @@ function Home() {
       </p>
 
 
-      <p className="text-gray-700 leading-relaxed text-lg mt-4">
+      <p className="text-gray-700 leading-relaxed text-lg mt-4 text-justify">
         By promoting <span className="font-semibold">Digital Trust, Innovation, and Security</span>, 
         the event will support progress toward goals related to 
         Innovation, Sustainable Cities, Strong Institutions, and Quality Education.
@@ -167,15 +167,15 @@ function Home() {
 
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
 <section id="about" className="bg-trustnet-primary-dark text-trustnet-lighter py-16 scroll-mt-20">
-  <div className="max-w-6xl mx-auto px-6 text-center">
+  <div className="max-w-6xl mx-auto px-6 ">
 
 
-    <h2 className="text-3xl md:text-4xl font-bold mb-8">
+    <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
       About Manipal University Jaipur
     </h2>
 
 
-    <p className="text-lg leading-relaxed">
+    <p className="text-lg leading-relaxed text-justify">
       Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the 
       globally acclaimed Manipal Group, carrying forward the visionary legacy of 
       Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education 
@@ -361,18 +361,18 @@ function Home() {
 
 {/* ================= PUBLICATION ================= */}
 <section className="bg-trustnet-bg-light py-20">
-  <div className="max-w-5xl mx-auto px-6 text-center">
+  <div className="max-w-5xl mx-auto px-6">
 
 
     {/* Title */}
-    <h2 className="text-3xl md:text-4xl font-bold mb-10">
+    <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
       PUBLICATION
       <div className="w-20 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
 
     {/* Description */}
-    <p className="text-gray-700 text-lg leading-relaxed mb-10">
+    <p className="text-gray-700 text-lg leading-relaxed mb-10 text-justify">
       The Microsoft CMT service was used for managing the peer-reviewing
       process for this conference. This service was provided for free by
       Microsoft and they bore all expenses, including costs for Azure cloud
@@ -381,7 +381,7 @@ function Home() {
 
 
     {/* Logos */}
-    <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-10">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-10 text-justify">
       <img
         src="/assets/Scopus_logo.svg.png"
         alt="Scopus"
@@ -455,7 +455,7 @@ function Home() {
 
 
     {/* Description */}
-    <p className="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto mb-14">
+    <p className="text-gray-700 text-lg leading-relaxed  max-w-4xl mx-auto mb-14 text-justify">
       Jaipur, famously known as the Pink City, is the vibrant capital of Rajasthan 
       and a remarkable testament to Indian architecture and culture. Founded in 1727 
       by Maharaja Jai Singh II, the city enchants visitors with its majestic forts, 
@@ -517,7 +517,7 @@ function Home() {
 
 
     {/* Description */}
-    <p className="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto mb-14">
+    <p className="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto mb-14">
       The conference will be held at Manipal University Jaipur, a premier
       institution known for its state-of-the-art facilities and beautiful campus.
     </p>

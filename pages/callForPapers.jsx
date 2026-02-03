@@ -269,8 +269,8 @@ function CallForPapers() {
 
       {/* Publication */}
       <section className="bg-trustnet-bg-light py-16">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-slate-700 mb-6">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-2xl font-bold text-slate-700 mb-6 text-center">
             Publication and Indexing
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-8">
@@ -282,12 +282,12 @@ function CallForPapers() {
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Scopus_logo.svg"
+              src="/assets/scopus.webp"
               alt="Scopus"
               className="h-14 object-contain"
             />
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Springer_logo.svg"
+              src="/assets/springer.webp"
               alt="Springer"
               className="h-14 object-contain"
             />
