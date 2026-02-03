@@ -273,7 +273,7 @@ function CallForPapers() {
           <h2 className="text-2xl font-bold text-slate-700 mb-6 text-center">
             Publication and Indexing
           </h2>
-          <p className="text-gray-700 text-lg leading-relaxed mb-8">
+          <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
             The Microsoft CMT service was used for managing the peer-reviewing
             process for this conference. The proceedings of TrustNet&apos;26
             will be published in Lecture Notes in Networks and Systems (LNNS).
@@ -282,17 +282,17 @@ function CallForPapers() {
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             <img
-              src="/assets/scopus.webp"
+              src="/assets/Scopus.png"
               alt="Scopus"
-              className="h-14 object-contain"
+              className="h-20 w-32 object-contain"
             />
             <img
-              src="/assets/springer.webp"
+              src="/assets/springer.png"
               alt="Springer"
-              className="h-14 object-contain"
+              className="h-20 w-32 object-contain"
             />
           </div>
-           <p className="text-gray-700 text-lg leading-relaxed mb-8">
+           <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
             The proceedings of TrustNet’26 will be published in Lecture Notes in Networks and Systems (LNNS). LNNS is abstracted and indexed in SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago.
            </p>
         </div>

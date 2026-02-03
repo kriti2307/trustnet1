@@ -21,41 +21,54 @@ function Home() {
 
 
       {/* ================= HERO SECTION ================= */}
-      <section
-        className="relative w-full h-screen bg-cover bg-center flex items-center justify-center"
-        style={{
-            backgroundImage: `url(${heroImage})`,
-        }}
-        >
+<section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
 
+  {/* Background Video */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover"
+    src="/assets/hero-video.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50"></div>
 
+  {/* Content */}
+  <div className="relative z-10 text-center text-white px-4">
+    
+    <div>
+      <img
+        src={footerLogo}
+        alt="TrustNet 2026"
+        className="max-w-xl mx-auto w-full"
+      />
+    </div>
 
-        {/* Content */}
-        <div className="relative z-10 text-center text-white px-4">
-          
-          <div><img src={footerLogo} alt="TrustNet 2026" className="max-w-xl mx-auto w-full" /></div>
+    <div className="text-2xl md:text-3xl font-semibold mb-8">
+      16<sup>th</sup> – 17<sup>th</sup> February 2026
+    </div>
 
+    <div className="flex justify-center gap-4 flex-wrap">
+      <Link
+        to="/for-authors/registration"
+        className="bg-trustnet-primary hover:bg-trustnet-primary-dark px-6 py-3 rounded-full text-white font-semibold transition duration-300"
+      >
+        Register Now
+      </Link>
 
-          <div className="text-2xl md:text-3xl font-semibold mb-8">
-            16<sup>th</sup> – 17<sup>th</sup> February 2026
-          </div>
+      <Link
+        to="/for-authors/submission"
+        className="bg-white text-trustnet-primary-dark hover:bg-trustnet-bg px-6 py-3 rounded-full font-semibold transition duration-300 border-2 border-white"
+      >
+        Submit Paper
+      </Link>
+    </div>
 
-
-          <div className="flex justify-center gap-4 flex-wrap">
-            <Link to="/for-authors/registration" className="bg-trustnet-primary hover:bg-trustnet-primary-dark px-6 py-3 rounded-full text-white font-semibold transition duration-300">
-              Register Now
-            </Link>
-            <Link to="/for-authors/submission" className="bg-white text-trustnet-primary-dark hover:bg-trustnet-bg px-6 py-3 rounded-full font-semibold transition duration-300 border-2 border-white">
-              Submit Paper
-            </Link>
-          </div>
-
-
-        </div>
-      </section>
+  </div>
+</section>
 
 
       {/* ================= IMPORTANT DATES ================= */}
@@ -383,14 +396,14 @@ function Home() {
     {/* Logos */}
     <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-10 text-justify">
       <img
-        src="/assets/Scopus_logo.svg.png"
+        src="/assets/Scopus.png"
         alt="Scopus"
-        className="h-16 object-contain"
+        className="h-20 w-32 object-contain"
       />
       <img
-        src="/assets/springer-logo-removebg-preview.png"
+        src="/assets/springer.png"
         alt="Springer"
-        className="h-24 object-contain"
+        className="h-20 w-32 object-contain"
       />
     </div>
 
