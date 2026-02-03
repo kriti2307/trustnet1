@@ -189,23 +189,9 @@ function Home() {
 
 
     <p className="text-lg leading-relaxed text-justify">
-      Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the 
-      globally acclaimed Manipal Group, carrying forward the visionary legacy of 
-      Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education 
-      accessible and transformative. With NAAC A+ accreditation, MUJ stands as a 
-      multi-disciplinary, future-focused university that blends academic excellence 
-      with innovation. Offering a wide spectrum of career-oriented programs across 
-      engineering, architecture, design, law, management, humanities, sciences, and 
-      more, MUJ is committed to nurturing well-rounded individuals prepared for the 
-      demands of a global world. The university's reputation is reinforced by 
-      national and international recognition: ranked 58th in both the University 
-      and Engineering categories by NIRF 2025 and featured in prestigious global 
-      rankings such as QS Asia (701–750 band) and Times Higher Education 
-      (1201–1500 band). Beyond academics, MUJ is known for its state-of-the-art 
-      infrastructure, cutting-edge research ecosystem, and a campus designed with 
-      sustainability at its core. It is the proud recipient of a 5-star GRIHA 
-      rating and the ASSOCHAM Award for Best University Campus, testaments to its 
-      commitment to excellence in every dimension.
+      The Manipal Education and Medical Group is an established leader in the field of education, research, and healthcare. In a span of over six decades, it has transformed the lives of more than 3,00,000 students from over 59 countries. The group includes five Universities – Manipal Academy of Higher Education (MAHE, Karnataka), Sikkim Manipal University (Sikkim), American University of Antigua (Caribbean Islands), Manipal International University (Malaysia), and Manipal University Jaipur (Jaipur). Manipal University Jaipur was established in 2011 at the invitation of the Government of Rajasthan as a self-financed State University. The university upholds the Manipal model of education, promoting academic excellence through hands-on learning and innovation across disciplines.
+
+
     </p>
 
 
@@ -543,7 +529,7 @@ function Home() {
       {/* Campus Video */}
 <div className="rounded-xl overflow-hidden shadow-lg">
   <video
-    className="w-full h-80 object-cover transition duration-300"
+    className="w-full h-100 object-cover transition duration-300"
     src="/assets/MUJ_Venue.webm"
     autoPlay
     loop
@@ -558,7 +544,7 @@ function Home() {
           title="Manipal University Jaipur Location"
           src="https://www.google.com/maps?q=Manipal+University+Jaipur&output=embed"
           width="100%"
-          height="320"
+          height="400"
           allowFullScreen=""
           loading="lazy"
           className="border-0"
