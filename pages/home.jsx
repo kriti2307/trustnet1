@@ -540,15 +540,17 @@ function Home() {
     <div className="grid md:grid-cols-2 gap-8 items-center">
 
 
-      {/* Campus Image */}
-      <div className="rounded-xl overflow-hidden shadow-lg">
-        <img
-          src="https://images.unsplash.com/photo-1581092918484-8313cf6e05d1?w=800"
-          alt="Manipal University Jaipur Campus"
-          className="w-full h-80 object-cover hover:scale-105 transition duration-300"
-        />
-      </div>
-
+      {/* Campus Video */}
+<div className="rounded-xl overflow-hidden shadow-lg">
+  <video
+    className="w-full h-80 object-cover transition duration-300"
+    src="/assets/MUJ_Venue.webm"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
 
       {/* Google Map Embed */}
       <div className="rounded-xl overflow-hidden shadow-lg">
