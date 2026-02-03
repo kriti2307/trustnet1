@@ -4,6 +4,8 @@ import SpeakerCard from "../components/speakerCard";
 import TrackItem from "../components/trackItem";
 import heroImage from "../src/assets/image.png";
 import footerLogo from "../src/assets/footer-logo.webp";
+import { FaLinkedinIn } from "react-icons/fa";
+
 
 
 function Home() {
@@ -299,64 +301,97 @@ function Home() {
 <section id="speakers" className="bg-trustnet-primary-dark py-20 scroll-mt-20">
   <div className="max-w-7xl mx-auto px-6">
 
-
-    {/* Section Title */}
+    {/* Title */}
     <h2 className="text-3xl md:text-4xl font-bold text-trustnet-lighter text-center mb-14">
       OUR EMINENT SPEAKERS
       <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
-
-    {/* Speakers Grid */}
+    {/* Grid */}
     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-items-center">
-      
-      <SpeakerCard
-        image="/assets/speakers/anupam-tiwari.webp"
-        name="Dr. Anupam Tiwari"
-        designation="Cyber Advisor, Ministry of Defence, Government of India"
-      />
 
+      {[
+        {
+          image: "/assets/speakers/anupam-tiwari.webp",
+          name: "Dr. Anupam Tiwari",
+          designation: "Cyber Advisor, Ministry of Defence, Government of India",
+          linkedin: "https://www.linkedin.com/",
+        },
+        {
+          image: "/assets/speakers/apurva.webp",
+          name: "Apurva K Vangujar",
+          designation: "Cyber Security Engineer, Jaguar Land Rover",
+          linkedin: "https://www.linkedin.com/",
+        },
+        {
+          image: "/assets/speakers/somanath-tripathy.webp",
+          name: "Dr. Somanath Tripathy",
+          designation: "Department of Computer Science & Engineering, IIT Patna",
+          linkedin: "https://www.linkedin.com/",
+        },
+        {
+          image: "/assets/speakers/dr-maanak-gupta.jpg",
+          name: "Dr. Maanak Gupta",
+          designation: "Department of Computer Science, Tennessee Tech University, TN, USA",
+          linkedin: "https://www.linkedin.com/",
+        },
+        {
+          image: "/assets/speakers/chhagan-lal.webp",
+          name: "Dr. Chhagan Lal",
+          designation: "Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project",
+          linkedin: "https://www.linkedin.com/",
+        },
+        {
+          image: "/assets/speakers/dr-gang-li.jpg",
+          name: "Dr. Gang Li",
+          designation: "Professor, Deakin University, School of Information Technology",
+          linkedin: "https://www.linkedin.com/",
+        },
+      ].map((speaker, idx) => (
+        <div key={idx} className="text-center max-w-[260px]">
 
-      <SpeakerCard
-        image="/assets/speakers/apurva.webp"
-        name="Apurva K Vangujar"
-        designation="Cyber Security Engineer, Jaguar Land Rover"
-      />
+          {/* IMAGE ONLY INSIDE BOX */}
+          <div className="border-2 border-white/40 rounded-xl overflow-hidden mb-4">
+            <img
+              src={speaker.image}
+              alt={speaker.name}
+              className="w-full aspect-[3/4] object-cover"
+            />
+          </div>
 
+          {/* NAME */}
+          <h3 className="font-semibold text-lg text-white">
+            {speaker.name}
+          </h3>
 
-      <SpeakerCard
-        image="/assets/speakers/somanath-tripathy.webp"
-        name="Dr. Somanath Tripathy"
-        designation="Department of Computer Science & Engineering, IIT Patna"
-      />
+          {/* DESIGNATION */}
+          <p className="text-sm text-trustnet-lighter mt-2 leading-snug">
+            {speaker.designation}
+          </p>
 
+          {/* LINKEDIN ICON */}
+          <div className="mt-3 flex justify-center">
+            <a
+              href={speaker.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-trustnet-primary hover:text-white transition"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
+          </div>
 
-      <SpeakerCard
-        image="/assets/speakers/dr-maanak-gupta.jpg"
-        name="Dr. Maanak Gupta"
-        designation="Department of Computer Science, Tennessee Tech University, TN, USA"
-      />
-
-
-      <SpeakerCard
-        image="/assets/speakers/chhagan-lal.webp"
-        name="Dr. Chhagan Lal"
-        designation="Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project"
-      />
-
-
-      <SpeakerCard
-        image="/assets/speakers/dr-gang-li.jpg"
-        name="Dr. Gang Li"
-        designation="Professor, Deakin University, School of Information Technology"
-      />
-
+        </div>
+      ))}
 
     </div>
-
-
   </div>
 </section>
+
+
+
+
+
 
 {/* ================= PUBLICATION ================= */}
 <section className="bg-trustnet-bg-light py-20">
