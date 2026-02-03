@@ -8,60 +8,124 @@ function Layout() {
   const [sessionsOpen, setSessionsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navLinks = (
-    <>
-      <Link to="/" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-      <a href="/#about" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</a>
-      <Link to="/call-for-papers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
-      <a href="/#speakers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</a>
-      
-      {/* Committee Dropdown */}
-      <div className="relative" onMouseEnter={() => setCommitteeOpen(true)} onMouseLeave={() => setCommitteeOpen(false)}>
-        <button className="hover:text-trustnet-accent flex items-center gap-1">
-          Committee
-          <span className={`transition-transform ${committeeOpen ? "rotate-180" : ""}`}>▼</span>
-        </button>
-        {committeeOpen && (
-          <div className="absolute top-full left-0 mt-1 bg-trustnet-card shadow-lg rounded-lg py-2 min-w-[200px] z-50 border border-trustnet-bg-light">
-            <Link to="/committee/advisory" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
-            <Link to="/committee/organizing" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
-          </div>
-        )}
-      </div>
+    const navLinks = (
+  <>
+    <Link to="/" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+      Home
+    </Link>
 
-      {/* For Authors Dropdown */}
-      <div className="relative" onMouseEnter={() => setAuthorsOpen(true)} onMouseLeave={() => setAuthorsOpen(false)}>
-        <button className="hover:text-trustnet-accent flex items-center gap-1">
-          For Authors
-          <span className={`transition-transform ${authorsOpen ? "rotate-180" : ""}`}>▼</span>
-        </button>
-        {authorsOpen && (
-          <div className="absolute top-full left-0 mt-1 bg-trustnet-card shadow-lg rounded-lg py-2 min-w-[220px] z-50 border border-trustnet-bg-light">
-            <Link to="/for-authors/guidelines" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Guidelines for Authors</Link>
-            <Link to="/for-authors/submission" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
-            <Link to="/for-authors/registration" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
-            <Link to="/for-authors/brochure" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Conference Brochure</Link>
-          </div>
-        )}
-      </div>
+    <a href="/#about" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+      About
+    </a>
 
-      <a href="/#contact" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+    <Link to="/call-for-papers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+      Call for Papers
+    </Link>
 
-      {/* Special Sessions Dropdown */}
-      <div className="relative" onMouseEnter={() => setSessionsOpen(true)} onMouseLeave={() => setSessionsOpen(false)}>
-        <button className="hover:text-trustnet-accent flex items-center gap-1">
-          Special Sessions
-          <span className={`transition-transform ${sessionsOpen ? "rotate-180" : ""}`}>▼</span>
-        </button>
-        {sessionsOpen && (
-          <div className="absolute top-full left-0 mt-1 bg-trustnet-card shadow-lg rounded-lg py-2 min-w-[220px] z-50 border border-trustnet-bg-light">
-            <Link to="/special-sessions" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
-            <Link to="/special-sessions/proposal" className="block px-4 py-2 hover:bg-trustnet-bg" onClick={() => setMobileMenuOpen(false)}>Special Session Proposal</Link>
+    <a href="/#speakers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+      Speakers
+    </a>
+
+    {/* ================= Committee Dropdown ================= */}
+    <div
+      className="relative flex items-center"
+      onMouseEnter={() => setCommitteeOpen(true)}
+      onMouseLeave={() => setCommitteeOpen(false)}
+    >
+      <button className="flex items-center gap-1 hover:text-trustnet-accent">
+        Committee
+        <span className={`transition-transform duration-200 ${committeeOpen ? "rotate-180" : ""}`}>
+          ▼
+        </span>
+      </button>
+
+      {committeeOpen && (
+        <div className="absolute top-full left-0 mt-3 z-50">
+          {/* invisible hover buffer */}
+          <div className="absolute -top-3 left-0 w-full h-3" />
+
+          <div className="bg-trustnet-card shadow-xl rounded-lg py-2 min-w-[200px] border border-trustnet-bg-light">
+            <Link to="/committee/advisory" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Advisory Board
+            </Link>
+            <Link to="/committee/organizing" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Organizing Committee
+            </Link>
           </div>
-        )}
-      </div>
-    </>
-  );
+        </div>
+      )}
+    </div>
+
+    {/* ================= For Authors Dropdown ================= */}
+    <div
+      className="relative flex items-center"
+      onMouseEnter={() => setAuthorsOpen(true)}
+      onMouseLeave={() => setAuthorsOpen(false)}
+    >
+      <button className="flex items-center gap-1 hover:text-trustnet-accent">
+        For Authors
+        <span className={`transition-transform duration-200 ${authorsOpen ? "rotate-180" : ""}`}>
+          ▼
+        </span>
+      </button>
+
+      {authorsOpen && (
+        <div className="absolute top-full left-0 mt-3 z-50">
+          <div className="absolute -top-3 left-0 w-full h-3" />
+
+          <div className="bg-trustnet-card shadow-xl rounded-lg py-2 min-w-[220px] border border-trustnet-bg-light">
+            <Link to="/for-authors/guidelines" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Guidelines for Authors
+            </Link>
+            <Link to="/for-authors/submission" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Paper Submission
+            </Link>
+            <Link to="/for-authors/registration" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Registration
+            </Link>
+            <Link to="/for-authors/brochure" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Conference Brochure
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+
+    <a href="/#contact" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+      Contact
+    </a>
+
+    {/* ================= Special Sessions Dropdown ================= */}
+    <div
+      className="relative flex items-center"
+      onMouseEnter={() => setSessionsOpen(true)}
+      onMouseLeave={() => setSessionsOpen(false)}
+    >
+      <button className="flex items-center gap-1 hover:text-trustnet-accent">
+        Special Sessions
+        <span className={`transition-transform duration-200 ${sessionsOpen ? "rotate-180" : ""}`}>
+          ▼
+        </span>
+      </button>
+
+      {sessionsOpen && (
+        <div className="absolute top-full left-0 mt-3 z-50">
+          <div className="absolute -top-3 left-0 w-full h-3" />
+
+          <div className="bg-trustnet-card shadow-xl rounded-lg py-2 min-w-[220px] border border-trustnet-bg-light">
+            <Link to="/special-sessions" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Special Sessions
+            </Link>
+            <Link to="/special-sessions/proposal" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Special Session Proposal
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+  </>
+);
+
 
   return (
     <div className="w-full min-h-screen font-sans">

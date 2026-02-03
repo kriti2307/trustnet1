@@ -96,64 +96,77 @@ const ORGANIZING_COMMITTEE = [
 ];
 
 /* ================= COMPONENT ================= */
-
 export default function Committee({ type }) {
   const isAdvisory = type === "advisory";
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="py-24">
+        <div className="max-w-6xl mx-auto px-6">
 
-          <h1 className="text-4xl font-bold text-gray-800 mb-12">
+          {/* Main Heading */}
+          <h1 className="text-4xl font-bold text-gray-800 mb-16">
             {isAdvisory ? "Advisory Board" : "Organizing Committee"}
-            <div className="w-24 h-1 bg-blue-900 mt-3 rounded-full" />
+            <div className="w-24 h-1 bg-orange-500 mt-3 rounded-full" />
           </h1>
 
           {isAdvisory ? (
             <>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                International Advisory Board
-              </h2>
-              <ul className="list-disc list-inside space-y-1 mb-12 text-gray-700">
-                {INTERNATIONAL_ADVISORY.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
+              {/* International Advisory Board */}
+              <div className="mb-20">
+                <h2 className="text-3xl font-semibold text-gray-800 mb-8">
+                  International Advisory Board
+                </h2>
+                <ul className="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                  {INTERNATIONAL_ADVISORY.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
 
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                National Advisory Board
-              </h2>
-              <ul className="list-disc list-inside space-y-1 text-gray-700">
-                {NATIONAL_ADVISORY.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
+              {/* National Advisory Board */}
+              <div>
+                <h2 className="text-3xl font-semibold text-gray-800 mb-8">
+                  National Advisory Board
+                </h2>
+                <ul className="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                  {NATIONAL_ADVISORY.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </>
           ) : (
-            <div className="space-y-4">
+            /* Organizing Committee - Card Grid (4 per row) */
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {ORGANIZING_COMMITTEE.map((member, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-xl p-6 shadow-sm border border-trustnet-bg-light hover:shadow-md transition-shadow flex items-center gap-4"
+                  className="bg-[#F27023] rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] transition"
                 >
-                  <img
-                    src={`/assets/committee/${member.image}`}
-                    alt={member.name}
-                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shrink-0"
-                  />
-                  <div className="flex flex-col sm:flex-row sm:flex-1 sm:justify-between sm:items-center gap-2 min-w-0">
-                    <span className="font-semibold text-gray-800 text-lg">
+                  {/* Image */}
+                  <div className="aspect-[3/4] w-full bg-gray-200 overflow-hidden">
+                    <img
+                      src={`/assets/committee/${member.image}`}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="text-lg font-semibold text-white">
                       {member.name}
-                    </span>
-                    <div className="flex flex-col sm:items-end gap-0.5">
-                      <span className="text-trustnet-primary font-medium">
-                        {member.role}
-                      </span>
-                      <span className="text-gray-600 text-sm">
-                        {member.designation}
-                      </span>
-                    </div>
+                    </h3>
+
+                    <p className="text-white font-medium mt-1">
+                      {member.role}
+                    </p>
+
+                    <p className="text-white/80 text-sm mt-1">
+                      {member.designation}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -165,4 +178,5 @@ export default function Committee({ type }) {
     </div>
   );
 }
+
 
