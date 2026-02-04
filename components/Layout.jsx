@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import manipalLogo from "../src/assets/manipal-logo.png";
 
+
 function Layout() {
   const [committeeOpen, setCommitteeOpen] = useState(false);
   const [authorsOpen, setAuthorsOpen] = useState(false);
@@ -10,21 +11,43 @@ function Layout() {
 
     const navLinks = (
   <>
-    <Link to="/" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
-      Home
-    </Link>
+  {/* Home */}
+  <Link
+    to="/"
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Home
+  </Link>
 
-    <a href="/#about" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
-      About
-    </a>
+  {/* About → About the Conference */}
+  <Link
+    to={{ pathname: '/', hash: '#about' }}
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    About
+  </Link>
 
-    <Link to="/call-for-papers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
-      Call for Papers
-    </Link>
+  {/* Call for Papers */}
+  <Link
+    to="/call-for-papers"
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Call for Papers
+  </Link>
 
-    <a href="/#speakers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
-      Speakers
-    </a>
+  {/* Speakers → Home Speakers section */}
+  <Link
+    to={{ pathname: '/', hash: '#speakers' }}
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Speakers
+  </Link>
+
+
 
     {/* ================= Committee Dropdown ================= */}
     <div
@@ -91,9 +114,9 @@ function Layout() {
       )}
     </div>
 
-    <a href="/#contact" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+    <Link to={{ pathname: '/', hash: '#contact' }} className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
       Contact
-    </a>
+    </Link>
 
     {/* ================= Special Sessions Dropdown ================= */}
     <div
@@ -166,9 +189,9 @@ function Layout() {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-trustnet-bg border-t border-trustnet-bg-light py-4 px-6 space-y-2">
             <Link to="/" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <a href="/#about" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</a>
+            <Link to={{ pathname: '/', hash: '#about' }} className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</Link>
             <Link to="/call-for-papers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
-            <a href="/#speakers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</a>
+            <Link to={{ pathname: '/', hash: '#speakers' }} className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
             <span className="block py-2 font-medium text-gray-500">Committee</span>
             <Link to="/committee/advisory" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
             <Link to="/committee/organizing" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
@@ -177,7 +200,7 @@ function Layout() {
             <Link to="/for-authors/submission" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
             <Link to="/for-authors/registration" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
             <Link to="/for-authors/brochure" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Brochure</Link>
-            <a href="/#contact" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            <Link to={{ pathname: '/', hash: '#contact' }} className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             <span className="block py-2 font-medium text-gray-500">Special Sessions</span>
             <Link to="/special-sessions" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
             <Link to="/special-sessions/proposal" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Session Proposal</Link>

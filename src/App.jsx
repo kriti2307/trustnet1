@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 import Layout from "../components/Layout";
 import Home from "../pages/home";
 import About from "../pages/about";
@@ -17,6 +18,8 @@ import SpecialSessionProposal from "../pages/specialSessionProposal";
 function App() {
   return (
     <BrowserRouter>
+      {/* Scroll handler: always mounted inside the Router */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
