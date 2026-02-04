@@ -274,11 +274,7 @@ function CallForPapers() {
             Publication and Indexing
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
-            The Microsoft CMT service was used for managing the peer-reviewing
-            process for this conference. The proceedings of TrustNet&apos;26
-            will be published in Lecture Notes in Networks and Systems (LNNS).
-            LNNS is abstracted and indexed in SCOPUS, INSPEC, WTI Frankfurt eG,
-            zbMATH, SCImago.
+            After a thorough peer review procedure, all registered and presented papers will be evaluated for publication in journals, book series, or conference proceedings that are indexed by Scopus/SCIE. In compliance with their editorial policies, the corresponding journals or publishers will independently undertake peer review and make editorial decisions.
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             <img
@@ -293,7 +289,6 @@ function CallForPapers() {
             />
           </div>
            <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
-            The proceedings of TrustNet’26 will be published in Lecture Notes in Networks and Systems (LNNS). LNNS is abstracted and indexed in SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago.
            </p>
         </div>
       </section>

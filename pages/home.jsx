@@ -234,7 +234,7 @@ function Home() {
 
 
 
-{/* ================= CONFERENCE TRACKS ================= */}
+{/* ================= CONFERENCE TRACKS ================= 
 <section className="bg-trustnet-bg py-20">
   <div className="max-w-6xl mx-auto px-6">
 
@@ -325,20 +325,21 @@ function Home() {
 
   </div>
 </section>
+*/}
 
 
 
-{/* ================= OUR EMINENT SPEAKERS ================= */}
+{/* ================= OUR EMINENT SPEAKERS ================= 
 <section id="speakers" className="bg-trustnet-primary-dark py-20 scroll-mt-20">
   <div className="max-w-7xl mx-auto px-6">
 
-    {/* Title */}
+    
     <h2 className="text-3xl md:text-4xl font-bold text-trustnet-lighter text-center mb-14">
       OUR EMINENT SPEAKERS
       <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
     </h2>
 
-    {/* Grid */}
+    
     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-items-center">
 
       {[
@@ -381,7 +382,7 @@ function Home() {
       ].map((speaker, idx) => (
         <div key={idx} className="text-center max-w-[260px]">
 
-          {/* IMAGE ONLY INSIDE BOX */}
+        
           <div className="border-2 border-white/40 rounded-xl overflow-hidden mb-4">
             <img
               src={speaker.image}
@@ -390,17 +391,16 @@ function Home() {
             />
           </div>
 
-          {/* NAME */}
+        
           <h3 className="font-semibold text-lg text-white">
             {speaker.name}
           </h3>
 
-          {/* DESIGNATION */}
+          
           <p className="text-sm text-trustnet-lighter mt-2 leading-snug">
             {speaker.designation}
           </p>
 
-          {/* LINKEDIN ICON */}
           <div className="mt-3 flex justify-center">
             <a
               href={speaker.linkedin}
@@ -418,6 +418,8 @@ function Home() {
     </div>
   </div>
 </section>
+
+*/}
 
 
 
@@ -443,8 +445,8 @@ After a thorough peer review procedure, all registered and presented papers will
     
     </p>
 
-
-    {/* Logos */}
+{/*
+     Logos 
     <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-10 text-justify">
       <img
         src="/assets/Scopus.png"
@@ -457,6 +459,8 @@ After a thorough peer review procedure, all registered and presented papers will
         className="h-20 w-32 object-contain"
       />
     </div>
+*/} 
+    
 
 
     <p className="text-gray-700 text-lg leading-relaxed">

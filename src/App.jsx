@@ -13,6 +13,8 @@ import Brochure from "../pages/forAuthors/brochure";
 import Contact from "../pages/contact";
 import SpecialSessions from "../pages/specialSessions";
 import SpecialSessionProposal from "../pages/specialSessionProposal";
+import BestPaper from "../pages/Awards/bestPaper";
+import YoungScientist from "../pages/Awards/youngScientist";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="special-sessions" element={<SpecialSessions />} />
           <Route path="special-sessions/proposal" element={<SpecialSessionProposal />} />
+          <Route path="/awards/best-paper" element={<BestPaper />} />
+          <Route path="/awards/young-scientist" element={<YoungScientist />} />
         </Route>
       </Routes>
     </BrowserRouter>
