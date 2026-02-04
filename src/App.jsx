@@ -16,7 +16,7 @@ import SpecialSessions from "../pages/specialSessions";
 import SpecialSessionProposal from "../pages/specialSessionProposal";
 import BestPaper from "../pages/Awards/bestPaper";
 import YoungScientist from "../pages/Awards/youngScientist";
-import Accommodation from "../pages/forAuthors/Accommodation";
+import Accommodation from "../pages/forAuthors/accommodation";
 
 function App() {
   return (

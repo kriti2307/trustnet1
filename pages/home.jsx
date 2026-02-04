@@ -458,6 +458,36 @@ After a thorough peer review procedure, all registered and presented papers will
     
     </p>
 
+    {/* Publication Partner Logos */}
+<div className="flex flex-wrap items-center justify-center gap-10 mt-12">
+  <img
+    src="/assets/sdg/4th.png"
+    alt="Publication Partner 1"
+    className="h-20 w-auto object-contain"
+  />
+  <img
+    src="/assets/sdg/8th.png"
+    alt="Publication Partner 2"
+    className="h-20 w-auto object-contain"
+  />
+  <img
+    src="/assets/sdg/9th.png"
+    alt="Publication Partner 3"
+    className="h-20 w-auto object-contain"
+  />
+  <img
+    src="/assets/sdg/12th.png"
+    alt="Publication Partner 4"
+    className="h-20 w-auto object-contain"
+  />
+  <img
+    src="/assets/sdg/17th.png"
+    alt="Publication Partner 5"
+    className="h-20 w-auto object-contain"
+  />
+</div>
+
+
 {/*
      Logos 
     <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-10 text-justify">
