@@ -183,28 +183,57 @@ function Layout() {
         <Outlet />
       </main>
 
-      {/* FOOTER — UNTOUCHED */}
-      <footer id="contact" className="bg-trustnet-primary-dark text-trustnet-lighter pt-12 pb-6">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-10 text-sm">
-            <div>
-              <h3 className="font-semibold text-lg mb-4">Contact:</h3>
-              <p>Email: trustnet2026@gmail.com</p>
-              <p className="mt-2">Dr. Satyabrata Roy (Program Co-Chair)</p>
-              <p>Dr. Amit Garg (Convener)</p>
-              <p>Dr. Ankur Pandey (Convener)</p>
-            </div>
-            <div className="text-center">
-              <img src="/assets/manipal-logo.png" alt="Manipal Logo" className="mx-auto mb-4" style={{ height: "80px" }} />
-              <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
-              <p>Jaipur, Rajasthan, India - 303007</p>
-            </div>
-            <div className="text-right">
-              <img src="/assets/trustnet.webp" alt="TrustNet Logo" className="mx-auto mb-4" style={{ height: "80px" }} />
-            </div>
-          </div>
-        </div>
-      </footer>
+     {/* FOOTER */}
+<footer id="contact" className="bg-trustnet-primary-dark text-trustnet-lighter pt-8 pb-4">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="grid md:grid-cols-3 gap-6 text-sm">
+
+      {/* Contacts */}
+      <div>
+        <h3 className="font-semibold text-base mb-2">Contact: </h3>
+
+        <p className="font-medium">Dr. Abdul Haseeb Ganie</p>
+        <p>Email: abdul.ganie@jaipur.manipal.edu</p>
+        <p className="mb-3">Ph: +91 99068 36244</p>
+
+        <p className="font-medium">Dr. Loganathan Karuppusamy</p>
+        <p>Email: loganathan.karuppusamy@jaipur.manipal.edu</p>
+        <p>Ph: +91 94433 68789</p>
+      </div>
+
+      {/* University */}
+      <div className="text-center">
+        <img
+        src="/assets/manipal_logo.png"
+        alt="Manipal Logo"
+        className="h-20 w-auto object-contain mx-auto"
+      />
+        <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
+        <p>Jaipur, Rajasthan, India - 303007</p>
+      </div>
+      
+      {/* Conference Email */}
+      <div className="text-right">
+        <h3 className="font-semibold text-base mb-2">Email</h3>
+        <p>aciffs2026@gmail.com</p>
+      </div>
+
+    </div>
+
+    {/* Bottom line */}
+    <div className="border-t border-trustnet-primary-darker mt-5 pt-3 text-xs text-trustnet-light">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-1">
+        <span>© 2026 All rights reserved.</span>
+        <span></span>
+        <span>Developed by</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
     </div>
   );
 }

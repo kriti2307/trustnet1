@@ -14,8 +14,7 @@ function Home() {
   return (
     <div className="w-full">
 
-
-      {/* ================= HERO SECTION ================= */}
+{/* ================= HERO SECTION ================= */}
 <section className="relative w-full h-[80vh] overflow-hidden">
 
   {/* VIDEO */}
@@ -31,7 +30,7 @@ function Home() {
   {/* DARK OVERLAY */}
   <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
 
-  {/* TEXT CONTENT */}
+  {/* CENTER TEXT */}
   <div className="relative z-10 h-full flex items-center justify-center">
     <div className="text-center text-white px-6 max-w-5xl space-y-4">
 
@@ -48,22 +47,28 @@ function Home() {
         July 29–31, 2026 <span className="opacity-80">(Hybrid Mode)</span>
       </p>
 
-      <div className="pt-4">
-        <p className="font-semibold">Organized by</p>
-        <p className="text-lg">Manipal University Jaipur</p>
-      </div>
-
-      <div className="pt-2 text-sm opacity-90 space-y-1">
-        <p className="font-semibold">In Association With</p>
-        <p>IIT Guwahati</p>
-        <p>Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania</p>
-        <p>African Mathematical Union (AMU)</p>
-      </div>
-
     </div>
   </div>
 
+  {/* BOTTOM LEFT — ORGANIZED BY */}
+  <div className="absolute bottom-8 left-8 z-10 text-white text-left">
+    <p className="font-semibold">Organized by</p>
+    <p className="text-lg">Manipal University Jaipur</p>
+  </div>
+
+  {/* BOTTOM RIGHT — IN ASSOCIATION WITH */}
+  <div className="absolute bottom-8 right-8 z-10 text-white text-right text-sm space-y-1">
+    <p className="font-semibold">In Association With</p>
+    <p>IIT Guwahati</p>
+    <p>
+      Nelson Mandela African Institution of Science and Technology (NM-AIST),
+      Tanzania
+    </p>
+    <p>African Mathematical Union (AMU)</p>
+  </div>
+
 </section>
+
 
 
 
@@ -583,7 +588,7 @@ After a thorough peer review procedure, all registered and presented papers will
       {/* Campus Video */}
 <div className="rounded-xl overflow-hidden shadow-lg">
   <video
-    className="w-full h-100 object-cover transition duration-300"
+    className="w-full h-80 object-cover transition duration-300"
     src="/assets/MUJ_Venue.webm"
     autoPlay
     loop
@@ -598,7 +603,7 @@ After a thorough peer review procedure, all registered and presented papers will
           title="Manipal University Jaipur Location"
           src="https://www.google.com/maps?q=Manipal+University+Jaipur&output=embed"
           width="100%"
-          height="400"
+          height="320"
           allowFullScreen=""
           loading="lazy"
           className="border-0"
