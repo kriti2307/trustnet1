@@ -192,6 +192,44 @@ function Home() {
   </div>
 </section>
 
+{/* ================= ABOUT DEPARTMENT OF MATHEMATICS & STATISTICS ================= */}
+<section className="bg-trustnet-bg-light py-20">
+  <div className="w-full px-6">
+
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-700">
+        Department of Mathematics and Statistics
+      </h2>
+      <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    {/* Wider Content Card */}
+    <div className="bg-white rounded-2xl shadow-lg border border-trustnet-bg-light 
+                    px-10 md:px-16 lg:px-32 py-12 
+                    max-w-screen-2xl mx-auto">
+
+      <p className="text-gray-700 text-lg leading-relaxed text-justify">
+        The Department of Mathematics and Statistics is dedicated to delivering
+        high-quality education and fostering a strong research-oriented
+        environment. With a balanced focus on teaching, research, and student
+        development, the department is supported by experienced faculty members
+        with strong research credentials and exposure to leading academic and
+        research institutions.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-6 text-justify">
+        The department is committed to promoting research in both fundamental and
+        applied areas of mathematics and statistics, enabling students to excel
+        academically and succeed in diverse professional and research careers.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
 
 
 

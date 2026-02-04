@@ -1,73 +1,55 @@
 import React from "react";
 
 /* ================= INTERNATIONAL ================= */
-
 const INTERNATIONAL_ADVISORY = [
-  "Vidyacharan Bhaskar, San Francisco State University, San Francisco, CA, USA",
-  "Rajkumar Buyya, University of Melbourne, Australia",
-  "Irfa Javed, Manager-Partnership (South Asia), Deakin University, Australia",
-  "Robin T. Bye, Norwegian University of Science and Technology, Alesund, Norway",
-  "Max Henrique Machado Costa, University of Campinas, Brazil",
-  "Aleksander Karadimche, UIST, Northern Rep. of Macedonia",
-  "Dijana Capeska Bogatinoska, UIST, Northern Rep. of Macedonia",
-  "Dmytro Zubov, Technical University of Ostrava, Czech Republic",
-  "Danish Ather, Amity University, Tashkent",
-  "Biju Issac, Northumbria University, Newcastle, UK",
-  "Pinnamaneni Bhanu Prasad, Kelenn Technology, France",
-  "Vijander Singh, Norwegian University of Science and Technology (NTNU), Alesund, Norway",
-  "Kristina, Technical University of Varna, Bulgaria",
-  "Tomas Sochor, Technical University of Ostrava, Czech Republic",
-  "Eustrat Zhupa, University of Rochester, Rochester, NY",
-  "Monika Polak, Rochester Institute of Technology, Rochester, NY",
-  "Florin POPENTIU VLĂDICESCU, University “Politehnica” of Bucharest and Co-Chairholder to UNESCO Chair, University of Oradea, Romania",
-  "Álvaro Rocha, University of Coimbra, Portugal",
-  "Weiler Finnamore, Universidade Federal de Juiz de Fora, Brazil",
-  "Hamurabi Gamboa-Rosales, Autonomous University of Zacatecas, Mexico",
-  "Pushpendu Kar, University of Nottingham UK (China campus)",
-  "Mohammad Nasar, Mazoon College Muscat, Sultanate of Oman",
-  "Mohammad Abu Kausar, University of Nizwa, Sultanate of Oman",
-  "Anand Nayyar, Duy Tan University, Da Nang, Vietnam",
-  "Aruna Kumar S V, University of Beira Interior Covilha, Portugal",
+  "Prof. Jitesh S.B. Gajjar, USA",
+  "Prof. Jagdish Prakash, South Africa",
+  "Prof. Loannis E. Sarris, Greece",
+  "Prof. Gunasekaran Nallappan, China",
+  "Prof. Dinesh Kumar Sharma, USA",
+  "Prof. Mohammad M Khalaf, Egypt",
+  "Prof. Mohammad M Ali Al-Shamiri, Saudi Arabia",
+  "Prof. Yousef Al-Qudah, Jordan",
+  "Prof. Syed Omar Shah, China",
+  "Prof. Kaouther Ghachem, Saudi Arabia",
+  "Prof. Ahmed Mir, Saudi Arabia",
+  "Prof. Chemseddine Maatki, Saudi Arabia",
+  "Prof. Lioua Kolsi, Saudi Arabia",
 ];
 
 /* ================= NATIONAL ================= */
-
 const NATIONAL_ADVISORY = [
-  "Virendra Singh, Indian Institute of Technology Bombay, India",
-  "Amitava Das, Director, CSIR-CSMCRI, Distinguished Professor AcSIR, Bhavnagar, Gujarat, India",
-  "Manu Pratap Singh, Dr. Bhimrao Ambedkar University, Agra, India",
-  "Amit Chaturvedi, Govt Engineering College Ajmer, Ajmer, India",
-  "Sunil Kumar Muttoo, University of Delhi, India",
-  "Vipin Tyagi, Jaypee University of Engineering and Technology Guna, India",
-  "K. Lobiyal, Jawaharlal Nehru University, Delhi, India",
-  "K. Mishra, Chairman, ACM Udaipur Chapter, India",
-  "V. Desai, Vice Chancellor, MVN University, Haryana, India",
-  "Sudeep Tanwar, Nirma University, Ahmedabad, India",
-  "C. Bishnoi, ACM Udaipur Chapter, India",
-  "Amit Joshi, Secretary, ACM Udaipur Chapter, India",
-  "Durgesh Mishra, Shri Aurobindo Institute of Technology, Indore, MP, India",
-  "Vijay Singh Rathore, IP Chairman (CSI Jaipur Chapter), India",
-  "Saroj, Guru Jambheshwar University of Science and Technology, Hisar, India",
-  "Yudhvir Singh, Maharshi Dayanand University, Rohtak, India",
-  "Santosh Vishwakarma, Gyan Ganga Institute of Technology and Sciences, Jabalpur, India",
-  "Rishi Pal Singh, Guru Jambheshwar University of Science and Technology, Hisar, India",
-  "Rahul Rishi, Maharshi Dayanand University, Rohtak, India",
-  "Neeta Nain, Malaviya National Institute of Technology, Jaipur, India",
-  "Om Parkash Sangwan, Guru Jambheshwar University of Science and Technology, Hisar, India",
-  "Sumeet Gill, Maharshi Dayanand University, Rohtak, India",
-  "Pankaj Lathar, Ch. Brahm Prakash Government Engineering College, Jaffarpur, Delhi, India",
-  "Girish Sharma, Bhai Parmanand Institute of Business Studies, Delhi, India",
-  "Naveen Kumar, Indira Gandhi National Open University, New Delhi, India",
-  "Amit Choudhary, Maharaja Surajmal Institute, New Delhi, India",
-  "Srinivasa K G, Ch. Brahm Prakash Government Engineering College, Jaffarpur, Delhi, India",
-  "Anoop Singh Poonia, Vivekananda Global University, Jaipur, India",
-  "Pradeep Tomar, Gautam Buddha University, Greater Noida, India",
-  "Mukesh Kumar Sharma, The Technological Institute of Textile & Sciences, Bhiwani, India",
-  "Sanjay Kumar Sharma, Banasthali Vidyapith, Rajasthan, India",
+  "Prof. Prasad Patnaik BSV, IIT Madras",
+  "Prof. Gauri Shankar Seth, IIT (ISM) Dhanbad",
+  "Prof. Debashis Dutta, NIT Warangal",
+  "Prof. Arif Ali Baigh Moghal, NIT Warangal",
+  "Prof. Surender Singh, Kurukshetra University, Haryana",
+  "Prof. Dharmendra Tripathi, NIT Uttarakhand",
+  "Prof. Sunil, NIT Hamirpur",
+  "Prof. Peeyush Chandra, IIT Kanpur",
+  "Prof. A. Benerji Babu, NIT Warangal",
+  "Prof. Aijaz-Ul-Islam, NIT Srinagar",
+  "Prof. Rajesh Kumar Gupta, Central University of Haryana",
+  "Prof. Arun Kajla, Central University of Haryana",
+];
+
+/* ================= TECHNICAL ================= */
+const TECHNICAL_COMMITTEE = [
+  "Prof. Sunny Kumar Sharma, SMVD University Jammu",
+  "Prof. Ramakrishna Manchi, NIT Silchar",
+  "Prof. Jaganath Roy, NIT Warangal",
+  "Prof. Muzaffar Ahmad Dar, Akal University, Punjab",
+  "Prof. Lateef Ahmad Wani, Thapar Institute of Engineering and Technology, Punjab",
+  "Prof. Arif Billah Dar, SMVD University Jammu",
+  "Prof. Faizan Danish, VIT Andhra Pradesh",
+  "Prof. Subhabrata Rath, VIT Vellore",
+  "Prof. S. Eswaramoorthi, CIT, Chennai",
+  "Prof. S. Sivaraj, NIT Jalandhar",
+  "Prof. Gopal Chandra Shit, Jadavpur University, Kolkata",
+  "Prof. Rushi Kumar, VIT Vellore",
 ];
 
 /* ================= ORGANIZING ================= */
-
 const ORGANIZING_COMMITTEE = [
   { name: "Mr. S. Vaitheeswaran", role: "Chief Patron", designation: "Chairperson", image: "S-Vaitheeswaran.webp" },
   { name: "Prof. Dr. N. N. Sharma", role: "Patron", designation: "President", image: "dr-nnsharma.webp" },
@@ -104,18 +86,17 @@ export default function Committee({ type }) {
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
 
-          {/* Main Heading */}
           <h1 className="text-4xl font-bold text-gray-800 mb-16">
-            {isAdvisory ? "Advisory Board" : "Organizing Committee"}
+            {isAdvisory ? "Committee" : "Organizing Committee"}
             <div className="w-24 h-1 bg-orange-500 mt-3 rounded-full" />
           </h1>
 
           {isAdvisory ? (
             <>
-              {/* International Advisory Board */}
+              {/* International */}
               <div className="mb-20">
                 <h2 className="text-3xl font-semibold text-gray-800 mb-8">
-                  International Advisory Board
+                  International Committee
                 </h2>
                 <ul className="list-disc list-inside space-y-4 text-gray-700 text-lg">
                   {INTERNATIONAL_ADVISORY.map((item, i) => (
@@ -124,10 +105,10 @@ export default function Committee({ type }) {
                 </ul>
               </div>
 
-              {/* National Advisory Board */}
-              <div>
+              {/* National */}
+              <div className="mb-20">
                 <h2 className="text-3xl font-semibold text-gray-800 mb-8">
-                  National Advisory Board
+                  National Committee
                 </h2>
                 <ul className="list-disc list-inside space-y-4 text-gray-700 text-lg">
                   {NATIONAL_ADVISORY.map((item, i) => (
@@ -135,16 +116,26 @@ export default function Committee({ type }) {
                   ))}
                 </ul>
               </div>
+
+              {/* Technical */}
+              <div>
+                <h2 className="text-3xl font-semibold text-gray-800 mb-8">
+                  Technical Committee
+                </h2>
+                <ul className="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                  {TECHNICAL_COMMITTEE.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </>
           ) : (
-            /* Organizing Committee - Card Grid (4 per row) */
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {ORGANIZING_COMMITTEE.map((member, idx) => (
                 <div
                   key={idx}
                   className="bg-[#F27023] rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] transition"
                 >
-                  {/* Image */}
                   <div className="aspect-[3/4] w-full bg-gray-200 overflow-hidden">
                     <img
                       src={`/assets/committee/${member.image}`}
@@ -154,16 +145,13 @@ export default function Committee({ type }) {
                     />
                   </div>
 
-                  {/* Content */}
                   <div className="p-6">
                     <h3 className="text-lg font-semibold text-white">
                       {member.name}
                     </h3>
-
                     <p className="text-white font-medium mt-1">
                       {member.role}
                     </p>
-
                     <p className="text-white/80 text-sm mt-1">
                       {member.designation}
                     </p>
@@ -178,5 +166,6 @@ export default function Committee({ type }) {
     </div>
   );
 }
+
 
 
