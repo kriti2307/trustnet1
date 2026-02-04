@@ -4,7 +4,8 @@ import SpeakerCard from "../components/speakerCard";
 import TrackItem from "../components/trackItem";
 import heroImage from "../src/assets/image.png";
 import footerLogo from "../src/assets/footer-logo.webp";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 
 
 
