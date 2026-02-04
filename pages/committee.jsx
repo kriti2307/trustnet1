@@ -48,7 +48,6 @@ const TECHNICAL_COMMITTEE = [
   "Prof. Gopal Chandra Shit, Jadavpur University, Kolkata",
   "Prof. Rushi Kumar, VIT Vellore",
 ];
-
 /* ================= ORGANIZING ================= */
 const ORGANIZING_COMMITTEE = [
   { name: "Mr. S. Vaitheeswaran", role: "Chief Patron", designation: "Chairperson", image: "S-Vaitheeswaran.webp" },
@@ -57,25 +56,22 @@ const ORGANIZING_COMMITTEE = [
   { name: "Dr. Amit Soni", role: "Co-Patron", designation: "Registrar", image: "amit-soni.webp" },
   { name: "Prof. Nitu Bhatnagar", role: "Co-Patron", designation: "Provost", image: "Nitu-Bhatnagar.webp" },
   { name: "Prof. Dr. Kuldip Singh Sangwan", role: "General Chair", designation: "Dean – Faculty of Engineering", image: "Dr-Kuldip-Singh.webp" },
-  { name: "Dr. Chhatar Singh Lamba", role: "General Chair", designation: "Professor & Associate Dean", image: "cslamba.webp" },
-  { name: "Prof. Dr. Neha Chaudhary", role: "Program Chair", designation: "Professor & HoD, CSE", image: "Neha-Chaudhary.webp" },
-  { name: "Dr. U. S. Rawat", role: "Program Co-Chair", designation: "Professor", image: "us-rawat.webp" },
-  { name: "Dr. Satyabrata Roy", role: "Program Co-chair", designation: "Associate Professor, CSE", image: "Dr-Satyabrata-Roy.webp" },
-  { name: "Dr. Mahesh Jangid", role: "Program Co-Chair", designation: "Associate Professor, CSE", image: "Mahesh-Jangid.webp" },
-  { name: "Dr. Amit Garg", role: "Organizing Chair", designation: "Associate Professor, CSE", image: "amit-garg.webp" },
-  { name: "Dr. Ankur Pandey", role: "Organizing Chair", designation: "Assistant Professor, CSE", image: "ankur-pandey.webp" },
-  { name: "Dr. Amit Kumar Gupta", role: "Organizing Co-Chair", designation: "Assistant Professor, CSE", image: "amit-kumar-gupta.webp" },
-  { name: "Dr. Neetu Gupta", role: "Organizing Co-Chair", designation: "Assistant Professor, CSE", image: "neetu-gupta.webp" },
-  { name: "Dr. Sayar Singh Shekhawat", role: "Publicity Chair", designation: "Associate Professor, CSE", image: "sayar-singh.webp" },
-  { name: "Dr. Usha Jain", role: "Publicity Chair", designation: "Assistant Professor, CSE", image: "usha-jain.webp" },
-  { name: "Dr. Surbhi Sharma", role: "Publicity Chair", designation: "Assistant Professor, CSE", image: "surbhi-sharma.webp" },
-  { name: "Dr. Satpal Singh Kushwaha", role: "Technical Chair", designation: "Assistant Professor, CSE", image: "satpal-singh-kushwaha.webp" },
-  { name: "Dr. Lokesh Sharma", role: "Technical Chair", designation: "Associate Professor, IT", image: "lokesh-sharma.webp" },
-  { name: "Dr. Sumit Srivastava", role: "Technical Chair", designation: "Assistant Professor, IT", image: "sumit-srivastava.webp" },
-  { name: "Dr. Rishi Gupta", role: "Finance Chair", designation: "Associate Professor, CSE", image: "rishi-gupta.webp" },
-  { name: "Dr. Akshay Jadhav", role: "Publication Chair", designation: "Assistant Professor, CSE", image: "akshay-jadhav.webp" },
-  { name: "Dr. Mayank Namdev", role: "Publication Chair", designation: "Assistant Professor, CSE", image: "mayank-namdev.webp" },
+  { name: "Prof. Ashima Bagaria", role: "General Chair", designation: "Professor & Associate Dean", image: "Dr. Ashima Bagaria.jpg" },
+
+  { name: "Prof. Reema Jain", role: "Program Chair", designation: "Head, Department of Mathematics and Statistics", image: "Dr Reema Jain.jpg" },
+  { name: "Prof. Swaroop Nandan Bora", role: "Program Chair", designation: "Professor, Department of Mathematics, IIT Guwahati, India", image: "Swaroop Nandan Bora.jpg" },
+  { name: "Prof. Verdiana Grace Masanja", role: "Program Chair", designation: "Department of Mathematics, Nelson Mandela African Institution of Science and Technology (NM-AIST), Africa", image: "Prof. Verdiana Grace Masanja.jpg" },
+
+  { name: "Dr Abdul Haseeb Ganie", role: "Convener", designation: "Assistant Professor (Research Track), Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Abdul Haseeb Ganie.jpg" },
+  { name: "Dr Loganathan Karuppusamy", role: "Convener", designation: "Assistant Professor (Research Track), Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Loganathan Karuppusamy.jpg" },
+
+  { name: "Dr Vipin Kumar", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Vipin Kumar.jpg" },
+  { name: "Dr Shamshad Ur Rasool", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Shamshad Ur Rasool.jpg" },
+  { name: "Dr Anil Ahlawat", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Anil Ahlawat.jpg" },
+  { name: "Dr Vijaypal Poonia", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Vijaypal Poonia.jpg" },
+  { name: "Dr Bijender Singh", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Bijender Singh.jpg" },
 ];
+
 
 /* ================= COMPONENT ================= */
 export default function Committee({ type }) {

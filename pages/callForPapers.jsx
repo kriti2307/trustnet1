@@ -163,10 +163,10 @@ function CallForPapers() {
             <div className="bg-white rounded-xl p-6 shadow-md border border-trustnet-bg-light">
               <h3 className="font-bold text-lg mb-4">Submission Requirements</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• Peer-review process</li>
-                <li>• Follow conference format guidelines</li>
-                <li>• High-quality academic content</li>
                 <li>• Original, unpublished research</li>
+                <li>• High-quality academic conten</li>
+                <li>• Follow conference format guidelines</li>
+                <li>• Peer-review process</li>
               </ul>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-trustnet-bg-light">
@@ -194,28 +194,28 @@ function CallForPapers() {
                 1
               </div>
               <h3 className="font-semibold text-lg mb-2">Call for Papers</h3>
-              <p className="text-gray-600">September 9, 2025</p>
+              <p className="text-gray-600">Feb 15, 2026</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
               <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                 2
               </div>
-              <h3 className="font-semibold text-lg mb-2">Submission</h3>
-              <p className="text-gray-600">December 30, 2025</p>
+              <h3 className="font-semibold text-lg mb-2">Last Date Of Submission</h3>
+              <p className="text-gray-600">April 15, 2026</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
               <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                 3
               </div>
               <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
-              <p className="text-gray-600">January 10, 2026</p>
+              <p className="text-gray-600">May 15, 2026</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
               <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
                 4
               </div>
               <h3 className="font-semibold text-lg mb-2">Registration End</h3>
-              <p className="text-gray-600">January 14, 2026</p>
+              <p className="text-gray-600">June 30, 2026</p>
             </div>
           </div>
         </div>
