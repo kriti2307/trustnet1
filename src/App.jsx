@@ -16,6 +16,7 @@ import SpecialSessions from "../pages/specialSessions";
 import SpecialSessionProposal from "../pages/specialSessionProposal";
 import BestPaper from "../pages/Awards/bestPaper";
 import YoungScientist from "../pages/Awards/youngScientist";
+import Accommodation from "../pages/forAuthors/Accommodation";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="special-sessions/proposal" element={<SpecialSessionProposal />} />
           <Route path="/awards/best-paper" element={<BestPaper />} />
           <Route path="/awards/young-scientist" element={<YoungScientist />} />
+          <Route path="for-authors/Accommodation" element={<Accommodation />} />
         </Route>
       </Routes>
     </BrowserRouter>
