@@ -47,6 +47,23 @@ function Home() {
         July 29–31, 2026 <span className="opacity-80">(Hybrid Mode)</span>
       </p>
 
+      {/* 🔘 BUTTONS */}
+      <div className="flex justify-center gap-4 pt-4 flex-wrap">
+        <a
+          href="/for-authors/registration"
+          className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          Register Now
+        </a>
+
+        <a
+          href="/for-authors/submission"
+          className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-full transition"
+        >
+          Submit Paper
+        </a>
+      </div>
+
     </div>
   </div>
 
@@ -496,7 +513,7 @@ After a thorough peer review procedure, all registered and presented papers will
       alt="AMU"
       className="h-60 object-contain"
     />
-    <p className="mt-4 font-medium">AMU</p>
+    <p className="mt-4 font-medium">African Mathematical Union </p>
   </div>
 
   {/* African Institute of Science and Technology */}

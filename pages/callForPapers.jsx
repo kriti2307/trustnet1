@@ -276,18 +276,6 @@ function CallForPapers() {
           <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
             After a thorough peer review procedure, all registered and presented papers will be evaluated for publication in journals, book series, or conference proceedings that are indexed by Scopus/SCIE. In compliance with their editorial policies, the corresponding journals or publishers will independently undertake peer review and make editorial decisions.
           </p>
-          <div className="flex flex-wrap justify-center gap-8">
-            <img
-              src="/assets/Scopus.png"
-              alt="Scopus"
-              className="h-20 w-32 object-contain"
-            />
-            <img
-              src="/assets/springer.png"
-              alt="Springer"
-              className="h-20 w-32 object-contain"
-            />
-          </div>
            <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
            </p>
         </div>
