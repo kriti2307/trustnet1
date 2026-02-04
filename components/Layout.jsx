@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import manipalLogo from "../src/assets/manipal-logo.png";
 
+
 function Layout() {
   const [committeeOpen, setCommitteeOpen] = useState(false);
   const [authorsOpen, setAuthorsOpen] = useState(false);
@@ -9,6 +10,7 @@ function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [awardsOpen, setAwardsOpen] = useState(false); // ✅ ONLY ADDITION
 
+<<<<<<< HEAD
   const navLinks = (
     <>
       <Link to="/" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
@@ -28,6 +30,73 @@ function Layout() {
               <Link to="/committee/advisory" className="block px-4 py-2 hover:bg-trustnet-bg">Advisory Board</Link>
               <Link to="/committee/organizing" className="block px-4 py-2 hover:bg-trustnet-bg">Organizing Committee</Link>
             </div>
+=======
+    const navLinks = (
+  <>
+  {/* Home */}
+  <Link
+    to="/"
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Home
+  </Link>
+
+  {/* About → About the Conference */}
+  <Link
+    to={{ pathname: '/', hash: '#about' }}
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    About
+  </Link>
+
+  {/* Call for Papers */}
+  <Link
+    to="/call-for-papers"
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Call for Papers
+  </Link>
+
+  {/* Speakers → Home Speakers section */}
+  <Link
+    to={{ pathname: '/', hash: '#speakers' }}
+    className="hover:text-trustnet-accent"
+    onClick={() => setMobileMenuOpen(false)}
+  >
+    Speakers
+  </Link>
+
+
+
+    {/* ================= Committee Dropdown ================= */}
+    <div
+      className="relative flex items-center"
+      onMouseEnter={() => setCommitteeOpen(true)}
+      onMouseLeave={() => setCommitteeOpen(false)}
+    >
+      <button className="flex items-center gap-1 hover:text-trustnet-accent">
+        Committee
+        <span className={`transition-transform duration-200 ${committeeOpen ? "rotate-180" : ""}`}>
+          ▼
+        </span>
+      </button>
+
+      {committeeOpen && (
+        <div className="absolute top-full left-0 mt-3 z-50">
+          {/* invisible hover buffer */}
+          <div className="absolute -top-3 left-0 w-full h-3" />
+
+          <div className="bg-trustnet-card shadow-xl rounded-lg py-2 min-w-[200px] border border-trustnet-bg-light">
+            <Link to="/committee/advisory" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Advisory Board
+            </Link>
+            <Link to="/committee/organizing" className="block px-4 py-2 hover:bg-trustnet-bg">
+              Organizing Committee
+            </Link>
+>>>>>>> 258df5d37ec3f2ed0fa27b8c6916e668881d2825
           </div>
         )}
       </div>
@@ -50,7 +119,13 @@ function Layout() {
         )}
       </div>
 
+<<<<<<< HEAD
       <a href="/#contact" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+=======
+    <Link to={{ pathname: '/', hash: '#contact' }} className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+      Contact
+    </Link>
+>>>>>>> 258df5d37ec3f2ed0fa27b8c6916e668881d2825
 
       {/* Special Sessions */}
       <div className="relative flex items-center" onMouseEnter={() => setSessionsOpen(true)} onMouseLeave={() => setSessionsOpen(false)}>
@@ -105,6 +180,34 @@ function Layout() {
 
           <button className="lg:hidden p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>☰</button>
         </div>
+<<<<<<< HEAD
+=======
+
+        {/* Mobile menu - flat links for touch */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-trustnet-bg border-t border-trustnet-bg-light py-4 px-6 space-y-2">
+            <Link to="/" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <Link to={{ pathname: '/', hash: '#about' }} className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link to="/call-for-papers" className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Call for Papers</Link>
+            <Link to={{ pathname: '/', hash: '#speakers' }} className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Speakers</Link>
+            <span className="block py-2 font-medium text-gray-500">Committee</span>
+            <Link to="/committee/advisory" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Advisory Board</Link>
+            <Link to="/committee/organizing" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Organizing Committee</Link>
+            <span className="block py-2 font-medium text-gray-500">For Authors</span>
+            <Link to="/for-authors/guidelines" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Guidelines</Link>
+            <Link to="/for-authors/submission" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Paper Submission</Link>
+            <Link to="/for-authors/registration" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
+            <Link to="/for-authors/brochure" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Brochure</Link>
+            <Link to={{ pathname: '/', hash: '#contact' }} className="block py-2 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <span className="block py-2 font-medium text-gray-500">Special Sessions</span>
+            <Link to="/special-sessions" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Special Sessions</Link>
+            <Link to="/special-sessions/proposal" className="block py-2 pl-4 hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>Session Proposal</Link>
+            <div className="pt-2">
+              <span className="bg-trustnet-primary text-white px-3 py-1 rounded-full text-sm font-semibold">HYBRID</span>
+            </div>
+          </div>
+        )}
+>>>>>>> 258df5d37ec3f2ed0fa27b8c6916e668881d2825
       </nav>
 
       <main className="pt-20">

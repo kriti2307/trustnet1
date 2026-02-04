@@ -1,23 +1,15 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ImageSlider from "../components/ImageSlider";
 import SpeakerCard from "../components/speakerCard";
 import TrackItem from "../components/trackItem";
 import heroImage from "../src/assets/image.png";
 import footerLogo from "../src/assets/footer-logo.webp";
-import { FaLinkedinIn } from "react-icons/fa6";
 
 
 
 
 function Home() {
-  /* Scroll to section when landing with hash (e.g. /#about from another page) */
-  useEffect(() => {
-    const hash = window.location.hash?.slice(1);
-    if (hash) {
-      const el = document.getElementById(hash);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, []);
 
   return (
     <div className="w-full">
@@ -121,7 +113,7 @@ function Home() {
 </section>
 
 {/* ================= ABOUT CONFERENCE SECTION ================= */}
-<section className="bg-trustnet-bg py-20">
+<section id="about" className="bg-trustnet-bg py-20">
   <div className="w-full px-6">
 
     {/* Section Header */}
@@ -174,7 +166,7 @@ function Home() {
 
 
 {/* ================= ABOUT MANIPAL UNIVERSITY JAIPUR ================= */}
-<section id="about" className="bg-trustnet-primary-dark text-trustnet-lighter py-16 scroll-mt-20">
+<section id="about-university" className="bg-trustnet-primary-dark text-trustnet-lighter py-16 scroll-mt-20">
   <div className="max-w-6xl mx-auto px-6 ">
 
 
@@ -408,7 +400,6 @@ function Home() {
               rel="noopener noreferrer"
               className="text-trustnet-primary hover:text-white transition"
             >
-              <FaLinkedinIn size={20} />
             </a>
           </div>
 
@@ -532,39 +523,11 @@ After a thorough peer review procedure, all registered and presented papers will
       unforgettable backdrop for our conference.
     </p>
 
-
-    {/* Image Gallery */}
-    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <img
-        src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600"
-        alt="Jaipur Fort"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
+{/* ================= MOVING IMAGE SLIDER ================= */}
+<ImageSlider />
 
 
-      <img
-        src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600"
-        alt="Amber Fort"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
-
-
-      <img
-        src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600"
-        alt="Jaipur Market"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
-
-
-      <img
-        src="https://images.unsplash.com/photo-1601823984263-b87b59798b70?w=600"
-        alt="Jantar Mantar"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
-
-
-    </div>
+    
 
 
   </div>
