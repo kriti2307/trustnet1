@@ -35,7 +35,7 @@ function Layout() {
       >
         <button className="flex items-center gap-1 hover:text-trustnet-accent">
           Committee
-          <span className={`transition-transform duration-200 ${committeeOpen ? "rotate-180" : ""}`}>
+          <span className={`ml-1 text-xs leading-none transition-transform duration-200 ${committeeOpen ? "rotate-180" : ""}`}>
             ▼
           </span>
         </button>
@@ -133,17 +133,17 @@ function Layout() {
   return (
     <div className="w-full min-h-screen font-sans">
       <nav className="w-full bg-white shadow-md fixed top-0 z-50 border-b border-trustnet-bg-light">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
           <Link to="/" style={{ marginLeft: "20px" }}>
             <img src={manipalLogo} alt="Manipal Logo" style={{ height: "70px" }} />
           </Link>
 
-          <div className="hidden lg:flex space-x-6 text-slate-700 font-medium items-center">
+          <div className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-700 leading-none">
             {navLinks}
           </div>
 
           <div className="hidden lg:block">
-            <span className="bg-trustnet-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+            <span className="bg-trustnet-primary text-white px-3 py-0.5 rounded-full text-xs font-semibold">
               HYBRID
             </span>
           </div>
@@ -154,7 +154,7 @@ function Layout() {
         </div>
       </nav>
 
-      <main className="pt-20">
+      <main className="pt-16">
         <Outlet />
       </main>
 
@@ -180,19 +180,28 @@ function Layout() {
       {/* University */}
       <div className="text-center">
         <img
-        src="/assets/manipal_logo.png"
+        src="/assets/mujlogo.png"
         alt="Manipal Logo"
-        className="h-20 w-auto object-contain mx-auto"
+        className="mx-auto mb-4"
+        style={{ height: "80px", width: "auto" }}
       />
         <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
         <p>Jaipur, Rajasthan, India - 303007</p>
       </div>
       
-      {/* Conference Email */}
-      <div className="text-right">
-        <h3 className="font-semibold text-base mb-2">Email</h3>
-        <p>aciffs2026@gmail.com</p>
-      </div>
+    {/* Conference Email */}
+<div className="
+  md:text-right 
+  text-center 
+  md:self-start 
+  mt-9 
+  md:mt-25
+">
+  <p className="font-semibold">
+    Email: <span className="font-normal">aciffs2026@gmail.com</span>
+  </p>
+</div>
+
 
     </div>
 
