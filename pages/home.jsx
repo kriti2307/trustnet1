@@ -17,15 +17,15 @@ function Home() {
 {/* ================= HERO SECTION ================= */}
 <section className="relative w-full h-[80vh] overflow-hidden">
 
-  {/* VIDEO */}
   <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
-    src="/assets/hero-video.mp4"
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
+  className="absolute top-0 left-0 w-full h-full object-cover object-[50%_25%]"
+  src="/assets/hero-video.mp4"
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
 
   {/* DARK OVERLAY */}
   <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
@@ -462,27 +462,27 @@ After a thorough peer review procedure, all registered and presented papers will
 <div className="flex flex-wrap items-center justify-center gap-10 mt-12">
   <img
     src="/assets/sdg/4th.png"
-    alt="Publication Partner 1"
+    alt="Quality Education"
     className="h-20 w-auto object-contain"
   />
   <img
     src="/assets/sdg/8th.png"
-    alt="Publication Partner 2"
+    alt="Decent Work and Economic Growth"
     className="h-20 w-auto object-contain"
   />
   <img
     src="/assets/sdg/9th.png"
-    alt="Publication Partner 3"
+    alt="Industry, Innovation and Infrastructure"
     className="h-20 w-auto object-contain"
   />
   <img
     src="/assets/sdg/12th.png"
-    alt="Publication Partner 4"
+    alt="Responsible consumption and production"
     className="h-20 w-auto object-contain"
   />
   <img
     src="/assets/sdg/17th.png"
-    alt="Publication Partner 5"
+    alt="Partnerships for the Goals"
     className="h-20 w-auto object-contain"
   />
 </div>

@@ -100,34 +100,6 @@ function Layout() {
         Contact
       </a>
 
-      {/* Special Sessions */}
-      <div
-        className="relative flex items-center"
-        onMouseEnter={() => setSessionsOpen(true)}
-        onMouseLeave={() => setSessionsOpen(false)}
-      >
-        <button className="flex items-center gap-1 hover:text-trustnet-accent">
-          Special Sessions
-          <span className={`transition-transform duration-200 ${sessionsOpen ? "rotate-180" : ""}`}>
-            ▼
-          </span>
-        </button>
-
-        {sessionsOpen && (
-          <div className="absolute top-full left-0 mt-3 z-50">
-            <div className="absolute -top-3 left-0 w-full h-3" />
-            <div className="bg-trustnet-card shadow-xl rounded-lg py-2 min-w-[220px] border border-trustnet-bg-light">
-              <Link to="/special-sessions" className="block px-4 py-2 hover:bg-trustnet-bg">
-                Special Sessions
-              </Link>
-              <Link to="/special-sessions/proposal" className="block px-4 py-2 hover:bg-trustnet-bg">
-                Special Session Proposal
-              </Link>
-            </div>
-          </div>
-        )}
-      </div>
-
       {/* Awards */}
       <div
         className="relative flex items-center"

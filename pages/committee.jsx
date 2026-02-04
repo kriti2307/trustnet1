@@ -62,14 +62,14 @@ const ORGANIZING_COMMITTEE = [
   { name: "Prof. Swaroop Nandan Bora", role: "Program Chair", designation: "Professor, Department of Mathematics, IIT Guwahati, India", image: "Swaroop Nandan Bora.jpg" },
   { name: "Prof. Verdiana Grace Masanja", role: "Program Chair", designation: "Department of Mathematics, Nelson Mandela African Institution of Science and Technology (NM-AIST), Africa", image: "Prof. Verdiana Grace Masanja.jpg" },
 
-  { name: "Dr Abdul Haseeb Ganie", role: "Convener", designation: "Assistant Professor (Research Track), Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Abdul Haseeb Ganie.jpg" },
-  { name: "Dr Loganathan Karuppusamy", role: "Convener", designation: "Assistant Professor (Research Track), Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Loganathan Karuppusamy.jpg" },
+  { name: "Dr Abdul Haseeb Ganie", role: "Convener", designation: "Assistant Professor (Research Track), Department of Mathematics and Statistics", image: "Dr Abdul Haseeb Ganie.jpg" },
+  { name: "Dr Loganathan Karuppusamy", role: "Convener", designation: "Assistant Professor (Research Track), Department of Mathematics and Statistics", image: "Dr Loganathan Karuppusamy.jpg" },
 
-  { name: "Dr Vipin Kumar", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Vipin Kumar.jpg" },
-  { name: "Dr Shamshad Ur Rasool", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Shamshad Ur Rasool.jpg" },
-  { name: "Dr Anil Ahlawat", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Anil Ahlawat.jpg" },
-  { name: "Dr Vijaypal Poonia", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Vijaypal Poonia.jpg" },
-  { name: "Dr Bijender Singh", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics, Manipal University Jaipur, India", image: "Dr Bijender Singh.jpg" },
+  { name: "Dr Vipin Kumar", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics", image: "Dr Vipin Kumar.jpg" },
+  { name: "Dr Shamshad Ur Rasool", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics", image: "Dr Shamshad Ur Rasool.jpg" },
+  { name: "Dr Anil Ahlawat", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics", image: "Dr Anil Ahlawat.jpg" },
+  { name: "Dr Vijaypal Poonia", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics", image: "Dr Vijaypal Poonia.jpg" },
+  { name: "Dr Bijender Singh", role: "Organizing Secretary", designation: "Assistant Professor, Department of Mathematics and Statistics ", image: "Dr Bijender Singh.jpg" },
 ];
 
 
