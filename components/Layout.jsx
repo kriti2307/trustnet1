@@ -84,7 +84,7 @@ function Layout() {
               <Link to="/for-authors/brochure" className="block px-4 py-2 hover:bg-trustnet-bg">
                 Conference Brochure
               </Link>
-              <Link to="/for-authors/accommodation" className="block px-4 py-2 hover:bg-trustnet-bg">
+              <Link to="/for-authors/Accommodation" className="block px-4 py-2 hover:bg-trustnet-bg">
                 Accommodation 
               </Link>
             </div>
