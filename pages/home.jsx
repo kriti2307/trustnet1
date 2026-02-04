@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ImageSlider from "../components/ImageSlider";
 import SpeakerCard from "../components/speakerCard";
 import TrackItem from "../components/trackItem";
 import heroImage from "../src/assets/image.png";
@@ -528,39 +529,11 @@ After a thorough peer review procedure, all registered and presented papers will
       unforgettable backdrop for our conference.
     </p>
 
-
-    {/* Image Gallery */}
-    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <img
-        src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600"
-        alt="Jaipur Fort"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
+{/* ================= MOVING IMAGE SLIDER ================= */}
+<ImageSlider />
 
 
-      <img
-        src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600"
-        alt="Amber Fort"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
-
-
-      <img
-        src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600"
-        alt="Jaipur Market"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
-
-
-      <img
-        src="https://images.unsplash.com/photo-1601823984263-b87b59798b70?w=600"
-        alt="Jantar Mantar"
-        className="rounded-xl shadow-md object-cover h-60 w-full hover:scale-105 transition duration-300"
-      />
-
-
-    </div>
+    
 
 
   </div>
