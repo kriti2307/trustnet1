@@ -23,11 +23,11 @@ function Home() {
 
 
       {/* ================= HERO SECTION ================= */}
-<section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+<section className="relative w-full h-[80vh] overflow-hidden">
 
-  {/* Background Video */}
+  {/* VIDEO */}
   <video
-    className="absolute inset-0 w-full h-full object-cover"
+    className="absolute top-0 left-0 w-full h-full object-cover"
     src="/assets/hero-video.mp4"
     autoPlay
     loop
@@ -35,148 +35,140 @@ function Home() {
     playsInline
   />
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/50"></div>
+  {/* DARK OVERLAY */}
+  <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
 
-  {/* Content */}
-  <div className="relative z-10 text-center text-white px-4">
-    
-    <div>
-      <img
-        src={footerLogo}
-        alt="TrustNet 2026"
-        className="max-w-xl mx-auto w-full"
-      />
+  {/* TEXT CONTENT */}
+  <div className="relative z-10 h-full flex items-center justify-center">
+    <div className="text-center text-white px-6 max-w-5xl space-y-4">
+
+      <p className="uppercase tracking-widest text-sm">
+        First International Conference
+      </p>
+
+      <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+        Advances in Computational Intelligence <br />
+        for Fluid and Fuzzy Systems
+      </h1>
+
+      <p className="text-lg font-semibold">
+        July 29–31, 2026 <span className="opacity-80">(Hybrid Mode)</span>
+      </p>
+
+      <div className="pt-4">
+        <p className="font-semibold">Organized by</p>
+        <p className="text-lg">Manipal University Jaipur</p>
+      </div>
+
+      <div className="pt-2 text-sm opacity-90 space-y-1">
+        <p className="font-semibold">In Association With</p>
+        <p>IIT Guwahati</p>
+        <p>Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania</p>
+        <p>African Mathematical Union (AMU)</p>
+      </div>
+
     </div>
-
-    <div className="text-2xl md:text-3xl font-semibold mb-8">
-      16<sup>th</sup> – 17<sup>th</sup> February 2026
-    </div>
-
-    <div className="flex justify-center gap-4 flex-wrap">
-      <Link
-        to="/for-authors/registration"
-        className="bg-trustnet-primary hover:bg-trustnet-primary-dark px-6 py-3 rounded-full text-white font-semibold transition duration-300"
-      >
-        Register Now
-      </Link>
-
-      <Link
-        to="/for-authors/submission"
-        className="bg-white text-trustnet-primary-dark hover:bg-trustnet-bg px-6 py-3 rounded-full font-semibold transition duration-300 border-2 border-white"
-      >
-        Submit Paper
-      </Link>
-    </div>
-
   </div>
+
 </section>
+
 
 
       {/* ================= IMPORTANT DATES ================= */}
-      <section className="bg-trustnet-bg py-12">
-        <div className="max-w-7xl mx-auto px-6">
+<section className="bg-trustnet-bg py-12">
+  <div className="max-w-7xl mx-auto px-6">
 
-
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-slate-700">
-              Important Dates
-            </h2>
-          </div>
-
-
-          <div className="grid md:grid-cols-4 gap-6">
-
-
-            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
-              <h3 className="font-semibold text-lg mb-2">Call for Paper</h3>
-              <p className="text-gray-600">September 9, 2025</p>
-            </div>
-
-
-            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
-              <h3 className="font-semibold text-lg mb-2">Submission</h3>
-              <p className="text-gray-600">December 15, 2025</p>
-              <p className="text-gray-600 text-sm mt-1">December 30, 2025 (Extended)</p>
-            </div>
-
-
-            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
-              <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
-              <p className="text-gray-600">December 15, 2025</p>
-              <p className="text-gray-600 text-sm mt-1">January 10, 2026 (Extended)</p>
-            </div>
-
-
-            <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light">
-              <h3 className="font-semibold text-lg mb-2">Registration End</h3>
-              <p className="text-gray-600">December 25, 2025</p>
-              <p className="text-gray-600 text-sm mt-1">January 14, 2026 (Extended)</p>
-            </div>
-
-
-          </div>
-
-
-        </div>
-      </section>
-
-
-      {/* ================= CONFERENCE INTRO SECTION ================= */}
-<section className="bg-trustnet-bg py-16">
-  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-
-    {/* Left Side - Logo + Title */}
-    <div className="flex flex-col md:flex-row items-start gap-6">
-
-
-      {/* Shield Logo Placeholder */}
-      <div className="w-24 h-24 bg-trustnet-primary rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-        TN
-      </div>
-
-
-      <div>
-        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-700 leading-tight">
-          INTERNATIONAL CONFERENCE ON <br />
-          TRUSTED NETWORKS AND <br />
-          INTELLIGENT SYSTEMS
-        </h2>
-      </div>
+    <div className="mb-8">
+      <h2 className="text-3xl font-bold text-slate-700">
+        Important Dates
+      </h2>
     </div>
 
+    {/* 👇 THIS LINE IS THE FIX */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
 
-    {/* Right Side - Description */}
-    <div>
-      <p className="text-gray-700 leading-relaxed text-lg text-justify">
-        The <span className="font-semibold">Department of Computer Science and Engineering, Manipal University Jaipur</span> 
-        is pleased to announce that it will host the International Conference on 
-        Trusted Networks and Intelligent Systems (TrustNet 2026) on 
-        February 16–17, 2026.
-      </p>
+      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+        <h3 className="font-semibold text-lg mb-2">Call for Paper</h3>
+        <p className="text-gray-600">Feb 15, 2026</p>
+      </div>
 
+      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+        <h3 className="font-semibold text-lg mb-2">Submission</h3>
+        <p className="text-gray-600">April 15, 2026</p>
+      </div>
 
-      <p className="text-gray-700 leading-relaxed text-lg mt-4 text-justify">
-        This conference is centered around a shared global goal: creating a safe, smart, 
-        and sustainable digital future. Discussions and research will focus on 
-        <span className="font-semibold"> cybersecurity and Artificial Intelligence (AI)</span>, 
-        contributing to both the United Nations Sustainable Development Goals (SDGs) 
-        and the Digital India vision.
-      </p>
+      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+        <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
+        <p className="text-gray-600">May 15, 2026</p>
+      </div>
 
+      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+        <h3 className="font-semibold text-lg mb-2">
+          Camera Ready Paper Submission
+        </h3>
+        <p className="text-gray-600">May 31, 2026</p>
+      </div>
 
-      <p className="text-gray-700 leading-relaxed text-lg mt-4 text-justify">
-        By promoting <span className="font-semibold">Digital Trust, Innovation, and Security</span>, 
-        the event will support progress toward goals related to 
-        Innovation, Sustainable Cities, Strong Institutions, and Quality Education.
-      </p>
+      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+        <h3 className="font-semibold text-lg mb-2">Registration End</h3>
+        <p className="text-gray-600">June 30, 2026</p>
+      </div>
+
     </div>
-
 
   </div>
 </section>
 
+{/* ================= ABOUT CONFERENCE SECTION ================= */}
+<section className="bg-trustnet-bg py-20">
+  <div className="w-full px-6">
+
+    {/* Section Header */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-700">
+        About the Conference
+      </h2>
+      <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    {/* Full-width Content Box */}
+    <div className="bg-white rounded-2xl shadow-lg border border-trustnet-bg-light 
+                    px-8 md:px-16 lg:px-32 py-10 max-w-screen-2xl mx-auto">
+
+      <p className="text-gray-700 text-lg leading-relaxed text-justify">
+        The <span className="font-semibold">
+          Department of Mathematics and Statistics, Manipal University Jaipur
+        </span>, in collaboration with the
+        <span className="font-semibold"> Indian Institute of Technology (IIT) Guwahati</span>,
+        <span className="font-semibold"> Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania</span>,
+        and the <span className="font-semibold">African Mathematical Union (AMU)</span>,
+        proposes to organize the First International Conference on
+        <span className="font-semibold">
+          {" "}Advances in Computational Intelligence for Fluid and Fuzzy Systems (ACIFFS-2026)
+        </span>,
+        scheduled for <span className="font-semibold">July 29–31, 2026</span>.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-6 text-justify">
+        ACIFFS 2026 provides an international platform for researchers,
+        academicians, and industry professionals to present, exchange, and discuss
+        recent advancements and innovative research outcomes in computational
+        intelligence, fluid systems, and fuzzy methodologies.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-6 text-justify">
+        The conference will bring together leading experts to explore cutting-edge
+        theoretical developments, computational techniques, and real-world
+        applications influencing science, technology, and society. To promote
+        collaboration and knowledge sharing between academia and industry, the
+        program will feature keynote addresses, technical paper presentations, and
+        interactive sessions by distinguished speakers from around the globe.
+      </p>
+
+    </div>
+
+  </div>
+</section>
 
 
 
