@@ -75,16 +75,17 @@
 
 
 
-@keyframes force-move {
-  from {
-    transform: translateX(0px);
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: translateX(-1500px);
+  100% {
+    transform: translateX(-50%);
   }
 }
 
 .force-slider {
   display: flex;
-  animation: force-move 20s linear infinite;
+  width: max-content;
+  animation: marquee 25s linear infinite;
 }
