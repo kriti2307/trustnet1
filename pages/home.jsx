@@ -437,10 +437,9 @@ function Home() {
 
     {/* Description */}
     <p className="text-gray-700 text-lg leading-relaxed mb-10 text-justify">
-      The Microsoft CMT service was used for managing the peer-reviewing
-      process for this conference. This service was provided for free by
-      Microsoft and they bore all expenses, including costs for Azure cloud
-      services as well as for software development and support.
+After a thorough peer review procedure, all registered and presented papers will be evaluated for publication in journals, book series, or conference proceedings that are indexed by Scopus/SCIE. In compliance with their editorial policies, the corresponding journals or publishers will independently undertake peer review and make editorial decisions.
+
+    
     </p>
 
 
@@ -460,9 +459,7 @@ function Home() {
 
 
     <p className="text-gray-700 text-lg leading-relaxed">
-      The proceedings of TrustNet'26 will be published in Lecture Notes in
-      Networks and Systems (LNNS). LNNS is abstracted and indexed in SCOPUS,
-      INSPEC, WTI Frankfurt eG, zbMATH, SCImago.
+      
     </p>
 
 
