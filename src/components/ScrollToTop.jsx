@@ -10,26 +10,7 @@ export default function ScrollToTop() {
   const { pathname, hash } = useLocation();
   const navigate = useNavigate();
 
-  // Run once on mount to handle reload redirect (if required)
-  useEffect(() => {
-    try {
-      const wasReloaded = sessionStorage.getItem('app-was-reloaded');
-      if (wasReloaded) {
-        // Clear flag immediately to avoid repeated redirects
-        sessionStorage.removeItem('app-was-reloaded');
-        if (window.location.pathname !== '/') {
-          // Replace current history entry and redirect to home without reload
-          navigate('/', { replace: true });
-          return; // let the pathname change trigger scroll handling
-        } else {
-          // already on home — ensure we are at top
-          window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-        }
-      }
-    } catch (e) {
-      // ignore
-    }
-  }, [navigate]);
+
 
   // Handle normal navigation and hash scrolling
   useEffect(() => {

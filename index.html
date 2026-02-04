@@ -5,6 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>manipaltrust</title>
+
+    <!--
+      SPA reload handling (minimal, runs before React boot):
+      - If the page was loaded via a hard reload (navigation type 'reload' or pageshow persisted),
+        and the current path is not '/', replace the location with '/' so production hard reloads
+        never result in a 404 (server rewrite required) and always land on Home at the top.
+      - We use location.replace('/') to avoid polluting history and to prevent loops.
+    -->
+    <script>
+      (function () {
+        try {
+          const navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+          const navType = navEntries && navEntries[0] && navEntries[0].type;
+          const isReload = navType === 'reload' || (performance && performance.navigation && performance.navigation.type === 1);
+          if (isReload && location.pathname !== '/') {
+            // replace so the user lands on '/', do not create a back entry
+            location.replace('/');
+          }
+        } catch (e) {
+          // ignore any errors — this script must never break the app
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
