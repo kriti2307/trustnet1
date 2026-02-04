@@ -481,19 +481,43 @@ After a thorough peer review procedure, all registered and presented papers will
     </h2>
 
 
-    {/* Partner Logos */}
-    <div className="flex flex-col md:flex-row items-center justify-center gap-16">
-      <img
-        src="/assets/unstop.png"
-        alt="Unstop"
-        className="h-16 object-contain"
-      />
-      <img
-        src="/assets/deakin.png"
-        alt="Deakin University"
-        className="h-16 object-contain"
-      />
-    </div>
+   {/* Partner Logos */}
+<div className="flex flex-col md:flex-row items-center justify-center gap-16">
+
+  {/* AMU */}
+  <div className="flex flex-col items-center text-center">
+    <img
+      src="/assets/AMU.png"
+      alt="AMU"
+      className="h-60 object-contain"
+    />
+    <p className="mt-4 font-medium">AMU</p>
+  </div>
+
+  {/* African Institute of Science and Technology */}
+  <div className="flex flex-col items-center text-center">
+    <img
+      src="/assets/Arusha.png"
+      alt="African Institute of Science and Technology"
+      className="h-60 object-contain"
+    />
+    <p className="mt-4 font-medium">
+      African Institute of Science and Technology
+    </p>
+  </div>
+
+  {/* IIT Guwahati */}
+  <div className="flex flex-col items-center text-center">
+    <img
+      src="/assets/IIT.png"
+      alt="IIT Guwahati"
+      className="h-60 object-contain"
+    />
+    <p className="mt-4 font-medium">IIT Guwahati</p>
+  </div>
+
+</div>
+
 
 
   </div>
