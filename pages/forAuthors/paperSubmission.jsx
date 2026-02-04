@@ -37,13 +37,13 @@ function PaperSubmission() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="font-bold mb-2">Important Dates</h3>
-                <p className="text-sm">Submission: December 30, 2025</p>
-                <p className="text-sm">Acceptance: January 10, 2026</p>
-                <p className="text-sm">Registration: January 14, 2026</p>
+                <p className="text-sm">Submission: April 15, 2026</p>
+                <p className="text-sm">Acceptance: May 15, 2026</p>
+                <p className="text-sm">Registration: June 30, 2026</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="font-bold mb-2">Contact</h3>
-                <p className="text-sm">Email: trustnet2026@gmail.com</p>
+                <p className="text-sm">Email: aciffs2026@gmail.com</p>
               </div>
             </div>
 

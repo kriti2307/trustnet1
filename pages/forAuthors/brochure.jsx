@@ -13,7 +13,7 @@ function Brochure() {
 
           <div className="space-y-8 text-gray-700">
             <p className="text-lg leading-relaxed">
-              Download the TrustNet 2026 conference brochure for complete
+              Download the ACIFFS 2026 conference brochure for complete
               information about the event, tracks, speakers, and venue.
             </p>
 
