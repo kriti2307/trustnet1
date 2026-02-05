@@ -103,3 +103,19 @@
   display: flex;
   animation: force-move 20s linear infinite;
 }
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.force-slider {
+  display: flex;
+  width: max-content;
+  animation: smoothScroll 25s linear infinite;
+  will-change: transform;
+}
