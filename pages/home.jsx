@@ -35,9 +35,13 @@ function Home() {
   <div className="relative z-10 h-full flex items-center justify-center">
     <div className="text-center text-white px-6 max-w-5xl space-y-4">
 
-      <p className="uppercase tracking-widest text-sm">
-        First International Conference
-      </p>
+      
+      <p className="uppercase tracking-widest text-lg font-medium">
+  First International Conference
+</p>
+
+<p className ="uppercase tracking-widest text-lg font-medium"> on </p>
+
 
       <h1 className="text-3xl md:text-5xl font-bold leading-tight">
         Advances in Computational Intelligence <br />
@@ -45,7 +49,7 @@ function Home() {
       </h1>
 
       <p className="text-lg font-semibold">
-        July 29–31, 2026 <span className="opacity-80">(Hybrid Mode)</span>
+        July 29–31, 2026
       </p>
 
       {/* 🔘 BUTTONS */}

@@ -162,18 +162,18 @@ function Layout() {
       </main>
 
      {/* FOOTER */}
-<footer id="contact" className="bg-trustnet-primary-dark text-trustnet-lighter pt-8 pb-4">
+<footer id="contact" className="bg-trustnet-primary-dark text-trustnet-lighter pt-6 pb-3">
   <div className="max-w-7xl mx-auto px-6">
 
-    <div className="grid md:grid-cols-3 gap-6 text-sm">
+    <div className="grid md:grid-cols-3 gap-4 text-sm items-start">
 
       {/* Contacts */}
       <div>
-        <h3 className="font-semibold text-base mb-2">Contact: </h3>
+        <h3 className="font-semibold text-base mb-1">Contact:</h3>
 
         <p className="font-medium">Dr. Abdul Haseeb Ganie</p>
         <p>Email: abdul.ganie@jaipur.manipal.edu</p>
-        <p className="mb-3">Ph: +91 99068 36244</p>
+        <p className="mb-2">Ph: +91 99068 36244</p>
 
         <p className="font-medium">Dr. Loganathan Karuppusamy</p>
         <p>Email: loganathan.karuppusamy@jaipur.manipal.edu</p>
@@ -183,42 +183,36 @@ function Layout() {
       {/* University */}
       <div className="text-center">
         <img
-        src="/assets/mujlogo.png"
-        alt="Manipal Logo"
-        className="mx-auto mb-4"
-        style={{ height: "80px", width: "auto" }}
-      />
+          src="/assets/mujlogo.png"
+          alt="Manipal Logo"
+          className="mx-auto mb-2"
+          style={{ height: "65px", width: "auto" }}
+        />
         <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
         <p>Jaipur, Rajasthan, India - 303007</p>
       </div>
-      
-    {/* Conference Email */}
-<div className="
-  md:text-right 
-  text-center 
-  md:self-start 
-  mt-9 
-  md:mt-25
-">
-  <p className="font-semibold">
-    Email: <span className="font-normal">aciffs2026@gmail.com</span>
-  </p>
-</div>
+
+    {/* Conference Email — Bottom Right */}
+      <div className="flex flex-col justify-end md:items-end items-center">
+        <p className="font-semibold">
+          Email: <span className="font-normal">aciffs2026@gmail.com</span>
+        </p>
+      </div>
 
 
     </div>
 
     {/* Bottom line */}
-    <div className="border-t border-trustnet-primary-darker mt-5 pt-3 text-xs text-trustnet-light">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-1">
+    <div className="border-t border-trustnet-primary-darker mt-4 pt-2 text-xs text-trustnet-light">
+      <div className="flex flex-col md:flex-row justify-between items-center">
         <span>© 2026 All rights reserved.</span>
-        <span></span>
         <span>Developed by</span>
       </div>
     </div>
 
   </div>
 </footer>
+
 
 
     </div>
