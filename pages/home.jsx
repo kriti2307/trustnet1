@@ -19,16 +19,11 @@ function Home() {
     <div className="w-full">
 
 {/* ================= HERO SECTION ================= */}
-<section className="relative w-full h-[58vh] md:h-[85vh] overflow-hidden">
+<section className="relative w-full h-[60vh] md:h-[90vh] overflow-hidden">
 
-  {/* VIDEO */}
+  {/* BACKGROUND VIDEO */}
   <video
-    className="
-      absolute inset-0 w-full h-full
-      object-cover
-      object-[50%_48%]    /* Mobile framing */
-      md:object-[50%_25%] /* Desktop framing */
-    "
+    className="absolute inset-0 w-full h-full object-cover"
     src="/assets/hero-video.mp4"
     autoPlay
     loop
@@ -37,71 +32,138 @@ function Home() {
   />
 
   {/* DARK OVERLAY */}
-  <div className="absolute inset-0 bg-black/30"></div>
-
+  <div className="absolute inset-0 bg-black/15"></div>
 
   {/* CENTER TEXT */}
   <div className="relative z-10 h-full flex items-center justify-center">
-    <div className="text-center text-white px-5 md:px-6 max-w-5xl space-y-2 md:space-y-4">
+    <div className="text-center text-white px-6 max-w-6xl">
 
-      <p className="uppercase tracking-widest text-xs md:text-lg font-medium">
-        First International Conference
-      </p>
+      {/* CONFERENCE CODE */}
+      <h2 className="font-serif text-xl md:text-3xl tracking-wide mb-3">
+        ACIFFS 2026
+      </h2>
 
-      <p className="uppercase tracking-widest text-xs md:text-lg font-medium">
+      {/* INTERNATIONAL CONF TEXT */}
+      <h3 className="font-serif text-2xl md:text-5xl mb-2">
+        International Conference
+      </h3>
+
+      <h3 className="font-serif text-2xl md:text-5xl mb-4">
         on
-      </p>
+      </h3>
 
-      <h1 className="text-xl sm:text-2xl md:text-5xl font-bold leading-tight">
+      {/* MAIN TITLE */}
+      <h1 className="font-serif text-2xl sm:text-3xl md:text-6xl leading-tight font-medium mb-6">
         Advances in Computational Intelligence
-        <br className="hidden md:block"/>
+        <br />
         for Fluid and Fuzzy Systems
       </h1>
 
-      <p className="text-sm md:text-lg font-semibold">
+      {/* DATE */}
+      <p className="font-serif text-lg md:text-2xl">
         July 29–31, 2026
       </p>
-
-
-      {/* BUTTONS */}
-      <div className="flex justify-center gap-3 md:gap-4 pt-2 md:pt-4">
-
-        <a
-          href="/for-authors/registration"
-          className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-4 md:px-6 py-2 md:py-3 rounded-full transition text-sm md:text-base"
-        >
-          Register Now
-        </a>
-
-        <a
-          href="/for-authors/submission"
-          className="bg-white hover:bg-gray-100 text-black font-semibold px-4 md:px-6 py-2 md:py-3 rounded-full transition text-sm md:text-base"
-        >
-          Submit Paper
-        </a>
-
-      </div>
 
     </div>
   </div>
 
+</section>
 
-  {/* BOTTOM LEFT */}
-  <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8 z-10 text-white text-[11px] md:text-sm">
-    <p className="font-semibold">Organized by</p>
-    <p className="md:text-lg">Manipal University Jaipur</p>
-  </div>
+{/* ================= CONFERENCE INFO SECTION ================= */}
+<section className="relative py-10 md:py-14 bg-gradient-to-b from-slate-50 via-white to-slate-100">
+
+  <div className="max-w-5xl mx-auto px-6 text-center space-y-8">
+
+    {/* -------- TOP LOGOS ROW -------- */}
+    <div className="flex flex-wrap justify-center items-center gap-6">
+
+      <div className="h-12 md:h-16">
+        <img src="/assets/manipal.png" alt="Manipal Logo" className="h-full object-contain" />
+      </div>
+
+      <div className="h-12 md:h-16">
+        <img src="/assets/partner1.png" alt="Partner Logo" className="h-full object-contain" />
+      </div>
+
+      <div className="h-12 md:h-16">
+        <img src="/assets/partner2.png" alt="Partner Logo" className="h-full object-contain" />
+      </div>
+
+      <div className="h-10 md:h-14">
+        <img src="/assets/sdg.png" alt="SDG Goals" className="h-full object-contain" />
+      </div>
+
+    </div>
 
 
-  {/* BOTTOM RIGHT */}
-  <div className="absolute bottom-4 md:bottom-8 right-4 md:right-8 z-10 text-white text-[11px] md:text-sm space-y-1 max-w-[170px] md:max-w-xs text-right">
-    <p className="font-semibold">In Association With</p>
-    <p>IIT Guwahati</p>
-    <p>Nelson Mandela African Institute of Science and Technology</p>
-    <p>African Mathematical Union (AMU)</p>
+    {/* -------- ORGANIZED BY -------- */}
+    <div className="space-y-1">
+      <p className="text-base md:text-lg font-semibold">
+        Organized by
+      </p>
+
+      <p className="text-lg md:text-xl">
+        Manipal University Jaipur
+      </p>
+    </div>
+
+
+    {/* -------- ASSOCIATIONS -------- */}
+    <div className="space-y-1">
+      <p className="text-base md:text-lg font-semibold">
+        In Association With
+      </p>
+
+      <p className="text-base md:text-lg">
+        IIT Guwahati & National Institute of Technology Uttarakhand
+      </p>
+    </div>
+
+
+    {/* -------- DATES + CENTER IMAGE + VENUE -------- */}
+    <div className="grid md:grid-cols-3 items-center gap-6 pt-4">
+
+      {/* Dates */}
+      <div className="space-y-2">
+        <p className="text-base md:text-lg font-semibold">
+          Conference Dates
+        </p>
+
+        <p className="text-base md:text-lg">
+          July 29–31, 2026
+        </p>
+      </div>
+
+
+      {/* CENTER IMAGE */}
+      <div className="flex justify-center">
+        <div className="w-24 h-24 md:w-32 md:h-32">
+          <img
+            src="/assets/conference-logo.png"
+            alt="Conference Logo"
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+
+
+      {/* Venue */}
+      <div className="space-y-2">
+        <p className="text-base md:text-lg font-semibold">
+          Conference Venue
+        </p>
+
+        <p className="text-base md:text-lg">
+          Manipal University Jaipur
+        </p>
+      </div>
+
+    </div>
+
   </div>
 
 </section>
+
 
 {/* ================= IMPORTANT DATES ================= */}
 <section className="bg-trustnet-bg py-12">
@@ -114,7 +176,7 @@ function Home() {
     </div>
 
     <motion.div
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -122,7 +184,7 @@ function Home() {
         hidden: {},
         visible: {
           transition: {
-            staggerChildren: 0.35
+            staggerChildren: 0.30
           }
         }
       }}
@@ -134,10 +196,10 @@ function Home() {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 }
         }}
-        transition={{ duration: 0.10 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
         className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
       >
-        <h3 className="font-semibold text-lg mb-2">Call for Paper</h3>
+        <h3 className="font-semibold text-lg mb-2">Call for Abstract</h3>
         <p className="text-gray-600">Feb 15, 2026</p>
       </motion.div>
 
@@ -147,7 +209,7 @@ function Home() {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 }
         }}
-        transition={{ duration: 0.10 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
         className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
       >
         <h3 className="font-semibold text-lg mb-2">Submission</h3>
@@ -160,7 +222,7 @@ function Home() {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 }
         }}
-        transition={{ duration: 0.10 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
         className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
       >
         <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
@@ -173,22 +235,7 @@ function Home() {
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 }
         }}
-        transition={{ duration: 0.10 }}
-        className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
-      >
-        <h3 className="font-semibold text-lg mb-2">
-          Camera Ready Paper Submission
-        </h3>
-        <p className="text-gray-600">May 31, 2026</p>
-      </motion.div>
-
-      {/* Card 5 */}
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 }
-        }}
-        transition={{ duration: 0.10 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
         className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
       >
         <h3 className="font-semibold text-lg mb-2">Registration End</h3>
@@ -505,6 +552,12 @@ function Home() {
 After a thorough peer review procedure, all registered and presented papers will be evaluated for publication in journals, book series, or conference proceedings that are indexed by Scopus/SCIE. In compliance with their editorial policies, the corresponding journals or publishers will independently undertake peer review and make editorial decisions.
 
     
+    </p>
+
+    <p className ="text-gray-700 text-lg leading-relaxed mb-10 text-justify">
+      Ethical Standards
+The conference upholds the highest standards of academic integrity. Any manuscript found to involve plagiarism or other ethical misconduct, whether during review, after registration, or in the final camera-ready version, will be rejected immediately. In such cases, the registration fee will not be refunded.
+This policy applies to issues identified by the conference committee or our publication partners at any stage of the process.
     </p>
 
     {/* Publication Partner Logos */}

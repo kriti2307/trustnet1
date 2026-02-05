@@ -182,45 +182,7 @@ function CallForPapers() {
         </div>
       </section>
 
-      {/* Submission Timeline */}
-      <section className="bg-trustnet-bg-light py-16">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-700 mb-12 text-center">
-            Submission Timeline
-          </h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
-                1
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Call for Papers</h3>
-              <p className="text-gray-600">Feb 15, 2026</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
-                2
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Last Date Of Submission</h3>
-              <p className="text-gray-600">April 15, 2026</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
-                3
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
-              <p className="text-gray-600">May 15, 2026</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <div className="w-12 h-12 bg-trustnet-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
-                4
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Registration End</h3>
-              <p className="text-gray-600">June 30, 2026</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       {/* Conference Tracks */}
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
@@ -277,6 +239,10 @@ function CallForPapers() {
             After a thorough peer review procedure, all registered and presented papers will be evaluated for publication in journals, book series, or conference proceedings that are indexed by Scopus/SCIE. In compliance with their editorial policies, the corresponding journals or publishers will independently undertake peer review and make editorial decisions.
           </p>
            <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
+            Ethical Standards
+The conference upholds the highest standards of academic integrity. Any manuscript found to involve plagiarism or other ethical misconduct, whether during review, after registration, or in the final camera-ready version, will be rejected immediately. In such cases, the registration fee will not be refunded.
+This policy applies to issues identified by the conference committee or our publication partners at any stage of the process.
+
            </p>
         </div>
       </section>
