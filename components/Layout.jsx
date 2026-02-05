@@ -295,17 +295,17 @@ function Layout() {
 
 
       {/* University */}
-      <div className="text-center">
-        <img
-          src="/assets/mujlogo.png"
-          alt="Manipal Logo"
-          className="mx-auto mb-3"
-          style={{ height: "60px" }}
-        />
+<div className="text-center">
+  <img
+    src="/assets/mujlogo-small.png"
+    alt="Manipal Logo"
+    className="mx-auto mb-3 h-20 w-auto object-contain"
+  />
 
-        <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
-        <p>Jaipur, Rajasthan, India - 303007</p>
-      </div>
+  <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
+  <p>Jaipur, Rajasthan, India - 303007</p>
+</div>
+
 
 
       {/* Conference Email */}
