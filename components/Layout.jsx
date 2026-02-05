@@ -189,14 +189,12 @@ function Layout() {
         <p>Jaipur, Rajasthan, India - 303007</p>
       </div>
 
-      {/* Conference Email */}
-<div className="flex flex-col justify-between h-full md:items-end items-center">
-  <span></span>
-
-  <p className="font-semibold">
-    Email: <span className="font-normal">aciffs2026@gmail.com</span>
-  </p>
-</div>
+    {/* Conference Email — Bottom Right */}
+      <div className="flex flex-col justify-end md:items-end items-center">
+        <p className="font-semibold">
+          Email: <span className="font-normal">aciffs2026@gmail.com</span>
+        </p>
+      </div>
 
 
     </div>

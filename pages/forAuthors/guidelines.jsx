@@ -13,7 +13,7 @@ function Guidelines() {
           </h1>
           <p className="text-lg md:text-xl leading-relaxed opacity-90">
             Authors are invited to submit original, unpublished research papers
-            aligned with the themes of TrustNet 2026.
+            aligned with the themes of ACIFF 2026.
           </p>
         </div>
       </section>
@@ -25,8 +25,7 @@ function Guidelines() {
           {/* INTRO */}
           <div className="text-gray-700 text-lg leading-relaxed space-y-6 text-justify">
             <p>
-              The International Conference on Trusted Networks and Intelligent
-              Systems (TrustNet 2026) seeks original research contributions
+              The International Conference on Advances in Computational Intelligence for Fluid and Fuzzy Systems  seeks original research contributions
               across various disciplines, provided the work&apos;s context is
               adequately articulated. Researchers are encouraged to submit
               their papers by the specified deadline. After this date, no new
