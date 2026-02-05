@@ -128,32 +128,35 @@ export default function Committee({ type }) {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {ORGANIZING_COMMITTEE.map((member, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#F27023] rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] transition"
-                >
-                  <div className="aspect-[3/4] w-full bg-gray-200 overflow-hidden">
-                    <img
-                      src={`/assets/committee/${member.image}`}
-                      alt={member.name}
-                      className="w-full h-full object-cover object-top"
-                      loading="lazy"
-                    />
-                  </div>
+  <div
+    key={idx}
+    className="bg-white rounded-2xl p-6 shadow-lg text-center hover:scale-[1.03] transition"
+  >
+    {/* ROUND IMAGE */}
+    <div className="w-36 h-36 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200 shadow-md">
+      <img
+        src={`/assets/committee/${member.image}`}
+        alt={member.name}
+        className="w-full h-full object-cover"
+        loading="lazy"
+      />
+    </div>
 
-                  <div className="p-6">
-                    <h3 className="text-lg font-semibold text-white">
-                      {member.name}
-                    </h3>
-                    <p className="text-white font-medium mt-1">
-                      {member.role}
-                    </p>
-                    <p className="text-white/80 text-sm mt-1">
-                      {member.designation}
-                    </p>
-                  </div>
-                </div>
-              ))}
+    {/* TEXT */}
+    <h3 className="text-lg font-semibold text-gray-800">
+      {member.name}
+    </h3>
+
+    <p className="text-trustnet-primary font-medium mt-1">
+      {member.role}
+    </p>
+
+    <p className="text-gray-600 text-sm mt-1">
+      {member.designation}
+    </p>
+  </div>
+))}
+
             </div>
           )}
 
