@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import ImageSlider from "../components/ImageSlider";
 import SpeakerCard from "../components/speakerCard";
 import TrackItem from "../components/trackItem";
@@ -93,7 +94,7 @@ function Home() {
 
 
 
-      {/* ================= IMPORTANT DATES ================= */}
+{/* ================= IMPORTANT DATES ================= */}
 <section className="bg-trustnet-bg py-12">
   <div className="max-w-7xl mx-auto px-6">
 
@@ -103,40 +104,93 @@ function Home() {
       </h2>
     </div>
 
-    {/* 👇 THIS LINE IS THE FIX */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+    <motion.div
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        hidden: {},
+        visible: {
+          transition: {
+            staggerChildren: 0.35
+          }
+        }
+      }}
+    >
 
-      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+      {/* Card 1 */}
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 }
+        }}
+        transition={{ duration: 0.10 }}
+        className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
+      >
         <h3 className="font-semibold text-lg mb-2">Call for Paper</h3>
         <p className="text-gray-600">Feb 15, 2026</p>
-      </div>
+      </motion.div>
 
-      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+      {/* Card 2 */}
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 }
+        }}
+        transition={{ duration: 0.10 }}
+        className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
+      >
         <h3 className="font-semibold text-lg mb-2">Submission</h3>
         <p className="text-gray-600">April 15, 2026</p>
-      </div>
+      </motion.div>
 
-      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+      {/* Card 3 */}
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 }
+        }}
+        transition={{ duration: 0.10 }}
+        className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
+      >
         <h3 className="font-semibold text-lg mb-2">Acceptance</h3>
         <p className="text-gray-600">May 15, 2026</p>
-      </div>
+      </motion.div>
 
-      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+      {/* Card 4 */}
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 }
+        }}
+        transition={{ duration: 0.10 }}
+        className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
+      >
         <h3 className="font-semibold text-lg mb-2">
           Camera Ready Paper Submission
         </h3>
         <p className="text-gray-600">May 31, 2026</p>
-      </div>
+      </motion.div>
 
-      <div className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center">
+      {/* Card 5 */}
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 }
+        }}
+        transition={{ duration: 0.10 }}
+        className="bg-white shadow-md rounded-lg p-6 border border-trustnet-bg-light text-center"
+      >
         <h3 className="font-semibold text-lg mb-2">Registration End</h3>
         <p className="text-gray-600">June 30, 2026</p>
-      </div>
+      </motion.div>
 
-    </div>
+    </motion.div>
 
   </div>
 </section>
+
 
 {/* ================= ABOUT CONFERENCE SECTION ================= */}
 <section id="about" className="bg-trustnet-bg py-20">
