@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ImageSlider from "../components/ImageSlider";
@@ -11,6 +11,9 @@ import footerLogo from "../src/assets/footer-logo.webp";
 
 
 function Home() {
+  const [openCategory, setOpenCategory] = useState(null);
+
+
 
   return (
     <div className="w-full">
@@ -312,98 +315,80 @@ function Home() {
 
 
 
-{/* ================= CONFERENCE TRACKS ================= 
+ {/* ================= SCIENTIFIC CATEGORIES ================= */}
 <section className="bg-trustnet-bg py-20">
   <div className="max-w-6xl mx-auto px-6">
 
-
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-      CONFERENCE TRACKS
-      <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+      SCIENTIFIC CATEGORIES
     </h2>
 
+    <p className="text-center text-gray-600 mb-12">
+      Topics of interest include but are not limited to the following:
+    </p>
 
-    <div className="grid md:grid-cols-2 gap-6">
-      <TrackItem 
-        title="Applied Cryptography and Network Security" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-          </svg>
-        }
-      />
-      
-      <TrackItem 
-        title="Distributed Systems and Architectures" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"/>
-            <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"/>
-            <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"/>
-          </svg>
-        }
-      />
-      
-      <TrackItem 
-        title="Data Security and Privacy" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
-          </svg>
-        }
-      />
-      
-      <TrackItem 
-        title="Security and AI/Machine Learning" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M13 7H7v6h6V7z"/>
-            <path fillRule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clipRule="evenodd"/>
-          </svg>
-        }
-      />
-      
-      <TrackItem 
-        title="Security and Privacy in Emerging Scenarios" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd"/>
-          </svg>
-        }
-      />
-      
-      <TrackItem 
-        title="Risks, Policies and Software Security" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clipRule="evenodd"/>
-          </svg>
-        }
-      />
-      
-      <TrackItem 
-        title="Trust Management and Usability" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
-          </svg>
-        }
-      />
-      
-      <TrackItem 
-        title="Computational Complexity Theory and its Applications" 
-        icon={
-          <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/>
-          </svg>
-        }
-      />
-    </div>
+<div className="grid md:grid-cols-2 gap-6 items-start">
+
+  <TrackItem
+    title="Advanced Fluid Dynamics and Flow Systems"
+    isOpen={openCategory === 1}
+    onToggle={() => setOpenCategory(openCategory === 1 ? null : 1)}
+    topics={[
+      "Aerodynamics",
+      "Artificial Intelligence in Turbulence",
+      "Astrophysical Flows",
+      "Biological/Biomedical Fluid Mechanics",
+      "Boundary Layers",
+      "Combustion and Reacting Flows",
+      "Computational Fluid Dynamics and Numerical Methods",
+      "Environmental Fluid Dynamics and Sustainability",
+      "Fluid Dynamics: General",
+      "Geophysical Fluid Dynamics",
+      "Heat Transfer and Phase Change",
+      "Industrial Fluid Dynamics and Applications",
+      "Jets and Free Shear Flows",
+      "Lattice Boltzmann Methods in Fluids",
+      "Magnetohydrodynamics",
+      "Multiphase Flows",
+      "Non-Newtonian Flows",
+      "Porous Media Flows",
+      "Rotating Fluid",
+      "Wall-Bounded Flows: Simulations",
+      "Wall-Bounded Flows: Theory"
+    ]}
+  />
+
+  <TrackItem
+    title="Artificial Intelligence and Fuzzy Systems"
+    isOpen={openCategory === 2}
+    onToggle={() => setOpenCategory(openCategory === 2 ? null : 2)}
+    topics={[
+      "Advanced Fuzzy Systems",
+      "Applied Mathematics, Statistics & Graph Theory",
+      "Data Science",
+      "Deep Learning",
+      "Explainable AI based on Fuzzy logic",
+      "Emerging Trends in AI and Fuzzy Logic",
+      "Fuzzy Logic, Mathematics, and Computing",
+      "Fuzzy Neural Networking",
+      "Information Theory",
+      "Learning, adaptive and evolvable fuzzy systems",
+      "Multi-granular cognitive computation",
+      "Machine Learning",
+      "Optimization",
+      "Rough set theory",
+      "Soft Computing",
+      "Theory of Uncertain Computation"
+    ]}
+  />
+
+</div>
 
 
   </div>
 </section>
-*/}
+
+
 
 
 
