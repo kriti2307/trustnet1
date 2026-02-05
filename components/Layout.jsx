@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import manipalLogo from "../src/assets/manipal-logo.png";
+import manipalLogo from "../src/assets/manipalfinallogo.png";
+
 
 function Layout() {
   const [committeeOpen, setCommitteeOpen] = useState(false);
@@ -26,6 +27,7 @@ function Layout() {
       <a href="/#speakers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
         Speakers
       </a>
+      
 
       {/* Committee */}
       <div
@@ -134,9 +136,10 @@ function Layout() {
     <div className="w-full min-h-screen font-sans">
       <nav className="w-full bg-white shadow-md fixed top-0 z-50 border-b border-trustnet-bg-light">
         <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
-          <Link to="/" style={{ marginLeft: "20px" }}>
-            <img src={manipalLogo} alt="Manipal Logo" style={{ height: "70px" }} />
+          <Link to="/" className="logo">
+            <img src={manipalLogo} alt="Manipal Logo" />
           </Link>
+
 
           <div className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-700 leading-none">
             {navLinks}

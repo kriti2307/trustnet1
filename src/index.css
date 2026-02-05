@@ -21,6 +21,21 @@
   --color-trustnet-light: #e0f2fe;
   --color-trustnet-lighter: #f0f9ff;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  height: 65px;       /* keeps navbar stable */
+  overflow: visible;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+  transform: scale(1.22) translateX(-10px);
+  transform-origin: left center;
+}
+
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -75,17 +90,16 @@
 
 
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
+@keyframes force-move {
+  from {
+    transform: translateX(0px);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(-1500px);
   }
 }
 
 .force-slider {
   display: flex;
-  width: max-content;
-  animation: marquee 25s linear infinite;
+  animation: force-move 20s linear infinite;
 }
