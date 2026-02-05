@@ -155,63 +155,193 @@ function Layout() {
             ☰
           </button>
         </div>
+
+{/* ===== MOBILE DRAWER MENU ===== */}
+<div
+  className={`lg:hidden fixed top-0 right-0 h-full w-[75%] max-w-sm bg-white shadow-2xl z-50 transform transition-transform duration-300
+  ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+>
+
+  <div className="flex flex-col h-full p-6 text-slate-700">
+
+    {/* CLOSE BUTTON */}
+    <button
+      className="self-end text-2xl mb-6"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      ✕
+    </button>
+
+    <div className="flex flex-col gap-4 text-base font-medium">
+
+      <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+
+      <a href="/#about" onClick={() => setMobileMenuOpen(false)}>About</a>
+
+      <Link to="/call-for-papers" onClick={() => setMobileMenuOpen(false)}>
+        Call for Papers
+      </Link>
+
+      <a href="/#speakers" onClick={() => setMobileMenuOpen(false)}>Speakers</a>
+
+
+      {/* Committee */}
+      <button
+        onClick={() => setCommitteeOpen(!committeeOpen)}
+        className="flex justify-between items-center"
+      >
+        Committee
+        <span className={`${committeeOpen ? "rotate-180" : ""}`}>⌄</span>
+      </button>
+
+      {committeeOpen && (
+        <div className="pl-4 flex flex-col gap-2 text-sm">
+          <Link to="/committee/advisory" onClick={() => setMobileMenuOpen(false)}>
+            Advisory Board
+          </Link>
+          <Link to="/committee/organizing" onClick={() => setMobileMenuOpen(false)}>
+            Organizing Committee
+          </Link>
+        </div>
+      )}
+
+
+      {/* Authors */}
+      <button
+        onClick={() => setAuthorsOpen(!authorsOpen)}
+        className="flex justify-between items-center"
+      >
+        For Authors
+        <span className={`${authorsOpen ? "rotate-180" : ""}`}>⌄</span>
+      </button>
+
+      {authorsOpen && (
+        <div className="pl-4 flex flex-col gap-2 text-sm">
+          <Link to="/for-authors/guidelines" onClick={() => setMobileMenuOpen(false)}>
+            Guidelines
+          </Link>
+          <Link to="/for-authors/submission" onClick={() => setMobileMenuOpen(false)}>
+            Submission
+          </Link>
+          <Link to="/for-authors/registration" onClick={() => setMobileMenuOpen(false)}>
+            Registration
+          </Link>
+          <Link to="/for-authors/brochure" onClick={() => setMobileMenuOpen(false)}>
+            Brochure
+          </Link>
+          <Link to="/for-authors/Accommodation" onClick={() => setMobileMenuOpen(false)}>
+            Accommodation
+          </Link>
+        </div>
+      )}
+
+
+      {/* Awards */}
+      <button
+        onClick={() => setAwardsOpen(!awardsOpen)}
+        className="flex justify-between items-center"
+      >
+        Awards
+        <span className={`${awardsOpen ? "rotate-180" : ""}`}>⌄</span>
+      </button>
+
+      {awardsOpen && (
+        <div className="pl-4 flex flex-col gap-2 text-sm">
+          <Link to="/awards/best-paper" onClick={() => setMobileMenuOpen(false)}>
+            Best Paper Award
+          </Link>
+          <Link to="/awards/young-scientist" onClick={() => setMobileMenuOpen(false)}>
+            Young Scientist Award
+          </Link>
+        </div>
+      )}
+
+
+      <a href="/#contact" onClick={() => setMobileMenuOpen(false)}>
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+
       </nav>
 
       <main className="pt-16">
         <Outlet />
       </main>
+{/* FOOTER */}
+<footer id="contact" className="bg-trustnet-primary-dark text-trustnet-lighter pt-6 pb-4">
 
-     {/* FOOTER */}
-<footer id="contact" className="bg-trustnet-primary-dark text-trustnet-lighter pt-6 pb-3">
-  <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-5 md:px-6">
 
-    <div className="grid md:grid-cols-3 gap-4 text-sm items-start">
+    {/* Main Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
 
       {/* Contacts */}
-      <div>
-        <h3 className="font-semibold text-base mb-1">Contact:</h3>
+      <div className="text-center sm:text-left">
+        <h3 className="font-semibold text-base mb-2">Contact</h3>
 
         <p className="font-medium">Dr. Abdul Haseeb Ganie</p>
         <p>Email: abdul.ganie@jaipur.manipal.edu</p>
-        <p className="mb-2">Ph: +91 99068 36244</p>
+        <p className="mb-3">Ph: +91 99068 36244</p>
 
         <p className="font-medium">Dr. Loganathan Karuppusamy</p>
         <p>Email: loganathan.karuppusamy@jaipur.manipal.edu</p>
         <p>Ph: +91 94433 68789</p>
       </div>
 
+
       {/* University */}
       <div className="text-center">
         <img
           src="/assets/mujlogo.png"
           alt="Manipal Logo"
-          className="mx-auto mb-2"
-          style={{ height: "65px", width: "auto" }}
+          className="mx-auto mb-3"
+          style={{ height: "60px" }}
         />
+
         <p>Dehmi Kalan, Off Jaipur-Ajmer Expressway,</p>
         <p>Jaipur, Rajasthan, India - 303007</p>
       </div>
 
-    {/* Conference Email — Bottom Right */}
-      <div className="flex flex-col justify-end md:items-end items-center">
-        <p className="font-semibold">
-          Email: <span className="font-normal">aciffs2026@gmail.com</span>
-        </p>
-      </div>
 
+      {/* Conference Email */}
+      <div className="flex flex-col justify-center md:items-end items-center text-center md:text-right">
+        <p className="font-semibold">
+          Email:
+        </p>
+
+        <a
+          href="mailto:aciffs2026@gmail.com"
+          className="hover:underline"
+        >
+          aciffs2026@gmail.com
+        </a>
+      </div>
 
     </div>
 
-    {/* Bottom line */}
-    <div className="border-t border-trustnet-primary-darker mt-4 pt-2 text-xs text-trustnet-light">
-      <div className="flex flex-col md:flex-row justify-between items-center">
+
+    {/* Bottom Line */}
+    <div className="border-t border-trustnet-primary-darker mt-6 pt-3 text-xs text-trustnet-light">
+
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+
         <span>© 2026 All rights reserved.</span>
+
         <span>Developed by</span>
+
       </div>
+
     </div>
 
   </div>
+
 </footer>
+
 
 
 

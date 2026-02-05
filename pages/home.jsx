@@ -16,80 +16,92 @@ function Home() {
     <div className="w-full">
 
 {/* ================= HERO SECTION ================= */}
-<section className="relative w-full h-[80vh] overflow-hidden">
+  <section className="relative w-full h-[85vh] md:h-[80vh] overflow-hidden">
 
-  <video
-  className="absolute top-0 left-0 w-full h-full object-cover object-[50%_25%]"
-  src="/assets/hero-video.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
-/>
+    {/* VIDEO */}
+    <video
+      className="absolute top-0 left-0 w-full h-full object-cover object-[50%_25%]"
+      src="/assets/hero-video.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+    />
 
-
-  {/* DARK OVERLAY */}
-  <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
-
-  {/* CENTER TEXT */}
-  <div className="relative z-10 h-full flex items-center justify-center">
-    <div className="text-center text-white px-6 max-w-5xl space-y-4">
-
-      
-      <p className="uppercase tracking-widest text-lg font-medium">
-  First International Conference
-</p>
-
-<p className ="uppercase tracking-widest text-lg font-medium"> on </p>
+    {/* DARK OVERLAY */}
+    <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
 
 
-      <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-        Advances in Computational Intelligence <br />
-        for Fluid and Fuzzy Systems
-      </h1>
+    {/* CENTER TEXT */}
+    <div className="relative z-10 h-full flex items-center justify-center">
+      <div className="text-center text-white px-5 md:px-6 max-w-5xl space-y-3 md:space-y-4">
 
-      <p className="text-lg font-semibold">
-        July 29–31, 2026
-      </p>
+        <p className="uppercase tracking-widest text-sm md:text-lg font-medium">
+          First International Conference
+        </p>
 
-      {/* 🔘 BUTTONS */}
-      <div className="flex justify-center gap-4 pt-4 flex-wrap">
-        <a
-          href="/for-authors/registration"
-          className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-full transition"
-        >
-          Register Now
-        </a>
+        <p className="uppercase tracking-widest text-sm md:text-lg font-medium">
+          on
+        </p>
 
-        <a
-          href="/for-authors/submission"
-          className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-full transition"
-        >
-          Submit Paper
-        </a>
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug md:leading-tight">
+          Advances in Computational Intelligence <br className="hidden md:block"/>
+          for Fluid and Fuzzy Systems
+        </h1>
+
+        <p className="text-base md:text-lg font-semibold">
+          July 29–31, 2026
+        </p>
+
+
+        {/* BUTTONS */}
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 pt-3 md:pt-4">
+
+          <a
+            href="/for-authors/registration"
+            className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-5 py-3 rounded-full transition"
+          >
+            Register Now
+          </a>
+
+          <a
+            href="/for-authors/submission"
+            className="bg-white hover:bg-gray-100 text-black font-semibold px-5 py-3 rounded-full transition"
+          >
+            Submit Paper
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+    {/* ===== Bottom Info Section ===== */}
+    <div className="absolute bottom-4 md:bottom-8 w-full px-5 md:px-8 z-10 text-white">
+
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-end gap-3 text-center md:text-left">
+
+        {/* Organized By */}
+        <div>
+          <p className="font-semibold text-sm md:text-base">Organized by</p>
+          <p className="text-base md:text-lg">Manipal University Jaipur</p>
+        </div>
+
+
+        {/* Association */}
+        <div className="text-sm md:text-right space-y-1 max-w-xs">
+          <p className="font-semibold">In Association With</p>
+          <p>IIT Guwahati</p>
+          <p>Nelson Mandela African Institute of Science and Technology</p>
+          <p>African Mathematical Union (AMU)</p>
+        </div>
+
       </div>
 
     </div>
-  </div>
 
-  {/* BOTTOM LEFT — ORGANIZED BY */}
-  <div className="absolute bottom-8 left-8 z-10 text-white text-left">
-    <p className="font-semibold">Organized by</p>
-    <p className="text-lg">Manipal University Jaipur</p>
-  </div>
+  </section>
 
-  {/* BOTTOM RIGHT — IN ASSOCIATION WITH */}
-  <div className="absolute bottom-8 right-8 z-10 text-white text-right text-sm space-y-1">
-    <p className="font-semibold">In Association With</p>
-    <p>IIT Guwahati</p>
-    <p>
-      Nelson Mandela African Institution of Science and Technology (NM-AIST),
-      Tanzania
-    </p>
-    <p>African Mathematical Union (AMU)</p>
-  </div>
-
-</section>
 
 
 
