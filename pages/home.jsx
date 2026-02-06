@@ -72,25 +72,68 @@ function Home() {
   <div className="max-w-5xl mx-auto px-6 text-center space-y-8">
 
     {/* -------- TOP LOGOS ROW -------- */}
-    <div className="flex flex-wrap justify-center items-center gap-6">
+<div className="flex flex-wrap justify-center items-center gap-10">
 
-      <div className="h-12 md:h-16">
-        <img src="/assets/manipal.png" alt="Manipal Logo" className="h-full object-contain" />
-      </div>
+  {/* MUJ Logo */}
+  <div className="h-20 md:h-24 flex items-center">
+    <img
+      src="/assets/muj_logo.png"
+      alt="Manipal Logo"
+      className="h-full max-w-[260px] object-contain"
+    />
+  </div>
 
-      <div className="h-12 md:h-16">
-        <img src="/assets/partner1.png" alt="Partner Logo" className="h-full object-contain" />
-      </div>
+  {/* Partner Logo 1 */}
+  <div className="h-20 md:h-24 flex items-center">
+    <img
+      src="/assets/AMU.png"
+      alt="AMU"
+      className="h-full max-w-[220px] object-contain"
+    />
+  </div>
 
-      <div className="h-12 md:h-16">
-        <img src="/assets/partner2.png" alt="Partner Logo" className="h-full object-contain" />
-      </div>
+  {/* Partner Logo 2 */}
+  <div className="h-20 md:h-24 flex items-center">
+    <img
+      src="/assets/IIT.png"
+      alt="IIT Guwahati"
+      className="h-full max-w-[220px] object-contain"
+    />
+  </div>
 
-      <div className="h-10 md:h-14">
-        <img src="/assets/sdg.png" alt="SDG Goals" className="h-full object-contain" />
-      </div>
+  {/* SDG LOGO STRIP (NO SPACE BETWEEN THEM) */}
+  <div className="flex items-center gap-0">
 
-    </div>
+    <img
+      src="/assets/sdg/4th.png"
+      alt="Quality Education"
+      className="h-14 md:h-16 w-auto object-contain"
+    />
+    <img
+      src="/assets/sdg/8th.png"
+      alt="Decent Work and Economic Growth"
+      className="h-14 md:h-16 w-auto object-contain"
+    />
+    <img
+      src="/assets/sdg/9th.png"
+      alt="Industry, Innovation and Infrastructure"
+      className="h-14 md:h-16 w-auto object-contain"
+    />
+    <img
+      src="/assets/sdg/12th.png"
+      alt="Responsible Consumption and Production"
+      className="h-14 md:h-16 w-auto object-contain"
+    />
+    <img
+      src="/assets/sdg/17th.png"
+      alt="Partnerships for the Goals"
+      className="h-14 md:h-16 w-auto object-contain"
+    />
+
+  </div>
+
+</div>
+
 
 
     {/* -------- ORGANIZED BY -------- */}
@@ -268,7 +311,7 @@ function Home() {
         <span className="font-semibold"> Indian Institute of Technology (IIT) Guwahati</span>,
         <span className="font-semibold"> Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania</span>,
         and the <span className="font-semibold">African Mathematical Union (AMU)</span>,
-        proposes to organize the First International Conference on
+        are organizing the First International Conference on
         <span className="font-semibold">
           {" "}Advances in Computational Intelligence for Fluid and Fuzzy Systems (ACIFFS-2026)
         </span>,
@@ -574,36 +617,6 @@ After a thorough peer review procedure, all registered and presented papers will
 The conference upholds the highest standards of academic integrity. Any manuscript found to involve plagiarism or other ethical misconduct, whether during review, after registration, or in the final camera-ready version, will be rejected immediately. In such cases, the registration fee will not be refunded.
 This policy applies to issues identified by the conference committee or our publication partners at any stage of the process.
     </p>
-
-    {/* Publication Partner Logos */}
-<div className="flex flex-wrap items-center justify-center gap-10 mt-12">
-  <img
-    src="/assets/sdg/4th.png"
-    alt="Quality Education"
-    className="h-20 w-auto object-contain"
-  />
-  <img
-    src="/assets/sdg/8th.png"
-    alt="Decent Work and Economic Growth"
-    className="h-20 w-auto object-contain"
-  />
-  <img
-    src="/assets/sdg/9th.png"
-    alt="Industry, Innovation and Infrastructure"
-    className="h-20 w-auto object-contain"
-  />
-  <img
-    src="/assets/sdg/12th.png"
-    alt="Responsible consumption and production"
-    className="h-20 w-auto object-contain"
-  />
-  <img
-    src="/assets/sdg/17th.png"
-    alt="Partnerships for the Goals"
-    className="h-20 w-auto object-contain"
-  />
-</div>
-
 
 {/*
      Logos 
