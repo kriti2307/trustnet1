@@ -19,50 +19,52 @@ function Home() {
     <div className="w-full">
 
 {/* ================= HERO SECTION ================= */}
-<section className="relative w-full h-[60vh] md:h-[90vh] overflow-hidden">
+<section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
 
   {/* BACKGROUND VIDEO */}
   <video
-    className="absolute inset-0 w-full h-full object-cover"
-    src="/assets/hero-video.mp4"
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
+  className="absolute inset-0 w-full h-full object-cover 
+             scale-[1.15] md:scale-100"
+  src="/assets/hero-video.mp4"
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
 
-  {/* DARK OVERLAY */}
-  <div className="absolute inset-0 bg-black/15"></div>
+  {/* OVERLAY (stronger only on mobile) */}
+  <div className="absolute inset-0 bg-black/40 md:bg-black/15"></div>
 
-  {/* CENTER TEXT */}
+  {/* CENTER CONTENT */}
   <div className="relative z-10 h-full flex items-center justify-center">
-    <div className="text-center text-white px-6 max-w-6xl">
+    <div className="text-center text-white px-5 sm:px-8 max-w-4xl">
 
       {/* CONFERENCE CODE */}
-      <h2 className="font-serif text-xl md:text-3xl tracking-wide mb-3">
+      <h2 className="font-serif text-base sm:text-lg md:text-3xl tracking-wide mb-2">
         ACIFFS 2026
       </h2>
 
-      {/* INTERNATIONAL CONF TEXT */}
-      <h3 className="font-serif text-2xl md:text-5xl mb-2">
+      {/* INTERNATIONAL CONFERENCE */}
+      <h3 className="font-serif text-lg sm:text-xl md:text-5xl mb-1">
         International Conference
       </h3>
 
-      <h3 className="font-serif text-2xl md:text-5xl mb-4">
+      <h3 className="font-serif text-lg sm:text-xl md:text-5xl mb-3">
         on
       </h3>
 
       {/* MAIN TITLE */}
-      <h1 className="font-serif text-2xl sm:text-3xl md:text-6xl leading-tight font-medium mb-6">
+      <h1 className="font-serif text-xl sm:text-2xl md:text-6xl leading-snug md:leading-tight font-medium mb-4">
         Advances in Computational Intelligence
-        <br />
+        <br className="hidden sm:block" />
         for Fluid and Fuzzy Systems
       </h1>
 
       {/* DATE */}
-      <p className="font-serif text-lg md:text-2xl">
+      <p className="font-serif mt-4 text-sm sm:text-base md:text-2xl">
         July 29–31, 2026
       </p>
+
 
     </div>
   </div>
