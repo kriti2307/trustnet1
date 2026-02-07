@@ -98,17 +98,54 @@ function Home() {
 
 
     {/* -------- ASSOCIATIONS -------- */}
-<div className="space-y-2">
-  <p className="text-base md:text-lg font-semibold">
-    In Association With
-  </p>
+    <div className="mt-10 text-center space-y-6">
+     <h3 className="text-lg md:text-xl font-semibold text-black">
+     In Association With
+     </h3>
 
-  <div className="text-base md:text-lg space-y-1">
-    <p>Indian Institute of Technology Guwahati (IIT G)</p>
-    <p>Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania</p>
-    <p>African Mathematical Union (AMU)</p>
+    {/* Logos + Names */}
+    <div className="flex flex-wrap justify-center gap-14">
+
+    {/* IIT Guwahati */}
+    <div className="flex flex-col items-center gap-3">
+      <img
+        src="/assets/IIT.png"
+        alt="IIT Guwahati"
+        className="h-16 md:h-20 object-contain"
+      />
+      <p className="text-base md:text-lg text-black text-center max-w-[240px]">
+        Indian Institute of Technology (IIT) Guwahati
+      </p>
+    </div>
+
+    {/* NM-AIST */}
+    <div className="flex flex-col items-center gap-3">
+      <img
+        src="/assets/Arusha.png"
+        alt="NM-AIST Tanzania"
+        className="h-16 md:h-20 object-contain"
+      />
+      <p className="text-base md:text-lg text-black text-center max-w-[260px]">
+        Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania
+      </p>
+    </div>
+
+    {/* AMU */}
+    <div className="flex flex-col items-center gap-3">
+      <img
+        src="/assets/AMU.png"
+        alt="African Mathematical Union"
+        className="h-16 md:h-20 object-contain"
+      />
+      <p className="text-base md:text-lg text-black text-center max-w-[240px]">
+        African Mathematical Union (AMU)
+      </p>
+    </div>
+
   </div>
+
 </div>
+
 
 
 
