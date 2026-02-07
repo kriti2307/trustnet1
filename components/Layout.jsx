@@ -16,10 +16,6 @@ function Layout() {
         Home
       </Link>
 
-      <a href="/#about" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
-        About
-      </a>
-
       <Link to="/about-us" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
         About Us
       </Link>
