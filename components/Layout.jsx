@@ -324,54 +324,28 @@ function Layout() {
 
 
 
-      {/* Conference Email */}
-      <div className="flex flex-col justify-center md:items-end items-center text-center md:text-right">
-        <p className="font-semibold">
-          Email:
-        </p>
+      {/* Conference Email + SDG */}
+<div className="flex flex-col justify-between h-full items-center md:items-end text-center md:text-right">
 
-        <a
-          href="mailto:aciffs2026@gmail.com"
-          className="hover:underline"
-        >
-          aciffs2026@gmail.com
-        </a>
-      </div>
-{/* SDG STRIP */}
-<div className="mt-8 flex justify-center">
-  <div className="flex items-center gap-0">
-
-    <img
-      src="/assets/sdg/4th.png"
-      alt="Quality Education"
-      className="h-10 md:h-12 w-auto object-contain"
-    />
-
-    <img
-      src="/assets/sdg/8th.png"
-      alt="Decent Work and Economic Growth"
-      className="h-10 md:h-12 w-auto object-contain"
-    />
-
-    <img
-      src="/assets/sdg/9th.png"
-      alt="Industry, Innovation and Infrastructure"
-      className="h-10 md:h-12 w-auto object-contain"
-    />
-
-    <img
-      src="/assets/sdg/12th.png"
-      alt="Responsible Consumption and Production"
-      className="h-10 md:h-12 w-auto object-contain"
-    />
-
-    <img
-      src="/assets/sdg/17th.png"
-      alt="Partnerships for the Goals"
-      className="h-10 md:h-12 w-auto object-contain"
-    />
-
+  <div>
+    <p className="font-semibold">Email:</p>
+    <a
+      href="mailto:aciffs2026@gmail.com"
+      className="hover:underline"
+    >
+      aciffs2026@gmail.com
+    </a>
   </div>
+
+  {/* SDG STRIP */}
+  <div className="mt-6 flex items-center gap-0 md:self-end">
+    <img src="/assets/sdg/4th.png" className="h-15 w-auto" />
+    <img src="/assets/sdg/8th.png" className="h-15 w-auto" />
+    <img src="/assets/sdg/9th.png" className="h-15 w-auto" />
+    <img src="/assets/sdg/12th.png" className="h-15 w-auto" />
+    <img src="/assets/sdg/17th.png" className="h-15 w-auto" />
+  </div>
+
 </div>
 
 
