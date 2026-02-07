@@ -319,33 +319,24 @@ function Home() {
                     px-8 md:px-16 lg:px-32 py-10 max-w-screen-2xl mx-auto">
 
       <p className="text-gray-700 text-lg leading-relaxed text-justify">
-        The <span className="font-semibold">
-          Department of Mathematics and Statistics, Manipal University Jaipur
-        </span>, in collaboration with the
-        <span className="font-semibold"> Indian Institute of Technology (IIT) Guwahati</span>,
-        <span className="font-semibold"> Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania</span>,
-        and the <span className="font-semibold">African Mathematical Union (AMU)</span>,
-        are organizing the First International Conference on
+        The International Conference on{" "}
         <span className="font-semibold">
-          {" "}Advances in Computational Intelligence for Fluid and Fuzzy Systems (ACIFFS-2026)
-        </span>,
-        scheduled for <span className="font-semibold">July 29–31, 2026</span>.
+          Advances in Computational Intelligence for Fluid and Fuzzy Systems (ACIFFS-2026)
+        </span>{" "}
+        aims to provide a distinguished international platform for academicians,
+        researchers, industry professionals, and postgraduate students to exchange
+        and disseminate cutting-edge research findings and innovative ideas in the
+        rapidly evolving fields of computational intelligence, fluid systems, and
+        fuzzy methodologies.
       </p>
 
       <p className="text-gray-700 text-lg leading-relaxed mt-6 text-justify">
-        ACIFFS 2026 provides an international platform for researchers,
-        academicians, and industry professionals to present, exchange, and discuss
-        recent advancements and innovative research outcomes in computational
-        intelligence, fluid systems, and fuzzy methodologies.
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mt-6 text-justify">
-        The conference will bring together leading experts to explore cutting-edge
-        theoretical developments, computational techniques, and real-world
-        applications influencing science, technology, and society. To promote
-        collaboration and knowledge sharing between academia and industry, the
-        program will feature keynote addresses, technical paper presentations, and
-        interactive sessions by distinguished speakers from around the globe.
+        The conference emphasizes the integration of intelligent computational
+        techniques with fluid modeling, fuzzy systems, and hybrid decision-making
+        frameworks, addressing both theoretical advancements and real-world
+        applications. ACIFFS-2026 seeks to promote interdisciplinary collaboration
+        and foster sustainable research partnerships across mathematics,
+        engineering, computer science, and applied sciences.
       </p>
 
     </div>
