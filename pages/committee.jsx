@@ -10,11 +10,6 @@ const INTERNATIONAL_ADVISORY = [
   "Prof. Mohammad M Khalaf, Egypt",
   "Prof. Mohammad M Ali Al-Shamiri, Saudi Arabia",
   "Prof. Yousef Al-Qudah, Jordan",
-  "Prof. Syed Omar Shah, China",
-  "Prof. Kaouther Ghachem, Saudi Arabia",
-  "Prof. Ahmed Mir, Saudi Arabia",
-  "Prof. Chemseddine Maatki, Saudi Arabia",
-  "Prof. Lioua Kolsi, Saudi Arabia",
 ];
 
 /* ================= NATIONAL ================= */
@@ -22,16 +17,18 @@ const NATIONAL_ADVISORY = [
   "Prof. Prasad Patnaik BSV, IIT Madras",
   "Prof. Gauri Shankar Seth, IIT (ISM) Dhanbad",
   "Prof. Debashis Dutta, NIT Warangal",
-  "Prof. Arif Ali Baigh Moghal, NIT Warangal",
   "Prof. Surender Singh, Kurukshetra University, Haryana",
+  "Prof. Arif Ali Baigh Moghal, NIT Warangal",
   "Prof. Dharmendra Tripathi, NIT Uttarakhand",
   "Prof. Sunil, NIT Hamirpur",
+  "Prof. Yogeshver Dutt Sharma, NIT Hamirpur",
   "Prof. Peeyush Chandra, IIT Kanpur",
   "Prof. A. Benerji Babu, NIT Warangal",
   "Prof. Aijaz-Ul-Islam, NIT Srinagar",
   "Prof. Rajesh Kumar Gupta, Central University of Haryana",
   "Prof. Arun Kajla, Central University of Haryana",
 ];
+
 
 /* ================= TECHNICAL ================= */
 const TECHNICAL_COMMITTEE = [

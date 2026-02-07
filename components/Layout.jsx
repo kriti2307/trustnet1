@@ -311,7 +311,6 @@ function Layout() {
   <div className="space-y-1">
     <p className="font-medium">Dr. Reema Jain</p>
     <p>Email: reema.jain@jaipur.manipal.edu</p>
-    <p>Ph: 9462222922</p>
   </div>
 </div>
 
