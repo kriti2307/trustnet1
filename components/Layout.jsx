@@ -337,8 +337,50 @@ function Layout() {
           aciffs2026@gmail.com
         </a>
       </div>
+{/* SDG STRIP */}
+<div className="mt-8 flex justify-center">
+  <div className="flex items-center gap-0">
+
+    <img
+      src="/assets/sdg/4th.png"
+      alt="Quality Education"
+      className="h-10 md:h-12 w-auto object-contain"
+    />
+
+    <img
+      src="/assets/sdg/8th.png"
+      alt="Decent Work and Economic Growth"
+      className="h-10 md:h-12 w-auto object-contain"
+    />
+
+    <img
+      src="/assets/sdg/9th.png"
+      alt="Industry, Innovation and Infrastructure"
+      className="h-10 md:h-12 w-auto object-contain"
+    />
+
+    <img
+      src="/assets/sdg/12th.png"
+      alt="Responsible Consumption and Production"
+      className="h-10 md:h-12 w-auto object-contain"
+    />
+
+    <img
+      src="/assets/sdg/17th.png"
+      alt="Partnerships for the Goals"
+      className="h-10 md:h-12 w-auto object-contain"
+    />
+
+  </div>
+</div>
+
+
+
+
+
 
     </div>
+    
 
 
     {/* Bottom Line */}

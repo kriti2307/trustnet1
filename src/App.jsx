@@ -3,7 +3,6 @@ import "./App.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Layout from "../components/Layout";
 import Home from "../pages/home";
-import About from "../pages/about";
 import CallForPapers from "../pages/callForPapers";
 import Speakers from "../pages/speakers";
 import Committee from "../pages/committee";
@@ -25,7 +24,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
           <Route path="call-for-papers" element={<CallForPapers />} />
           <Route path="speakers" element={<Speakers />} />
           <Route path="committee/advisory" element={<Committee type="advisory" />} />
