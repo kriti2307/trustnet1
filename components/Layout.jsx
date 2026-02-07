@@ -280,18 +280,32 @@ function Layout() {
     {/* Main Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
 
-      {/* Contacts */}
-      <div className="text-center sm:text-left">
-        <h3 className="font-semibold text-base mb-2">Contact</h3>
+ {/* Contacts */}
+<div className="text-center sm:text-left space-y-5">
+  <h3 className="font-semibold text-base mb-2">Contact</h3>
 
-        <p className="font-medium">Dr. Abdul Haseeb Ganie</p>
-        <p>Email: abdul.ganie@jaipur.manipal.edu</p>
-        <p className="mb-3">Ph: +91 99068 36244</p>
+  {/* Contact 1 */}
+  <div className="space-y-1">
+    <p className="font-medium">Dr. Abdul Haseeb Ganie</p>
+    <p>Email: abdul.ganie@jaipur.manipal.edu</p>
+    <p>Ph: +91 99068 36244</p>
+  </div>
 
-        <p className="font-medium">Dr. Loganathan Karuppusamy</p>
-        <p>Email: loganathan.karuppusamy@jaipur.manipal.edu</p>
-        <p>Ph: +91 94433 68789</p>
-      </div>
+  {/* Contact 2 */}
+  <div className="space-y-1">
+    <p className="font-medium">Dr. Loganathan Karuppusamy</p>
+    <p>Email: loganathan.karuppusamy@jaipur.manipal.edu</p>
+    <p>Ph: +91 94433 68789</p>
+  </div>
+
+  {/* Contact 3 */}
+  <div className="space-y-1">
+    <p className="font-medium">Dr. Reema Jain</p>
+    <p>Email: reema.jain@jaipur.manipal.edu</p>
+    <p>Ph: 9462222922</p>
+  </div>
+</div>
+
 
 
       {/* University */}
