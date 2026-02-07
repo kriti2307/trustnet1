@@ -182,52 +182,81 @@ function CallForPapers() {
         </div>
       </section>
 
-    
-      {/* Conference Tracks */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Conference Tracks
-            <div className="w-24 h-1 bg-trustnet-primary mx-auto mt-3 rounded-full"></div>
-          </h2>
+    {/* ================= SCIENTIFIC CATEGORIES ================= */}
+<section className="bg-trustnet-bg py-20">
+  <div className="max-w-6xl mx-auto px-6">
 
-          <div className="space-y-4">
-            {TRACKS_WITH_TOPICS.map((track, idx) => (
-              <div
-                key={idx}
-                className="border border-blue-200 rounded-xl overflow-hidden shadow-sm bg-white"
-              >
-                <button
-                  onClick={() =>
-                    setOpenTrack(openTrack === idx ? null : idx)
-                  }
-                  className="w-full flex justify-between items-center px-6 py-4 bg-trustnet-bg hover:bg-trustnet-bg-light transition text-left"
-                >
-                  <span className="font-semibold text-gray-800">
-                    {track.title.toUpperCase()}
-                  </span>
-                  <span
-                    className={`text-trustnet-primary text-xl transition-transform ${
-                      openTrack === idx ? "rotate-180" : ""
-                    }`}
-                  >
-                    ▼
-                  </span>
-                </button>
-                {openTrack === idx && (
-                  <div className="px-6 py-4 bg-white text-gray-600">
-                    <ul className="grid md:grid-cols-2 gap-2">
-                      {track.topics.map((topic, i) => (
-                        <li key={i}>• {topic}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+      SCIENTIFIC CATEGORIES
+    </h2>
+
+    <p className="text-center text-gray-600 mb-12">
+      Topics of interest include but are not limited to the following:
+    </p>
+
+<div className="grid md:grid-cols-2 gap-6 items-start">
+
+  <TrackItem
+    title="Advanced Fluid Dynamics and Flow Systems"
+    isOpen={openCategory === 1}
+    onToggle={() => setOpenCategory(openCategory === 1 ? null : 1)}
+    topics={[
+      "Aerodynamics",
+      "Artificial Intelligence in Turbulence",
+      "Astrophysical Flows",
+      "Biological/Biomedical Fluid Mechanics",
+      "Boundary Layers",
+      "Combustion and Reacting Flows",
+      "Computational Fluid Dynamics and Numerical Methods",
+      "Environmental Fluid Dynamics and Sustainability",
+      "Fluid Dynamics: General",
+      "Geophysical Fluid Dynamics",
+      "Heat Transfer and Phase Change",
+      "Industrial Fluid Dynamics and Applications",
+      "Jets and Free Shear Flows",
+      "Lattice Boltzmann Methods in Fluids",
+      "Magnetohydrodynamics",
+      "Multiphase Flows",
+      "Non-Newtonian Flows",
+      "Porous Media Flows",
+      "Rotating Fluid",
+      "Wall-Bounded Flows: Simulations",
+      "Wall-Bounded Flows: Theory"
+    ]}
+  />
+
+  <TrackItem
+    title="Artificial Intelligence and Fuzzy Systems"
+    isOpen={openCategory === 2}
+    onToggle={() => setOpenCategory(openCategory === 2 ? null : 2)}
+    topics={[
+      "Advanced Fuzzy Systems",
+      "Applied Mathematics, Statistics & Graph Theory",
+      "Data Science",
+      "Deep Learning",
+      "Explainable AI based on Fuzzy logic",
+      "Emerging Trends in AI and Fuzzy Logic",
+      "Fuzzy Logic, Mathematics, and Computing",
+      "Fuzzy Neural Networking",
+      "Information Theory",
+      "Learning, adaptive and evolvable fuzzy systems",
+      "Multi-granular cognitive computation",
+      "Machine Learning",
+      "Optimization",
+      "Rough set theory",
+      "Soft Computing",
+      "Theory of Uncertain Computation"
+    ]}
+  />
+
+</div>
+
+
+  </div>
+</section>
+   
+
+
 
       {/* Publication */}
       <section className="bg-trustnet-bg-light py-16">
