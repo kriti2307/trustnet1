@@ -154,21 +154,24 @@ function Home() {
       </p>
 
       <p className="text-lg md:text-xl">
-        Manipal University Jaipur
+        Department of Mathematics and Statistics, Manipal University Jaipur
       </p>
     </div>
 
 
     {/* -------- ASSOCIATIONS -------- */}
-    <div className="space-y-1">
-      <p className="text-base md:text-lg font-semibold">
-        In Association With
-      </p>
+<div className="space-y-2">
+  <p className="text-base md:text-lg font-semibold">
+    In Association With
+  </p>
 
-      <p className="text-base md:text-lg">
-        IIT Guwahati & National Institute of Technology Uttarakhand
-      </p>
-    </div>
+  <div className="text-base md:text-lg space-y-1">
+    <p>Indian Institute of Technology Guwahati (IIT G)</p>
+    <p>Nelson Mandela African Institution of Science and Technology (NM-AIST), Tanzania</p>
+    <p>African Mathematical Union (AMU)</p>
+  </div>
+</div>
+
 
 
     {/* -------- DATES + CENTER IMAGE + VENUE -------- */}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import manipalLogo from "../src/assets/manipalfinallogo.png";
 
 
 function Layout() {
@@ -137,7 +136,7 @@ function Layout() {
       <nav className="w-full bg-white shadow-md fixed top-0 z-50 border-b border-trustnet-bg-light">
         <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
           <Link to="/" className="logo">
-            <img src={manipalLogo} alt="Manipal Logo" />
+            <img src="/assets/newmujlogo.png" alt="Manipal Logo" />
           </Link>
 
 
@@ -289,24 +288,25 @@ function Layout() {
 <div className="text-center sm:text-left space-y-5">
   <h3 className="font-semibold text-base mb-2">Contact</h3>
 
-  {/* Contact 1 */}
+   {/* Contact 1 */}
+  <div className="space-y-1">
+    <p className="font-medium">Dr. Reema Jain</p>
+    <p>Email: reema.jain@jaipur.manipal.edu</p>
+    <p>Ph: +91 141 3999100 (Extn. 648)</p>
+  </div>
+
+  {/* Contact 2 */}
   <div className="space-y-1">
     <p className="font-medium">Dr. Abdul Haseeb Ganie</p>
     <p>Email: abdul.ganie@jaipur.manipal.edu</p>
     <p>Ph: +91 99068 36244</p>
   </div>
 
-  {/* Contact 2 */}
+  {/* Contact 3 */}
   <div className="space-y-1">
     <p className="font-medium">Dr. Loganathan Karuppusamy</p>
     <p>Email: loganathan.karuppusamy@jaipur.manipal.edu</p>
     <p>Ph: +91 94433 68789</p>
-  </div>
-
-  {/* Contact 3 */}
-  <div className="space-y-1">
-    <p className="font-medium">Dr. Reema Jain</p>
-    <p>Email: reema.jain@jaipur.manipal.edu</p>
   </div>
 </div>
 
