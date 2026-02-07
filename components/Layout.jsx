@@ -291,14 +291,14 @@ function Layout() {
    {/* Contact 1 */}
   <div className="space-y-1">
     <p className="font-medium">Dr. Reema Jain</p>
-    <p>Email: reema.jain@jaipur.manipal.edu</p>
-    <p>Ph: +91 141 3999100 (Extn. 648)</p>
+    <p>Professor & Head</p>
+    <p>Email: aciffs2026@gmail.com</p>
   </div>
 
   {/* Contact 2 */}
   <div className="space-y-1">
     <p className="font-medium">Dr. Abdul Haseeb Ganie</p>
-    <p>Email: abdul.ganie@jaipur.manipal.edu</p>
+    <p>Email: abdul.ganie@jaipur.manipal.edu </p>
     <p>Ph: +91 99068 36244</p>
   </div>
 
