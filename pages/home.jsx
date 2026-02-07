@@ -88,7 +88,7 @@ function Home() {
   {/* MUJ Logo */}
   <div className="h-20 md:h-24 flex items-center">
     <img
-      src="/assets/muj_logo.png"
+      src="/assets/newmujlogo.png"
       alt="Manipal Logo"
       className="h-full max-w-[260px] object-contain"
     />
