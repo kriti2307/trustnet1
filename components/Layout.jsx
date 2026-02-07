@@ -20,6 +20,10 @@ function Layout() {
         About
       </a>
 
+      <Link to="/about-us" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
+        About Us
+      </Link>
+
       <Link to="/call-for-papers" className="hover:text-trustnet-accent" onClick={() => setMobileMenuOpen(false)}>
         Call for Papers
       </Link>
@@ -177,6 +181,11 @@ function Layout() {
       <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
 
       <a href="/#about" onClick={() => setMobileMenuOpen(false)}>About</a>
+
+      <Link to="/about-us" onClick={() => setMobileMenuOpen(false)}>
+      About Us
+      </Link>
+ 
 
       <Link to="/call-for-papers" onClick={() => setMobileMenuOpen(false)}>
         Call for Papers

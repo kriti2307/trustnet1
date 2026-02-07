@@ -15,6 +15,7 @@ import Contact from "../pages/contact";
 import BestPaper from "../pages/Awards/bestPaper";
 import YoungScientist from "../pages/Awards/youngScientist";
 import Accommodation from "../pages/forAuthors/accommodation";
+import AboutPartners from "../pages/aboutus";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/awards/best-paper" element={<BestPaper />} />
           <Route path="/awards/young-scientist" element={<YoungScientist />} />
           <Route path="for-authors/Accommodation" element={<Accommodation />} />
+          <Route path="about-us" element={<AboutPartners />} />
         </Route>
       </Routes>
     </BrowserRouter>
