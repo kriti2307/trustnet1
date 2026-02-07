@@ -13,7 +13,7 @@ import Brochure from "../pages/forAuthors/brochure";
 import Contact from "../pages/contact";
 import BestPaper from "../pages/Awards/bestPaper";
 import YoungScientist from "../pages/Awards/youngScientist";
-import Accommodation from "../pages/forAuthors/Accommodation";
+import Accommodation from "../pages/forAuthors/accommodation";
 import AboutPartners from "../pages/aboutus";
 
 function App() {
