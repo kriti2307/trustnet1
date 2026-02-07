@@ -23,16 +23,16 @@ function Home() {
 
   {/* BACKGROUND VIDEO */}
   <video
-  className="absolute inset-0 w-full h-full object-cover 
-             scale-[1.15] md:scale-100"
-  src="/assets/hero-video.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
-/>
+    className="absolute inset-0 w-full h-full object-cover 
+               scale-[1.15] md:scale-100"
+    src="/assets/hero-video.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
 
-  {/* OVERLAY (stronger only on mobile) */}
+  {/* OVERLAY */}
   <div className="absolute inset-0 bg-black/40 md:bg-black/15"></div>
 
   {/* CENTER CONTENT */}
@@ -40,31 +40,37 @@ function Home() {
     <div className="text-center text-white px-5 sm:px-8 max-w-4xl">
 
       {/* CONFERENCE CODE */}
-      <h2 className="font-serif text-base sm:text-lg md:text-3xl tracking-wide mb-2">
+      <h2 className="font-serif text-sm sm:text-base md:text-2xl tracking-wide mb-2">
         ACIFFS 2026
       </h2>
 
       {/* INTERNATIONAL CONFERENCE */}
-      <h3 className="font-serif text-lg sm:text-xl md:text-5xl mb-1">
+      <h3 className="font-serif text-base sm:text-lg md:text-4xl mb-1">
         International Conference
       </h3>
 
-      <h3 className="font-serif text-lg sm:text-xl md:text-5xl mb-3">
+      <h3 className="font-serif text-base sm:text-lg md:text-4xl mb-3">
         on
       </h3>
 
       {/* MAIN TITLE */}
-      <h1 className="font-serif text-xl sm:text-2xl md:text-6xl leading-snug md:leading-tight font-medium mb-4">
-        Advances in Computational Intelligence
-        <br className="hidden sm:block" />
-        for Fluid and Fuzzy Systems
-      </h1>
+<h1 className="font-serif text-lg sm:text-xl md:text-5xl leading-snug md:leading-tight font-medium mb-4 text-center">
+  
+  <span className="md:whitespace-nowrap">
+    Advances in Computational Intelligence
+  </span>
+
+  <br className="hidden sm:block" />
+
+  for Fluid and Fuzzy Systems
+
+</h1>
+
 
       {/* DATE */}
-      <p className="font-serif mt-4 text-sm sm:text-base md:text-2xl">
+      <p className="font-serif mt-4 text-sm sm:text-base md:text-xl">
         July 29–31, 2026
       </p>
-
 
     </div>
   </div>
