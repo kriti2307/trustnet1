@@ -32,6 +32,7 @@ const NATIONAL_ADVISORY = [
 
 /* ================= TECHNICAL ================= */
 const TECHNICAL_COMMITTEE = [
+  "Prof. C S Lamba, Manipal University Jaipur",
   "Prof. Sunny Kumar Sharma, SMVD University Jammu",
   "Prof. Ramakrishna Manchi, NIT Silchar",
   "Prof. Jaganath Roy, NIT Warangal",

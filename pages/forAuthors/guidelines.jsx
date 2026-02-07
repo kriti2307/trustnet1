@@ -13,7 +13,7 @@ function Guidelines() {
           </h1>
           <p className="text-lg md:text-xl leading-relaxed opacity-90">
             Authors are invited to submit original, unpublished research papers
-            aligned with the themes of ACIFF 2026.
+            aligned with the themes of ACIFFS 2026.
           </p>
         </div>
       </section>
@@ -118,7 +118,7 @@ function Guidelines() {
             </h2>
 
             <p className="text-gray-700 leading-relaxed text-justify">
-             Once an article is submitted to the conference, the authors agree to our review policy, where the article will be peer-reviewed by professional reviewers after being checked for similarity index and plagiarism by plagiarism detection software (Turnitin). ACIFF 2026 respects Intellectual Property Rights. Plagiarism is defined as the incorrect appropriation of someone else&apos;s information, thoughts, or ideas and presenting them as one&apos;s own. The conference committee will not tolerate this sort of breach of ethical norms at any cost. Any article with more than 18% similarity index will be rejected immediately without further consideration. The similarity should not be greater than 2% from a single source.
+             Once an article is submitted to the conference, the authors agree to our review policy, where the article will be peer-reviewed by professional reviewers after being checked for similarity index and plagiarism by plagiarism detection software (Turnitin). ACIFFS 2026 respects Intellectual Property Rights. Plagiarism is defined as the incorrect appropriation of someone else&apos;s information, thoughts, or ideas and presenting them as one&apos;s own. The conference committee will not tolerate this sort of breach of ethical norms at any cost. Any article with more than 18% similarity index will be rejected immediately without further consideration. The similarity should not be greater than 2% from a single source.
             </p>
 
             <p className="text-gray-700 leading-relaxed text-justify">

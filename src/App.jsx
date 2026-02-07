@@ -39,7 +39,7 @@ function App() {
           <Route path="/awards/young-scientist" element={<YoungScientist />} />
           <Route path="for-authors/Accommodation" element={<Accommodation />} />
           <Route path="about-us" element={<AboutPartners />} />
-        </Route>
+        </Route>  
       </Routes>
     </BrowserRouter>
   );

@@ -174,9 +174,7 @@ function Layout() {
     <div className="flex flex-col gap-4 text-base font-medium">
 
       <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-
-      <a href="/#about" onClick={() => setMobileMenuOpen(false)}>About</a>
-
+      
       <Link to="/about-us" onClick={() => setMobileMenuOpen(false)}>
       About Us
       </Link>

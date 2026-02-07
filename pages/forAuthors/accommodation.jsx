@@ -51,7 +51,7 @@ function Accommodation() {
                   <td className="p-3 border font-medium">
                     Hotel Highway King
                   </td>
-                  <td className="p-3 border">—</td>
+                  <td className="p-3 border">Manipal University Road, Dehmi Kalan, Rajasthan 303007</td>
                   <td className="p-3 border">—</td>
                   <td className="p-3 border">2 km</td>
                 </tr>
